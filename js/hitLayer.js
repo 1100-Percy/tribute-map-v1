@@ -11,6 +11,15 @@
 
   function updateCountryLabels(year, month) {
     const counts = global.getRecordCountsByCountry(year, month);
+    updateCountryLabelsFromCounts(counts);
+  }
+
+  function updateCountryLabelsByRecords(records) {
+    const counts = global.getRecordCountsFromRecords(records);
+    updateCountryLabelsFromCounts(counts);
+  }
+
+  function updateCountryLabelsFromCounts(counts) {
     document.querySelectorAll(".country-label[data-country-id]").forEach((label) => {
       const countryId = label.dataset.countryId;
       const baseName = COUNTRIES[countryId].name;
@@ -28,4 +37,5 @@
 
   global.renderHitLayer = renderHitLayer;
   global.updateCountryLabels = updateCountryLabels;
+  global.updateCountryLabelsByRecords = updateCountryLabelsByRecords;
 })(window);

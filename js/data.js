@@ -7641,6 +7641,78 @@
 };
   global.TRIBUTE_META = TRIBUTE_META;
 
+  const TRIBUTE_CATEGORIES = {
+    "方物": ["方物"],
+    "馬匹": ["马", "馬"],
+    "香料": ["胡椒", "苏木", "蘇木", "丁香", "降香", "木香", "龙脑", "龍腦", "速香", "沉香", "黄蜡", "黃蠟", "乳香", "檀香"],
+    "象": ["象", "驯象", "馴象"],
+    "金銀器": ["金", "银", "銀", "龙盏", "龍盞", "玳瑁"],
+    "布帛": ["布", "绵", "綿", "绮", "綺", "罗", "羅", "纱", "紗", "苾布", "缎", "緞"],
+    "硫黃": ["硫黄", "硫磺"],
+    "動物": ["虎", "熊", "孔雀", "鹦鹉", "鸚鵡", "白猴", "火鸡", "火雞", "犀牛", "白鹿", "鹤", "鶴", "鸡", "雞"]
+  };
+  global.TRIBUTE_CATEGORIES = TRIBUTE_CATEGORIES;
+
+  const GIFT_CATEGORIES = {
+    "絲織品": ["文绮", "文綺", "织金", "織金", "纱罗", "紗羅", "绮", "綺", "帛", "罗", "羅", "纱", "紗", "缎", "緞"],
+    "鈔錠": ["钞", "鈔"],
+    "衣服": ["衣", "冠带", "冠帶", "靴", "袜", "襪"],
+    "卻貢": ["却贡", "卻貢"],
+    "大統曆": ["大统历", "大統曆", "历", "曆"],
+    "宴飲": ["宴"]
+  };
+  global.GIFT_CATEGORIES = GIFT_CATEGORIES;
+
+  const PURPOSE_CATEGORIES = {
+    "朝賀": ["贺正旦", "賀正旦", "贺明年正旦", "賀明年正旦", "贺天寿", "賀天壽", "上贺", "上賀", "贺皇太子", "賀皇太子", "贺即位", "賀即位", "贺克", "賀克", "天寿圣节", "天壽聖節", "天寿节", "天壽節", "皇太子千秋"],
+    "謝恩": ["谢恩", "謝恩", "上表谢恩", "上表謝恩", "谢封", "謝封", "谢赐", "謝賜"],
+    "請求": ["请封", "請封", "请入朝", "請入朝", "请袭", "請襲", "请谥", "請謚", "请命", "請命", "请祭", "請祭", "请入学", "請入學"],
+    "入學": ["入学", "入學"],
+    "市馬": ["市马", "市馬"],
+    "告哀": ["告哀"],
+    "謝罪": ["谢罪", "謝罪", "纳元", "納元", "纳前元", "納前元"]
+  };
+  global.PURPOSE_CATEGORIES = PURPOSE_CATEGORIES;
+
+  function matchesCategory(rawText, categoryKeywords) {
+    if (!rawText) return false;
+    return categoryKeywords.some((keyword) => rawText.includes(keyword));
+  }
+  global.matchesCategory = matchesCategory;
+
+  function getTributeCategories(record) {
+    const categories = [];
+    for (const [category, keywords] of Object.entries(TRIBUTE_CATEGORIES)) {
+      if (matchesCategory(record.tributeRaw, keywords)) {
+        categories.push(category);
+      }
+    }
+    return categories;
+  }
+  global.getTributeCategories = getTributeCategories;
+
+  function getGiftCategories(record) {
+    const categories = [];
+    for (const [category, keywords] of Object.entries(GIFT_CATEGORIES)) {
+      if (matchesCategory(record.giftsRaw, keywords)) {
+        categories.push(category);
+      }
+    }
+    return categories;
+  }
+  global.getGiftCategories = getGiftCategories;
+
+  function getPurposeCategories(record) {
+    const categories = [];
+    for (const [category, keywords] of Object.entries(PURPOSE_CATEGORIES)) {
+      if (matchesCategory(record.purpose, keywords)) {
+        categories.push(category);
+      }
+    }
+    return categories;
+  }
+  global.getPurposeCategories = getPurposeCategories;
+
   global.getRecordsByYear = function getRecordsByYear(year) {
     return TRIBUTE_DATA.filter((record) => record.year === Number(year));
   };
@@ -7653,6 +7725,18 @@
   };
 
   if (typeof module !== "undefined" && module.exports) {
-    module.exports = { TRIBUTE_DATA, COUNTRIES, COUNTRY_NAME_TO_ID, TRIBUTE_META };
+    module.exports = {
+      TRIBUTE_DATA,
+      COUNTRIES,
+      COUNTRY_NAME_TO_ID,
+      TRIBUTE_META,
+      TRIBUTE_CATEGORIES,
+      GIFT_CATEGORIES,
+      PURPOSE_CATEGORIES,
+      matchesCategory,
+      getTributeCategories,
+      getGiftCategories,
+      getPurposeCategories,
+    };
   }
 })(typeof window !== "undefined" ? window : globalThis);

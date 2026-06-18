@@ -16,6 +16,7 @@
   let animationFrame = null;
   let activeYear = null;
   let activeMonth = null;
+  let activeRecords = [];
   let activeCaravans = [];
   let referenceRouteLength = null;
   const activeHitTargets = new Map();
@@ -74,8 +75,11 @@
     return `${record.month}月${record.isLeapMonth ? "（閏）" : ""}`;
   }
 
-  function showTributePopup(countryId, year, month = activeMonth) {
-    const records = TRIBUTE_DATA.filter((record) => record.countryId === countryId && record.year === year && record.month === month);
+  function showTributePopup(countryId, year = activeYear, month = activeMonth, recordsOverride = null) {
+    const sourceRecords = recordsOverride || activeRecords;
+    const records = sourceRecords.length
+      ? sourceRecords.filter((record) => record.countryId === countryId)
+      : TRIBUTE_DATA.filter((record) => record.countryId === countryId && record.year === year && record.month === month);
     const country = COUNTRIES[countryId];
     if (!country) {
       return;
@@ -106,12 +110,16 @@
       font-family: 'Noto Serif TC', serif;
     `;
 
-    const recordBlocks = records
+    const sortedRecords = records
+      .slice()
+      .sort((a, b) => a.year - b.year || a.monthSort - b.monthSort || a.sourceRow - b.sourceRow);
+    const recordBlocks = sortedRecords
       .map((record) => {
         const month = formatMonth(record);
         return `
           <div style="border-top:1px solid #E0D8C8; padding:12px 0;">
-            ${month ? `<div style="font-size:12px; color:#C0392B; margin-bottom:4px;">${escapeHtml(month)}</div>` : ""}
+            <div style="font-size:12px; color:#C0392B; margin-bottom:4px;">洪武${record.year}年${escapeHtml(month)}</div>
+            ${record.purpose ? `<div style="font-size:13px; color:#1A1008; margin-bottom:4px;">目的：${escapeHtml(record.purpose)}</div>` : ""}
             ${record.king ? `<div style="font-size:13px; color:#1A1008; margin-bottom:4px;">國王：${escapeHtml(record.king)}</div>` : ""}
             ${record.envoy ? `<div style="font-size:13px; color:#1A1008; margin-bottom:4px;">使者：${escapeHtml(record.envoy)}</div>` : ""}
             <div style="font-size:13px; margin-bottom:4px;">
@@ -127,6 +135,14 @@
         `;
       })
       .join("");
+    const isFilteredPopup =
+      recordsOverride ||
+      activeYear === null ||
+      activeMonth === null ||
+      activeRecords.length !== global.getRecordsByPeriod(activeYear, activeMonth).length;
+    const periodLabel = isFilteredPopup
+      ? `篩選結果 · ${records.length}次遣使`
+      : `洪武${year}年${month}月 · ${records.length}次遣使`;
 
     popup.innerHTML = `
       <div style="display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:16px;">
@@ -134,7 +150,7 @@
         <button class="tribute-popup-close" type="button" aria-label="關閉" style="cursor:pointer; border:0; background:transparent; font-size:20px; color:#8B8070; line-height:1;">&times;</button>
       </div>
       <div style="font-size:13px; color:#8B6914; margin-bottom:12px;">
-        洪武${year}年${month}月 · ${records.length}次遣使
+        ${escapeHtml(periodLabel)}
       </div>
       ${recordBlocks || '<div style="font-size:13px; color:#1A1008;">本年無朝貢記錄。</div>'}
     `;
@@ -227,12 +243,12 @@
       `;
       target.addEventListener("click", (event) => {
         event.stopPropagation();
-        showTributePopup(caravan.countryId, activeYear, activeMonth);
+        showTributePopup(caravan.countryId);
       });
       target.addEventListener("keydown", (event) => {
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
-          showTributePopup(caravan.countryId, activeYear, activeMonth);
+          showTributePopup(caravan.countryId);
         }
       });
       hitLayer.appendChild(target);
@@ -272,6 +288,7 @@
     }
     activeYear = null;
     activeMonth = null;
+    activeRecords = [];
     activeCaravans = [];
     cleanupHitTargets();
     closeTributePopup();
@@ -282,6 +299,7 @@
     stopCaravanAnimation();
     activeYear = Number(year);
     activeMonth = Number(month);
+    activeRecords = global.getRecordsByPeriod(activeYear, activeMonth);
     activeCaravans = getCaravansForPeriod(activeYear, activeMonth);
     if (!activeCaravans.length) {
       return;
@@ -292,7 +310,46 @@
     });
   }
 
+  function getCaravansFromRecords(records) {
+    return Array.from(global.getActiveCountryIdsFromRecords(records))
+      .map((countryId) => {
+        const country = COUNTRIES[countryId];
+        const path = global.getRoutePathForCountry(countryId);
+        if (!country || !path) {
+          return null;
+        }
+        return {
+          countryId,
+          country,
+          path,
+          transportMode: getTransportMode(country, countryId),
+          durationMs: getCaravanDuration(path),
+          delay: Math.abs(countryId.split("").reduce((sum, char) => sum + char.charCodeAt(0), 0)) % 1400,
+        };
+      })
+      .filter(Boolean);
+  }
+
+  function startCaravanAnimationForRecords(records) {
+    stopCaravanAnimation();
+    activeYear = null;
+    activeMonth = null;
+    activeRecords = records.slice();
+    activeCaravans = getCaravansFromRecords(activeRecords);
+    if (!activeCaravans.length) {
+      return;
+    }
+    setupCanvas();
+    animationFrame = global.requestAnimationFrame((timestamp) => {
+      drawFrame(timestamp, timestamp);
+    });
+  }
+
   global.addEventListener("tribute:silence", (event) => {
+    if (Array.isArray(event.detail.records)) {
+      startCaravanAnimationForRecords(event.detail.records);
+      return;
+    }
     startCaravanAnimation(event.detail.year, event.detail.month);
   });
 
@@ -300,6 +357,7 @@
   global.addEventListener("resize", stopCaravanAnimation);
 
   global.startCaravanAnimation = startCaravanAnimation;
+  global.startCaravanAnimationForRecords = startCaravanAnimationForRecords;
   global.stopCaravanAnimation = stopCaravanAnimation;
   global.clearCaravanAnimation = clearAnimationCanvas;
   global.showTributePopup = showTributePopup;

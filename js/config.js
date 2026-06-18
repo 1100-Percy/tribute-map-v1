@@ -136,8 +136,11 @@
     "label": "方物",
     "icon": "box"
   }
-};
-  global.TRIBUTE_CATEGORIES = TRIBUTE_CATEGORIES;
+  };
+  global.TRIBUTE_ICON_CATEGORIES = TRIBUTE_CATEGORIES;
+  if (!global.TRIBUTE_CATEGORIES) {
+    global.TRIBUTE_CATEGORIES = TRIBUTE_CATEGORIES;
+  }
   if (typeof module !== "undefined" && module.exports) {
     module.exports = { NANJING, MAP_CONFIG, ROUTE_TEMPLATES, TRIBUTE_COLORS, TRIBUTE_CATEGORIES };
   }

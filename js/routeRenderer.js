@@ -41,8 +41,19 @@
     return new Set(getRecordsByPeriod(year, month).map((record) => record.countryId));
   }
 
+  function getActiveCountryIdsFromRecords(records) {
+    return new Set(records.map((record) => record.countryId));
+  }
+
   function getRecordCountsByCountry(year, month) {
     return getRecordsByPeriod(year, month).reduce((counts, record) => {
+      counts[record.countryId] = (counts[record.countryId] || 0) + 1;
+      return counts;
+    }, {});
+  }
+
+  function getRecordCountsFromRecords(records) {
+    return records.reduce((counts, record) => {
       counts[record.countryId] = (counts[record.countryId] || 0) + 1;
       return counts;
     }, {});
@@ -196,10 +207,15 @@
   function renderTributePoints(year = currentYear, month = currentMonth) {
     currentYear = Number(year);
     currentMonth = Number(month);
+    const records = getRecordsByPeriod(currentYear, currentMonth);
+    return renderTributeRecords(records);
+  }
+
+  function renderTributeRecords(records) {
     setupCanvas();
     ctx.clearRect(0, 0, routeCanvas.logicalWidth, routeCanvas.logicalHeight);
 
-    const activeIds = getActiveCountryIds(currentYear, currentMonth);
+    const activeIds = getActiveCountryIdsFromRecords(records);
     drawRoutesForYear(activeIds);
     Object.values(COUNTRIES).forEach((country) => {
       if (activeIds.has(country.id)) {
@@ -224,9 +240,12 @@
   global.getRecordsByYear = getRecordsByYear;
   global.getRecordsByPeriod = getRecordsByPeriod;
   global.getActiveCountryIds = getActiveCountryIds;
+  global.getActiveCountryIdsFromRecords = getActiveCountryIdsFromRecords;
   global.getRecordCountsByCountry = getRecordCountsByCountry;
+  global.getRecordCountsFromRecords = getRecordCountsFromRecords;
   global.getRoutePathForCountry = getRoutePathForCountry;
   global.pointAtRoute = pointAtRoute;
   global.renderTributePoints = renderTributePoints;
+  global.renderTributeRecords = renderTributeRecords;
   global.routePathCache = routePathCache;
 })(window);
