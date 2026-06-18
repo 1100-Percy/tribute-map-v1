@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>藩國朝貢記錄</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="country-page">
+    <main class="country-shell">
+      <nav class="country-nav" aria-label="頁面導航">
+        <a href="index.html">返回朝貢圖</a>
+      </nav>
+      <header class="country-hero">
+        <p class="era-mark">洪武二年至三十一年 · 1369-1398</p>
+        <h1 id="country-title">藩國朝貢記錄</h1>
+        <p id="country-subtitle" class="country-subtitle"></p>
+      </header>
+      <section id="country-summary" class="country-summary" aria-label="藩國概覽"></section>
+      <section class="country-timeline-section" aria-label="歷年朝貢時間線">
+        <div class="section-heading">
+          <h2>歷年朝貢時間線</h2>
+          <p id="timeline-count"></p>
+        </div>
+        <div id="tribute-timeline" class="tribute-timeline"></div>
+      </section>
+      <footer id="country-compliance" class="country-compliance">
+        <strong>2026 理大人工智能 × 數位人文獎 · B組</strong>
+        <span>AI輔助資料抽取與可視化原型；資料來源據《明太祖實錄》附錄二整理。底圖地理資料：Natural Earth（Public Domain）。古地名定位與路線含人工判讀，僅供教學與研究展示；全站無外部 CDN、無追蹤。</span>
+      </footer>
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/countryPage.js"></script>
+  </body>
+</html>

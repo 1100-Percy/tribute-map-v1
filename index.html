@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>明洪武年間藩國朝貢圖</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main id="map-container" aria-label="明洪武年間藩國朝貢靜態地圖">
+      <canvas id="base-canvas" aria-hidden="true"></canvas>
+      <canvas id="route-canvas" aria-hidden="true"></canvas>
+      <canvas id="anim-canvas" aria-hidden="true"></canvas>
+      <div id="hit-layer" aria-label="藩國點擊熱區"></div>
+      <div id="label-layer" aria-label="藩國位置標籤"></div>
+      <section id="ui-layer" aria-label="地圖標題">
+        <div class="title-block">
+          <p class="era-mark">洪武二年至三十一年 · 1369-1398</p>
+          <h1>明洪武年間藩國朝貢圖</h1>
+          <p class="phase-note">打磨合規 · Phase 6</p>
+        </div>
+        <section id="timeline-panel" class="timeline-panel" aria-label="洪武年份時間軸">
+          <div class="timeline-readout">
+            <strong id="current-year-label">洪武二年</strong>
+            <span id="current-month-label">八月</span>
+            <span id="gregorian-year-label">1369年</span>
+            <span id="active-country-count">1國遣使</span>
+          </div>
+          <div class="timeline-controls">
+            <label class="slider-row" for="year-slider">
+              <span>年</span>
+              <input id="year-slider" type="range" min="2" max="31" step="1" value="2" aria-label="洪武年份" />
+            </label>
+            <label class="slider-row" for="month-slider">
+              <span>月</span>
+              <input id="month-slider" type="range" min="1" max="12" step="1" value="8" aria-label="朝貢月份" />
+            </label>
+          </div>
+          <div id="active-country-list" class="active-country-list" aria-live="polite"></div>
+        </section>
+        <div class="map-legend" aria-label="圖例">
+          <span><i class="legend-dot country-dot"></i>藩國位置</span>
+          <span><i class="legend-dot capital-dot"></i>應天府</span>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/geodata.js"></script>
+    <script src="js/baseMap.js"></script>
+    <script src="js/icons.js"></script>
+    <script src="js/routeRenderer.js"></script>
+    <script src="js/hitLayer.js"></script>
+    <script src="js/caravanAnim.js"></script>
+    <script src="js/bindEvents.js"></script>
+  </body>
+</html>
