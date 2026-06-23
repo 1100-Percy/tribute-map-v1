@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>時間演進圖譜</title>
+    <style>
+      :root {
+        --paper: #f5f0e8;
+        --ink: #1a1008;
+        --ink-soft: rgba(26, 16, 8, 0.68);
+        --line: rgba(139, 128, 112, 0.28);
+        --muted: #8b8070;
+        --vermillion: #c0392b;
+        --gold: #8b6914;
+        --shadow: rgba(58, 43, 26, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        min-height: 100%;
+        margin: 0;
+      }
+
+      body {
+        background:
+          repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(139, 128, 112, 0.02) 2px, rgba(139, 128, 112, 0.02) 4px),
+          radial-gradient(ellipse at 52% 18%, #fff8ed 0%, var(--paper) 58%, #e6ddcc 100%);
+        color: var(--ink);
+        font-family: "Noto Serif TC", "Noto Serif SC", "Source Han Serif TC", "Songti TC", serif;
+      }
+
+      .page {
+        width: min(900px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 28px 0 56px;
+      }
+
+      .top-nav {
+        margin-bottom: 18px;
+      }
+
+      .back-link {
+        color: var(--gold);
+        font-size: 14px;
+        text-decoration: none;
+      }
+
+      .back-link:hover,
+      .back-link:focus-visible {
+        color: var(--vermillion);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        margin-bottom: 6px;
+        color: var(--ink);
+        font-size: clamp(30px, 5vw, 46px);
+        line-height: 1.1;
+        letter-spacing: 0;
+      }
+
+      .subtitle {
+        max-width: 760px;
+        margin-bottom: 24px;
+        color: var(--ink-soft);
+        font-size: 15px;
+        line-height: 1.8;
+      }
+
+      .chart-section,
+      .phase-section {
+        margin-top: 22px;
+        padding: 18px 20px;
+        border: 1px solid var(--line);
+        background: rgba(245, 240, 232, 0.72);
+        box-shadow: 0 18px 42px var(--shadow);
+      }
+
+      .section-head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 14px;
+      }
+
+      h2 {
+        margin-bottom: 0;
+        color: var(--ink);
+        font-size: 21px;
+        line-height: 1.25;
+      }
+
+      .note {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      canvas {
+        display: block;
+        width: 100%;
+        border: 1px solid rgba(139, 128, 112, 0.18);
+        background: rgba(255, 250, 242, 0.34);
+      }
+
+      #timeline-canvas,
+      #month-canvas {
+        height: 270px;
+      }
+
+      .phase-list {
+        position: relative;
+        padding-top: 2px;
+      }
+
+      .phase-list::before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 132px;
+        width: 1px;
+        background: rgba(139, 128, 112, 0.28);
+        content: "";
+      }
+
+      .phase-break {
+        display: grid;
+        grid-template-columns: 132px minmax(0, 1fr);
+        align-items: center;
+        gap: 26px;
+        margin: 10px 0;
+        color: rgba(26, 16, 8, 0.68);
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .phase-break span {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .phase-break span::before,
+      .phase-break span::after {
+        height: 1px;
+        flex: 1;
+        background: rgba(139, 128, 112, 0.26);
+        content: "";
+      }
+
+      .phase-item {
+        display: grid;
+        grid-template-columns: 132px minmax(0, 1fr);
+        gap: 26px;
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(139, 128, 112, 0.22);
+      }
+
+      .phase-item:last-child {
+        border-bottom: 0;
+      }
+
+      .phase-side {
+        position: relative;
+        padding-right: 18px;
+        text-align: right;
+      }
+
+      .phase-main {
+        min-width: 0;
+      }
+
+      .phase-dot {
+        position: absolute;
+        top: 8px;
+        right: -4px;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: var(--phase-color);
+        box-shadow: 0 0 0 3px rgba(245, 240, 232, 0.9);
+      }
+
+      .phase-index {
+        margin-bottom: 4px;
+        color: rgba(26, 16, 8, 0.74);
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .phase-years {
+        color: var(--ink);
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.35;
+      }
+
+      .phase-gregorian {
+        color: rgba(26, 16, 8, 0.68);
+        font-size: 13px;
+      }
+
+      .phase-title-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+      }
+
+      .phase-title-row h3 {
+        margin: 0;
+        color: var(--ink);
+        font-size: 18px;
+        line-height: 1.25;
+      }
+
+      .phase-badge {
+        padding: 3px 9px;
+        border-radius: 999px;
+        background: color-mix(in srgb, var(--phase-color) 14%, #f5f0e8);
+        color: color-mix(in srgb, var(--phase-color) 70%, #1a1008);
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .phase-metrics {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 22px;
+        margin-bottom: 10px;
+      }
+
+      .metric {
+        min-width: 72px;
+      }
+
+      .metric strong {
+        display: block;
+        color: var(--phase-color);
+        font-size: 22px;
+        line-height: 1;
+      }
+
+      .metric span {
+        display: block;
+        margin-top: 4px;
+        color: rgba(26, 16, 8, 0.74);
+        font-size: 12px;
+      }
+
+      .phase-progress {
+        height: 3px;
+        margin: 5px 0 10px;
+        border-radius: 999px;
+        background: rgba(139, 128, 112, 0.24);
+        overflow: hidden;
+      }
+
+      .phase-progress i {
+        display: block;
+        width: var(--phase-width);
+        height: 100%;
+        border-radius: inherit;
+        background: var(--phase-color);
+      }
+
+      .phase-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .phase-tags span {
+        padding: 3px 8px;
+        border: 1px solid rgba(139, 128, 112, 0.24);
+        border-radius: 999px;
+        background: rgba(255, 250, 242, 0.46);
+        color: rgba(26, 16, 8, 0.74);
+        font-size: 12px;
+        line-height: 1.2;
+      }
+
+      @media (max-width: 700px) {
+        .page {
+          width: min(100vw - 20px, 900px);
+          padding-top: 20px;
+        }
+
+        .chart-section,
+        .phase-section {
+          padding: 16px 12px;
+        }
+
+        .section-head {
+          display: block;
+        }
+
+        .phase-list::before {
+          left: 12px;
+        }
+
+        .phase-item,
+        .phase-break {
+          grid-template-columns: 1fr;
+          gap: 12px;
+          padding-left: 34px;
+        }
+
+        .phase-side {
+          text-align: left;
+        }
+
+        .phase-dot {
+          right: auto;
+          left: -27px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <nav class="top-nav" aria-label="頁面導航">
+        <a class="back-link" href="../map.html">← 返回地圖</a>
+      </nav>
+
+      <header>
+        <h1>時間演進圖譜</h1>
+        <p class="subtitle">以《明太祖實錄》洪武二年至三十一年朝貢記錄為基礎，觀察年度節奏、分期變化與月份頻率分佈。</p>
+      </header>
+
+      <section class="chart-section" aria-labelledby="timeline-title">
+        <div class="section-head">
+          <h2 id="timeline-title">年度朝貢頻次圖</h2>
+          <span class="note">橫軸：洪武年份 · 縱軸：朝貢記錄數</span>
+        </div>
+        <canvas id="timeline-canvas" width="856" height="270" aria-label="洪武年份朝貢總次數柱狀圖"></canvas>
+      </section>
+
+      <section class="phase-section" aria-labelledby="phase-title">
+        <div class="section-head">
+          <h2 id="phase-title">分期總覽</h2>
+          <span class="note">依洪武朝朝貢節奏切分為五段</span>
+        </div>
+        <div id="phase-list" class="phase-list"></div>
+      </section>
+
+      <section class="chart-section" aria-labelledby="month-title">
+        <div class="section-head">
+          <h2 id="month-title">各月朝貢頻次分佈（全期）</h2>
+          <span class="note">橫軸：朝貢記錄數 · 縱軸：月份</span>
+        </div>
+        <canvas id="month-canvas" width="856" height="270" aria-label="十二個月份朝貢頻次分佈"></canvas>
+      </section>
+    </main>
+
+    <script src="../js/data.js"></script>
+    <script>
+      (function () {
+        "use strict";
+
+        const records = window.TRIBUTE_DATA || [];
+        const years = Array.from({ length: 30 }, (_, index) => index + 2);
+        const monthNames = ["正", "二", "三", "四", "五", "六", "七", "八", "九", "十", "冬", "臘"];
+        const phases = [
+          {
+            index: "第一期",
+            title: "建交擴張期",
+            years: [2, 6],
+            gregorian: "1369-1373",
+            color: "#3D84C6",
+            badge: "建交開局",
+            tags: ["高麗·安南·占城·暹羅同期入場", "冊封與納貢儀式密集"],
+            breakAfter: "洪武 6/7 年 · 建交儀式結束，關係開始分化",
+          },
+          {
+            index: "第二期",
+            title: "量質背離期",
+            years: [7, 13],
+            gregorian: "1374-1380",
+            color: "#1FA078",
+            badge: "入場國家增多",
+            tags: ["次數快速攀升", "爪哇附屬國集中湧入", "部分國家頻率下降"],
+            breakAfter: "洪武 13/14 年 · 網絡大幅收縮，進入低谷",
+          },
+          {
+            index: "第三期",
+            title: "收縮調整期",
+            years: [14, 19],
+            gregorian: "1381-1386",
+            color: "#F29B24",
+            badge: "全期低谷",
+            tags: ["大量國家永久退出", "日本洪武19年後消失", "洪武14年僅少量記錄"],
+            breakAfter: "洪武 19/20 年 · 日本退出，核心朝貢圈定型",
+          },
+          {
+            index: "第四期",
+            title: "穩定鞏固期",
+            years: [20, 25],
+            gregorian: "1387-1392",
+            color: "#5A9A2B",
+            badge: "次數全期最峰",
+            tags: ["精簡但高頻，網絡濃縮", "高麗·占城·安南·暹羅·琉球三國", "卻貢率全期最低"],
+            breakAfter: "洪武 25/26 年 · 朝鮷取代高麗，東北亞格局重組",
+          },
+          {
+            index: "第五期",
+            title: "結構重組期",
+            years: [26, 31],
+            gregorian: "1393-1398",
+            color: "#D9517A",
+            badge: "政治性使團激增",
+            tags: ["高麗改朝鮮後重新入場", "安南洪武29年後退場", "政治性目的占比升高"],
+          },
+        ];
+
+        const timelineCanvas = document.getElementById("timeline-canvas");
+        const monthCanvas = document.getElementById("month-canvas");
+        const phaseList = document.getElementById("phase-list");
+
+        function setupCanvas(canvas) {
+          const dpr = window.devicePixelRatio || 1;
+          const rect = canvas.getBoundingClientRect();
+          const width = rect.width || canvas.width;
+          const height = rect.height || canvas.height;
+          canvas.width = Math.round(width * dpr);
+          canvas.height = Math.round(height * dpr);
+          const ctx = canvas.getContext("2d");
+          ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+          return { ctx, width, height };
+        }
+
+        function countByYear(sourceRecords) {
+          const counts = new Map(years.map((year) => [year, 0]));
+          sourceRecords.forEach((record) => {
+            counts.set(record.year, (counts.get(record.year) || 0) + 1);
+          });
+          return counts;
+        }
+
+        function countByMonth(sourceRecords) {
+          const counts = new Map(Array.from({ length: 12 }, (_, index) => [index + 1, 0]));
+          sourceRecords.forEach((record) => {
+            counts.set(record.month, (counts.get(record.month) || 0) + 1);
+          });
+          return counts;
+        }
+
+        function getPhaseRecords(phase) {
+          return records.filter((record) => record.year >= phase.years[0] && record.year <= phase.years[1]);
+        }
+
+        function hasPoliticalPurpose(record) {
+          return Boolean((record.purpose || "").trim());
+        }
+
+        function renderPhases() {
+          const phaseStats = phases.map((phase) => {
+            const phaseRecords = getPhaseRecords(phase);
+            const countries = new Set(phaseRecords.map((record) => record.countryId));
+            const political = phaseRecords.filter(hasPoliticalPurpose).length;
+            return { phase, records: phaseRecords, countryCount: countries.size, political };
+          });
+          const maxRecords = Math.max(...phaseStats.map((item) => item.records.length), 1);
+
+          phaseList.innerHTML = phaseStats
+            .map((item) => {
+              const { phase } = item;
+              const width = `${Math.max(16, Math.round((item.records.length / maxRecords) * 100))}%`;
+              const tags = phase.tags.map((tag) => `<span>${tag}</span>`).join("");
+              const phaseHtml = `
+                <article class="phase-item" style="--phase-color:${phase.color}; --phase-width:${width};">
+                  <div class="phase-side">
+                    <i class="phase-dot"></i>
+                    <div class="phase-index">${phase.index}</div>
+                    <div class="phase-years">洪武 ${phase.years[0]}-${phase.years[1]}</div>
+                    <div class="phase-gregorian">${phase.gregorian}</div>
+                  </div>
+                  <div class="phase-main">
+                    <div class="phase-title-row">
+                      <h3>${phase.title}</h3>
+                      <span class="phase-badge">${phase.badge}</span>
+                    </div>
+                    <div class="phase-metrics">
+                      <div class="metric"><strong>${item.records.length}</strong><span>次遣使</span></div>
+                      <div class="metric"><strong>${item.countryCount}</strong><span>國參與</span></div>
+                      <div class="metric"><strong>${item.political}</strong><span>政治性目的</span></div>
+                    </div>
+                    <div class="phase-progress"><i></i></div>
+                    <div class="phase-tags">${tags}</div>
+                  </div>
+                </article>
+              `;
+              if (!phase.breakAfter) return phaseHtml;
+              return `${phaseHtml}<div class="phase-break"><span>${phase.breakAfter}</span></div>`;
+            })
+            .join("");
+        }
+
+        function drawTimeline() {
+          const { ctx, width, height } = setupCanvas(timelineCanvas);
+          const padding = { top: 28, right: 26, bottom: 58, left: 62 };
+          const plotW = width - padding.left - padding.right;
+          const plotH = height - padding.top - padding.bottom;
+          const counts = countByYear(records);
+          const maxCount = Math.max(...Array.from(counts.values()), 1);
+          const step = plotW / years.length;
+          const barW = Math.max(8, step * 0.58);
+
+          ctx.clearRect(0, 0, width, height);
+          ctx.strokeStyle = "rgba(139,128,112,0.3)";
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(padding.left, padding.top);
+          ctx.lineTo(padding.left, padding.top + plotH);
+          ctx.lineTo(padding.left + plotW, padding.top + plotH);
+          ctx.stroke();
+
+          ctx.save();
+          ctx.translate(18, padding.top + plotH / 2);
+          ctx.rotate(-Math.PI / 2);
+          ctx.fillStyle = "#1A1008";
+          ctx.font = '13px "Noto Serif TC", serif';
+          ctx.textAlign = "center";
+          ctx.textBaseline = "middle";
+          ctx.fillText("朝貢記錄數", 0, 0);
+          ctx.restore();
+
+          ctx.fillStyle = "#1A1008";
+          ctx.font = '13px "Noto Serif TC", serif';
+          ctx.textAlign = "center";
+          ctx.textBaseline = "top";
+          ctx.fillText("洪武年份", padding.left + plotW / 2, height - 22);
+
+          ctx.fillStyle = "rgba(26,16,8,0.58)";
+          ctx.font = '12px "Noto Serif TC", serif';
+          ctx.textAlign = "right";
+          ctx.textBaseline = "middle";
+          const tickStep = Math.max(1, Math.ceil(maxCount / 4));
+          for (let tick = 0; tick <= maxCount; tick += tickStep) {
+            const y = padding.top + plotH - (tick / maxCount) * plotH;
+            ctx.fillText(String(tick), padding.left - 8, y);
+            ctx.strokeStyle = "rgba(139,128,112,0.12)";
+            ctx.beginPath();
+            ctx.moveTo(padding.left, y);
+            ctx.lineTo(padding.left + plotW, y);
+            ctx.stroke();
+          }
+
+          years.forEach((year, index) => {
+            const value = counts.get(year) || 0;
+            const x = padding.left + index * step + (step - barW) / 2;
+            const barH = (value / maxCount) * plotH;
+            const y = padding.top + plotH - barH;
+            ctx.fillStyle = "#C0392B";
+            ctx.globalAlpha = 0.76;
+            ctx.fillRect(x, y, barW, barH);
+            ctx.globalAlpha = 1;
+            ctx.fillStyle = "rgba(26,16,8,0.6)";
+            ctx.textAlign = "center";
+            ctx.textBaseline = "top";
+            if (index % 2 === 0) ctx.fillText(String(year), x + barW / 2, padding.top + plotH + 8);
+          });
+        }
+
+        function drawMonths() {
+          const { ctx, width, height } = setupCanvas(monthCanvas);
+          const counts = countByMonth(records);
+          const maxCount = Math.max(...Array.from(counts.values()), 1);
+          const padding = { top: 20, right: 34, bottom: 42, left: 94 };
+          const rowH = (height - padding.top - padding.bottom) / 12;
+          const maxW = width - padding.left - padding.right;
+
+          ctx.clearRect(0, 0, width, height);
+          ctx.strokeStyle = "rgba(139,128,112,0.3)";
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(padding.left, padding.top);
+          ctx.lineTo(padding.left, padding.top + rowH * 12);
+          ctx.lineTo(padding.left + maxW, padding.top + rowH * 12);
+          ctx.stroke();
+
+          ctx.fillStyle = "#1A1008";
+          ctx.font = '13px "Noto Serif TC", serif';
+          ctx.textAlign = "center";
+          ctx.textBaseline = "top";
+          ctx.fillText("朝貢記錄數", padding.left + maxW / 2, height - 24);
+          ctx.save();
+          ctx.translate(22, padding.top + (rowH * 12) / 2);
+          ctx.rotate(-Math.PI / 2);
+          ctx.textBaseline = "middle";
+          ctx.fillText("月份", 0, 0);
+          ctx.restore();
+
+          for (let month = 1; month <= 12; month += 1) {
+            const value = counts.get(month) || 0;
+            const y = padding.top + (month - 1) * rowH + rowH * 0.16;
+            const h = rowH * 0.58;
+            const w = (value / maxCount) * maxW;
+
+            ctx.fillStyle = month === 1 ? "#C0392B" : "rgba(139,105,20,0.62)";
+            ctx.fillRect(padding.left, y, w, h);
+            ctx.fillStyle = "#1A1008";
+            ctx.font = '13px "Noto Serif TC", serif';
+            ctx.textAlign = "right";
+            ctx.textBaseline = "middle";
+            ctx.fillText(`${monthNames[month - 1]}月`, padding.left - 12, y + h / 2);
+            ctx.textAlign = "left";
+            ctx.fillText(String(value), padding.left + w + 8, y + h / 2);
+
+            if (month === 1 || month === 5 || month === 8 || month === 12) {
+              const label = month === 1 ? "正旦" : month === 5 ? "端午時節" : month === 8 ? "中秋時節" : "歲末朝賀";
+              ctx.fillStyle = "rgba(192,57,43,0.72)";
+              ctx.font = '11px "Noto Serif TC", serif';
+              ctx.fillText(label, Math.min(width - 86, padding.left + w + 44), y + h / 2);
+            }
+          }
+        }
+
+        function redrawCharts() {
+          drawTimeline();
+          drawMonths();
+        }
+
+        renderPhases();
+        redrawCharts();
+        window.addEventListener("resize", redrawCharts);
+      })();
+    </script>
+  </body>
+</html>

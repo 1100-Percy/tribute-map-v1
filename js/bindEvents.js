@@ -23,8 +23,8 @@
   function handleResize() {
     global.clearTimeout(resizeTimer);
     resizeTimer = global.setTimeout(() => {
-      if (typeof global.renderAppliedFilters === "function") {
-        global.renderAppliedFilters();
+      if (typeof global.onFilterChange === "function") {
+        global.onFilterChange();
       }
     }, 120);
   }

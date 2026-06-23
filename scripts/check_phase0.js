@@ -74,7 +74,7 @@ assertCheck(
 
 assertCheck(
   "0-9 source retained",
-  TRIBUTE_DATA.every((record) => record.source && record.source.includes("明太祖实录")),
+  TRIBUTE_DATA.every((record) => record.source && record.source.includes("明太祖實錄")),
 );
 
 const routeTypes = new Set(Object.keys(ROUTE_TEMPLATES));

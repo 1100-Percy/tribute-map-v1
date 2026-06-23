@@ -136,6 +136,24 @@
       </section>
     </main>
 
+    <aside id="analysis-menu" class="analysis-menu" aria-label="分析入口">
+      <button id="analysis-menu-toggle" class="analysis-menu-toggle" type="button" aria-expanded="false" aria-controls="analysis-menu-list" aria-label="展開分析入口">
+        <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <rect x="10" y="12" width="28" height="5" rx="2.5"></rect>
+          <rect x="10" y="22" width="28" height="5" rx="2.5"></rect>
+          <rect x="10" y="32" width="28" height="5" rx="2.5"></rect>
+          <path d="M15 30l6-8 7 5 6-10" fill="none"></path>
+        </svg>
+      </button>
+      <div id="analysis-menu-list" class="analysis-menu-list" hidden>
+        <button class="analysis-entry" type="button" data-title="時間演進圖譜" data-src="analysis/timeline.html" aria-label="時間演進圖譜">時</button>
+        <button class="analysis-entry" type="button" data-title="地理分佈圖譜" data-src="analysis/geography.html" aria-label="地理分佈圖譜">地</button>
+        <button class="analysis-entry" type="button" data-title="貢物網絡圖譜" data-src="analysis/tribute-network.html" aria-label="貢物網絡圖譜">貢</button>
+        <button class="analysis-entry" type="button" data-title="時段對比分析" data-src="analysis/comparison.html" aria-label="時段對比分析">比</button>
+        <button class="analysis-entry" type="button" data-title="藩國關係光譜" data-src="analysis/spectrum.html" aria-label="藩國關係光譜">譜</button>
+      </div>
+    </aside>
+
     <script src="js/config.js"></script>
     <script src="js/data.js"></script>
     <script src="js/geodata.js"></script>
@@ -146,5 +164,6 @@
     <script src="js/caravanAnim.js"></script>
     <script src="js/bindEvents.js"></script>
     <script src="js/filterPanel.js"></script>
+    <script src="js/analysisMenu.js"></script>
   </body>
 </html>

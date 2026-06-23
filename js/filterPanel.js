@@ -13,90 +13,109 @@
   } = global;
 
   const monthNames = ["正月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"];
+  const HEATMAP_DATA = {
+    2: { 1: 0, 2: 1, 3: 0, 4: 0, 5: 0, 6: 1, 7: 0, 8: 1, 9: 2, 10: 0, 11: 0, 12: 1 },
+    3: { 1: 0, 2: 0, 3: 0, 4: 1, 5: 0, 6: 1, 7: 0, 8: 2, 9: 3, 10: 1, 11: 0, 12: 0 },
+    4: { 1: 1, 2: 1, 3: 0, 4: 0, 5: 0, 6: 0, 7: 1, 8: 1, 9: 3, 10: 1, 11: 1, 12: 2 },
+    5: { 1: 3, 2: 2, 3: 1, 4: 0, 5: 0, 6: 0, 7: 1, 8: 0, 9: 2, 10: 2, 11: 1, 12: 1 },
+    6: { 1: 1, 2: 0, 3: 0, 4: 1, 5: 0, 6: 0, 7: 0, 8: 1, 9: 0, 10: 4, 11: 4, 12: 3 },
+    7: { 1: 0, 2: 0, 3: 2, 4: 0, 5: 2, 6: 1, 7: 0, 8: 0, 9: 1, 10: 1, 11: 1, 12: 0 },
+    8: { 1: 6, 2: 0, 3: 1, 4: 0, 5: 0, 6: 1, 7: 0, 8: 0, 9: 2, 10: 2, 11: 1, 12: 0 },
+    9: { 1: 0, 2: 0, 3: 0, 4: 2, 5: 1, 6: 0, 7: 0, 8: 1, 9: 1, 10: 0, 11: 0, 12: 0 },
+    10: { 1: 2, 2: 0, 3: 0, 4: 0, 5: 1, 6: 0, 7: 1, 8: 1, 9: 2, 10: 0, 11: 1, 12: 2 },
+    11: { 1: 1, 2: 0, 3: 1, 4: 1, 5: 2, 6: 0, 7: 0, 8: 0, 9: 0, 10: 1, 11: 1, 12: 3 },
+    12: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 1, 6: 0, 7: 0, 8: 0, 9: 3, 10: 2, 11: 0, 12: 2 },
+    13: { 1: 0, 2: 0, 3: 1, 4: 0, 5: 1, 6: 2, 7: 1, 8: 0, 9: 2, 10: 3, 11: 0, 12: 0 },
+    14: { 1: 0, 2: 1, 3: 0, 4: 0, 5: 0, 6: 1, 7: 1, 8: 0, 9: 0, 10: 1, 11: 0, 12: 0 },
+    15: { 1: 1, 2: 1, 3: 0, 4: 0, 5: 1, 6: 1, 7: 0, 8: 0, 9: 1, 10: 0, 11: 0, 12: 0 },
+    16: { 1: 3, 2: 1, 3: 0, 4: 0, 5: 0, 6: 1, 7: 0, 8: 0, 9: 1, 10: 1, 11: 0, 12: 2 },
+    17: { 1: 4, 2: 1, 3: 0, 4: 0, 5: 1, 6: 1, 7: 1, 8: 1, 9: 2, 10: 0, 11: 0, 12: 1 },
+    18: { 1: 4, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 1, 8: 0, 9: 1, 10: 0, 11: 0, 12: 1 },
+    19: { 1: 1, 2: 2, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 3, 10: 0, 11: 2, 12: 1 },
+    20: { 1: 0, 2: 1, 3: 0, 4: 0, 5: 1, 6: 0, 7: 3, 8: 2, 9: 5, 10: 2, 11: 0, 12: 1 },
+    21: { 1: 4, 2: 1, 3: 1, 4: 0, 5: 0, 6: 0, 7: 1, 8: 1, 9: 3, 10: 1, 11: 0, 12: 2 },
+    22: { 1: 3, 2: 0, 3: 0, 4: 1, 5: 0, 6: 2, 7: 0, 8: 1, 9: 2, 10: 1, 11: 1, 12: 1 },
+    23: { 1: 4, 2: 0, 3: 0, 4: 2, 5: 1, 6: 0, 7: 1, 8: 0, 9: 3, 10: 0, 11: 1, 12: 2 },
+    24: { 1: 0, 2: 1, 3: 0, 4: 1, 5: 0, 6: 0, 7: 0, 8: 1, 9: 2, 10: 0, 11: 2, 12: 1 },
+    25: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 2, 6: 0, 7: 0, 8: 0, 9: 1, 10: 0, 11: 2, 12: 2 },
+    26: { 1: 4, 2: 3, 3: 0, 4: 1, 5: 1, 6: 1, 7: 0, 8: 0, 9: 1, 10: 0, 11: 1, 12: 1 },
+    27: { 1: 2, 2: 0, 3: 0, 4: 1, 5: 1, 6: 0, 7: 0, 8: 0, 9: 1, 10: 0, 11: 1, 12: 0 },
+    28: { 1: 4, 2: 0, 3: 0, 4: 1, 5: 1, 6: 0, 7: 0, 8: 1, 9: 1, 10: 0, 11: 1, 12: 1 },
+    29: { 1: 3, 2: 2, 3: 0, 4: 2, 5: 0, 6: 0, 7: 0, 8: 0, 9: 2, 10: 0, 11: 2, 12: 1 },
+    30: { 1: 0, 2: 5, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 1, 9: 1, 10: 1, 11: 0, 12: 2 },
+    31: { 1: 2, 2: 0, 3: 1, 4: 2, 5: 2, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0 },
+  };
+
   const filterState = {
-    years: new Set(),
-    months: new Set(),
+    selectedCells: new Set(),
     countries: new Set(),
     tribute: new Set(),
     gifts: new Set(),
     purpose: new Set(),
   };
-  const appliedFilterState = {
-    years: new Set(),
-    months: new Set(),
-    countries: new Set(),
-    tribute: new Set(),
-    gifts: new Set(),
-    purpose: new Set(),
-  };
-  const filterDimensions = ["years", "months", "countries", "tribute", "gifts", "purpose"];
+  const FILTER_STORAGE_KEY = "hongwu-tribute-map-filter-state-v1";
+  const FILTER_STATE_KEYS = ["selectedCells", "countries", "tribute", "gifts", "purpose"];
 
   let filterSilenceTimer = null;
-  let hasAppliedFilters = false;
 
-  function getGregorianYear(year) {
-    return Number(year) + 1367;
+  function readStoredFilterState() {
+    try {
+      const raw = global.localStorage?.getItem(FILTER_STORAGE_KEY);
+      if (!raw) return null;
+      const parsed = JSON.parse(raw);
+      if (!parsed || typeof parsed !== "object") return null;
+      return parsed;
+    } catch (error) {
+      return null;
+    }
   }
 
-  function formatGregorianSummary() {
-    const years = Array.from(filterState.years).sort((a, b) => a - b);
-    if (years.length === 0) return "";
-    const gregorianYears = years.map(getGregorianYear);
-    if (gregorianYears.length === 1) {
-      return `（公元${gregorianYears[0]}年）`;
-    }
-    if (gregorianYears.length <= 3) {
-      return `（公元${gregorianYears.join("、")}年）`;
-    }
-    return `（公元${gregorianYears[0]}-${gregorianYears[gregorianYears.length - 1]}年）`;
+  function loadStoredFilterState() {
+    const stored = readStoredFilterState();
+    if (!stored) return;
+    FILTER_STATE_KEYS.forEach((key) => {
+      if (!Array.isArray(stored[key])) return;
+      filterState[key].clear();
+      stored[key].forEach((value) => {
+        if (typeof value === "string" && value.trim()) {
+          filterState[key].add(value);
+        }
+      });
+    });
   }
 
-  function getRecordsForState(state) {
+  function persistFilterState() {
+    try {
+      const payload = {};
+      FILTER_STATE_KEYS.forEach((key) => {
+        payload[key] = Array.from(filterState[key]);
+      });
+      global.localStorage?.setItem(FILTER_STORAGE_KEY, JSON.stringify(payload));
+    } catch (error) {
+      // Storage can be unavailable in private or restricted file contexts.
+    }
+  }
+
+  function getFilteredRecords() {
     return TRIBUTE_DATA.filter((record) => {
-      if (state.years.size > 0 && !state.years.has(record.year)) return false;
-      if (state.months.size > 0 && !state.months.has(record.month)) return false;
-      if (state.countries.size > 0 && !state.countries.has(record.countryId)) return false;
+      if (filterState.selectedCells.size > 0 && !filterState.selectedCells.has(`${record.year}-${record.month}`)) return false;
+      if (filterState.countries.size > 0 && !filterState.countries.has(record.countryId)) return false;
 
-      if (state.tribute.size > 0 && !getTributeCategories(record).some((cat) => state.tribute.has(cat))) {
+      if (filterState.tribute.size > 0 && !getTributeCategories(record).some((cat) => filterState.tribute.has(cat))) {
         return false;
       }
-      if (state.gifts.size > 0 && !getGiftCategories(record).some((cat) => state.gifts.has(cat))) {
+      if (filterState.gifts.size > 0 && !getGiftCategories(record).some((cat) => filterState.gifts.has(cat))) {
         return false;
       }
-      if (state.purpose.size > 0 && !getPurposeCategories(record).some((cat) => state.purpose.has(cat))) {
+      if (filterState.purpose.size > 0 && !getPurposeCategories(record).some((cat) => filterState.purpose.has(cat))) {
         return false;
       }
       return true;
     });
   }
 
-  function getFilteredRecords() {
-    return hasAppliedFilters ? getRecordsForState(appliedFilterState) : [];
-  }
-
-  function getDraftFilteredRecords() {
-    return getRecordsForState(filterState);
-  }
-
   function getFilteredCountryIds() {
     return new Set(getFilteredRecords().map((record) => record.countryId));
-  }
-
-  function copyFilterState(source, target) {
-    filterDimensions.forEach((dimension) => {
-      target[dimension].clear();
-      source[dimension].forEach((value) => target[dimension].add(value));
-    });
-  }
-
-  function setEquals(left, right) {
-    if (left.size !== right.size) return false;
-    return Array.from(left).every((value) => right.has(value));
-  }
-
-  function hasPendingChanges() {
-    if (!hasAppliedFilters) return true;
-    return filterDimensions.some((dimension) => !setEquals(filterState[dimension], appliedFilterState[dimension]));
   }
 
   function scheduleFilteredAnimation(records) {
@@ -106,20 +125,15 @@
     }, 3000);
   }
 
-  function getStateTags(state) {
+  function getFilterTags() {
     const tags = [];
-    if (state.years.size > 0) {
-      const years = Array.from(state.years).sort((a, b) => a - b);
-      tags.push(years.length <= 2 ? years.map((year) => `洪武${year}年`).join("、") : `已選${years.length}年`);
+    if (filterState.selectedCells.size > 0) {
+      tags.push(`已選${filterState.selectedCells.size}個年月`);
     }
-    if (state.months.size > 0) {
-      const months = Array.from(state.months).sort((a, b) => a - b);
-      tags.push(months.length <= 2 ? months.map((month) => monthNames[month - 1]).join("、") : `已選${months.length}月`);
-    }
-    state.countries.forEach((id) => tags.push(COUNTRIES[id]?.name || id));
-    state.tribute.forEach((cat) => tags.push(cat));
-    state.gifts.forEach((cat) => tags.push(cat));
-    state.purpose.forEach((cat) => tags.push(cat));
+    filterState.countries.forEach((id) => tags.push(COUNTRIES[id]?.name || id));
+    filterState.tribute.forEach((cat) => tags.push(cat));
+    filterState.gifts.forEach((cat) => tags.push(cat));
+    filterState.purpose.forEach((cat) => tags.push(cat));
     return tags;
   }
 
@@ -130,31 +144,12 @@
 
     countEl.textContent = String(records.length);
     nationsEl.textContent = String(activeCountries.size);
-    const tags = getStateTags(appliedFilterState);
-    tagsEl.textContent = hasAppliedFilters ? tags.join(" × ") || "全部記錄" : "請在左側選擇後點擊應用";
+    const tags = getFilterTags();
+    tagsEl.textContent = tags.join(" × ") || "全部記錄";
   }
 
-  function updateDraftSummary() {
-    const draftRecords = getDraftFilteredRecords();
-    const draftCountries = new Set(draftRecords.map((record) => record.countryId));
-    const readout = document.getElementById("draft-result-count");
-    const state = document.getElementById("filter-apply-state");
-    const applyBtn = document.getElementById("filter-apply-btn");
-    const pending = hasPendingChanges();
-
-    if (readout) {
-      readout.textContent = `${draftRecords.length} 條 · ${draftCountries.size} 國`;
-    }
-    if (state) {
-      state.textContent = !hasAppliedFilters ? "選好後點擊應用" : pending ? "有未套用選項" : "已套用目前選項";
-    }
-    if (applyBtn) {
-      applyBtn.classList.toggle("is-pending", pending);
-      applyBtn.disabled = !pending;
-    }
-  }
-
-  function renderAppliedFilters() {
+  function onFilterChange() {
+    persistFilterState();
     const filtered = getFilteredRecords();
     const activeCountries = new Set(filtered.map((record) => record.countryId));
 
@@ -173,17 +168,6 @@
     }
     updateResultBar(filtered, activeCountries);
     scheduleFilteredAnimation(filtered);
-  }
-
-  function applyFilters() {
-    copyFilterState(filterState, appliedFilterState);
-    hasAppliedFilters = true;
-    renderAppliedFilters();
-    updateDraftSummary();
-  }
-
-  function onFilterChange() {
-    updateDraftSummary();
   }
 
   function createPill(label, count, onClick) {
@@ -209,29 +193,6 @@
     }
   }
 
-  function updatePickerLabel(type) {
-    const label = document.getElementById(`${type}-label`);
-    if (!label) return;
-
-    if (type === "yr") {
-      const years = Array.from(filterState.years).sort((a, b) => a - b);
-      label.textContent = years.length === 0 ? "選擇年份" : years.length <= 2 ? years.map((year) => `${year}年`).join("、") : `已選 ${years.length} 年`;
-      label.classList.toggle("picker-selected", years.length > 0);
-      updateGregorianLabel();
-      return;
-    }
-
-    const months = Array.from(filterState.months).sort((a, b) => a - b);
-    label.textContent = months.length === 0 ? "選擇月份" : months.length <= 2 ? months.map((month) => monthNames[month - 1]).join("、") : `已選 ${months.length} 月`;
-    label.classList.toggle("picker-selected", months.length > 0);
-  }
-
-  function updateGregorianLabel() {
-    const label = document.getElementById("time-gregorian-label");
-    if (!label) return;
-    label.textContent = formatGregorianSummary();
-  }
-
   function updateBadge(dim) {
     const badge = document.getElementById(`badge-${dim}`);
     if (!badge) return;
@@ -240,66 +201,128 @@
     badge.style.display = count > 0 ? "inline" : "none";
   }
 
-  function syncYearButtons() {
-    document.querySelectorAll(".yr-pill").forEach((btn, index) => {
-      btn.classList.toggle("active", filterState.years.has(index + 2));
-    });
-    updatePickerLabel("yr");
+  function getHeatLevel(count) {
+    if (count === 0) return 0;
+    if (count === 1) return 1;
+    if (count === 2) return 2;
+    if (count === 3) return 3;
+    if (count <= 5) return 4;
+    return 5;
   }
 
-  function syncMonthButtons() {
-    document.querySelectorAll(".mo-pill").forEach((btn, index) => {
-      btn.classList.toggle("active", filterState.months.has(index + 1));
+  function refreshYearLabelState(year) {
+    const label = document.getElementById(`yr-label-${year}`);
+    if (!label) return;
+    const hasAny = Object.keys(HEATMAP_DATA[year] || {}).some((month) => filterState.selectedCells.has(`${year}-${Number(month)}`));
+    label.classList.toggle("yr-active", hasAny);
+  }
+
+  function toggleCell(year, month, cellEl) {
+    const key = `${year}-${month}`;
+    if (filterState.selectedCells.has(key)) {
+      filterState.selectedCells.delete(key);
+      cellEl.classList.remove("cell-selected");
+    } else {
+      filterState.selectedCells.add(key);
+      cellEl.classList.add("cell-selected");
+    }
+    refreshYearLabelState(year);
+    onFilterChange();
+  }
+
+  function toggleYear(year) {
+    const monthsWithData = [];
+    for (let month = 1; month <= 12; month += 1) {
+      if (HEATMAP_DATA[year] && HEATMAP_DATA[year][month] > 0) {
+        monthsWithData.push(month);
+      }
+    }
+
+    const allSelected = monthsWithData.length > 0 && monthsWithData.every((month) => filterState.selectedCells.has(`${year}-${month}`));
+    monthsWithData.forEach((month) => {
+      const key = `${year}-${month}`;
+      const cellEl = document.getElementById(`cell-${key}`);
+      if (allSelected) {
+        filterState.selectedCells.delete(key);
+        cellEl?.classList.remove("cell-selected");
+      } else {
+        filterState.selectedCells.add(key);
+        cellEl?.classList.add("cell-selected");
+      }
     });
-    updatePickerLabel("mo");
+
+    refreshYearLabelState(year);
+    onFilterChange();
+  }
+
+  function initHeatmap() {
+    const body = document.getElementById("heatmap-body");
+    if (!body) return;
+    body.innerHTML = "";
+
+    for (let year = 2; year <= 31; year += 1) {
+      const row = document.createElement("div");
+      row.className = "heatmap-row";
+
+      const yrLabel = document.createElement("span");
+      yrLabel.className = "heatmap-yr-label";
+      yrLabel.id = `yr-label-${year}`;
+      yrLabel.textContent = `${year}年`;
+      yrLabel.title = "點擊選整年";
+      yrLabel.addEventListener("click", () => toggleYear(year));
+      row.appendChild(yrLabel);
+
+      for (let month = 1; month <= 12; month += 1) {
+        const count = (HEATMAP_DATA[year] && HEATMAP_DATA[year][month]) || 0;
+        const key = `${year}-${month}`;
+        const cell = document.createElement("div");
+        cell.className = `heatmap-cell heat-${getHeatLevel(count)}`;
+        cell.id = `cell-${key}`;
+        cell.dataset.year = String(year);
+        cell.dataset.month = String(month);
+        cell.title = `洪武${year}年${monthNames[month - 1]}：${count}條記錄`;
+
+        if (count > 0) {
+          cell.addEventListener("click", () => toggleCell(year, month, cell));
+          if (filterState.selectedCells.has(key)) {
+            cell.classList.add("cell-selected");
+          }
+        } else {
+          cell.classList.add("cell-empty");
+        }
+
+        row.appendChild(cell);
+      }
+
+      body.appendChild(row);
+      refreshYearLabelState(year);
+    }
   }
 
   function clearAllFilters() {
-    Object.values(filterState).forEach((set) => set.clear());
-    document.querySelectorAll(".filter-pill.active, .yr-pill.active, .mo-pill.active").forEach((el) => el.classList.remove("active"));
-    updatePickerLabel("yr");
-    updatePickerLabel("mo");
+    filterState.selectedCells.clear();
+    document.querySelectorAll(".heatmap-cell.cell-selected").forEach((cell) => cell.classList.remove("cell-selected"));
+    document.querySelectorAll(".heatmap-yr-label.yr-active").forEach((label) => label.classList.remove("yr-active"));
+
+    filterState.countries.clear();
+    filterState.tribute.clear();
+    filterState.gifts.clear();
+    filterState.purpose.clear();
+    document.querySelectorAll(".filter-pill.active").forEach((pill) => pill.classList.remove("active"));
     ["countries", "tribute", "gifts", "purpose"].forEach(updateBadge);
     onFilterChange();
   }
 
   function setFilterPeriod(year, month) {
-    filterState.years.clear();
-    filterState.months.clear();
-    filterState.years.add(Number(year));
-    filterState.months.add(Number(month));
-    syncYearButtons();
-    syncMonthButtons();
-    applyFilters();
-  }
+    filterState.selectedCells.clear();
+    document.querySelectorAll(".heatmap-cell.cell-selected").forEach((cell) => cell.classList.remove("cell-selected"));
+    document.querySelectorAll(".heatmap-yr-label.yr-active").forEach((label) => label.classList.remove("yr-active"));
 
-  function toggleDrop(type) {
-    const drop = document.getElementById(`${type}-drop`);
-    const btn = document.getElementById(`${type}-btn`);
-    const other = type === "yr" ? "mo" : "yr";
-    document.getElementById(`${other}-drop`)?.classList.remove("show");
-    document.getElementById(`${other}-btn`)?.classList.remove("open");
-    drop?.classList.toggle("show");
-    btn?.classList.toggle("open");
-  }
-
-  function selectAllYears() {
-    const allSelected = filterState.years.size === 30;
-    filterState.years.clear();
-    if (!allSelected) {
-      for (let year = 2; year <= 31; year += 1) filterState.years.add(year);
-    }
-    syncYearButtons();
-    onFilterChange();
-  }
-
-  function selectAllMonths() {
-    const allSelected = filterState.months.size === 12;
-    filterState.months.clear();
-    if (!allSelected) {
-      for (let month = 1; month <= 12; month += 1) filterState.months.add(month);
-    }
-    syncMonthButtons();
+    const key = `${Number(year)}-${Number(month)}`;
+    const cell = document.getElementById(`cell-${key}`);
+    filterState.selectedCells.add(key);
+    cell?.classList.add("cell-selected");
+    refreshYearLabelState(Number(year));
     onFilterChange();
   }
 
@@ -327,38 +350,6 @@
     }
   }
 
-  function createYearButtons() {
-    const grid = document.getElementById("yr-grid");
-    for (let year = 2; year <= 31; year += 1) {
-      const btn = document.createElement("button");
-      btn.className = "yr-pill";
-      btn.type = "button";
-      btn.textContent = `${year}年`;
-      btn.addEventListener("click", () => {
-        toggleSetValue(filterState.years, year, btn);
-        updatePickerLabel("yr");
-        onFilterChange();
-      });
-      grid.appendChild(btn);
-    }
-  }
-
-  function createMonthButtons() {
-    const grid = document.getElementById("mo-grid");
-    for (let month = 1; month <= 12; month += 1) {
-      const btn = document.createElement("button");
-      btn.className = "mo-pill";
-      btn.type = "button";
-      btn.textContent = monthNames[month - 1];
-      btn.addEventListener("click", () => {
-        toggleSetValue(filterState.months, month, btn);
-        updatePickerLabel("mo");
-        onFilterChange();
-      });
-      grid.appendChild(btn);
-    }
-  }
-
   function createCountryPills() {
     const regionGroups = {
       northeast: ["goryeo", "joseon", "japan"],
@@ -380,6 +371,9 @@
           updateBadge("countries");
           onFilterChange();
         });
+        if (filterState.countries.has(id)) {
+          pill.classList.add("active");
+        }
         container.appendChild(pill);
       });
     });
@@ -395,44 +389,30 @@
         updateBadge(badgeKey);
         onFilterChange();
       });
+      if (filterState[stateKey].has(category)) {
+        pill.classList.add("active");
+      }
       container.appendChild(pill);
     });
   }
 
-  function closePickersOnOutsideClick() {
-    document.addEventListener("click", (event) => {
-      if (event.target.closest(".picker-box")) return;
-      document.querySelectorAll(".picker-drop").forEach((drop) => drop.classList.remove("show"));
-      document.querySelectorAll(".picker-btn").forEach((btn) => btn.classList.remove("open"));
-    });
-  }
-
   function initFilterPanel() {
-    createYearButtons();
-    createMonthButtons();
+    loadStoredFilterState();
     createCountryPills();
     createCategoryPills("pills-tribute", TRIBUTE_CATEGORIES, "tribute", (record, keywords) => global.matchesCategory(record.tributeRaw, keywords));
     createCategoryPills("pills-gifts", GIFT_CATEGORIES, "gifts", (record, keywords) => global.matchesCategory(record.giftsRaw, keywords));
     createCategoryPills("pills-purpose", PURPOSE_CATEGORIES, "purpose", (record, keywords) => global.matchesCategory(record.purpose, keywords));
-    closePickersOnOutsideClick();
-    copyFilterState(filterState, appliedFilterState);
-    renderAppliedFilters();
-    updateDraftSummary();
+    initHeatmap();
+    ["countries", "tribute", "gifts", "purpose"].forEach(updateBadge);
+    onFilterChange();
   }
 
   global.filterState = filterState;
-  global.appliedFilterState = appliedFilterState;
   global.getFilteredRecords = getFilteredRecords;
-  global.getDraftFilteredRecords = getDraftFilteredRecords;
   global.getFilteredCountryIds = getFilteredCountryIds;
   global.onFilterChange = onFilterChange;
-  global.applyFilters = applyFilters;
-  global.renderAppliedFilters = renderAppliedFilters;
   global.clearAllFilters = clearAllFilters;
   global.setFilterPeriod = setFilterPeriod;
-  global.toggleDrop = toggleDrop;
-  global.selectAllYears = selectAllYears;
-  global.selectAllMonths = selectAllMonths;
   global.toggleFilterSection = toggleFilterSection;
   global.togglePanel = togglePanel;
 

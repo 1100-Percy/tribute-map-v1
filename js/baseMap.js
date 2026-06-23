@@ -11,6 +11,64 @@
     { text: "渤海", lng: 120, lat: 39 },
   ];
 
+  const MING_BORDER = [
+    [121.2, 39.0],
+    [122.0, 40.5],
+    [124.0, 41.0],
+    [126.0, 42.0],
+    [127.5, 43.5],
+    [126.0, 44.5],
+    [123.5, 44.0],
+    [121.0, 41.5],
+    [117.5, 41.0],
+    [116.0, 41.0],
+    [114.0, 41.0],
+    [113.0, 40.5],
+    [111.5, 41.0],
+    [110.0, 40.8],
+    [108.5, 40.5],
+    [107.0, 39.5],
+    [106.0, 39.0],
+    [104.5, 38.0],
+    [103.0, 37.5],
+    [100.5, 38.5],
+    [98.5, 39.5],
+    [97.5, 39.8],
+    [97.0, 37.5],
+    [97.5, 36.0],
+    [100.0, 34.0],
+    [99.0, 31.0],
+    [98.5, 28.5],
+    [98.5, 26.0],
+    [98.0, 24.5],
+    [98.5, 22.5],
+    [100.5, 21.5],
+    [102.0, 22.0],
+    [104.5, 22.5],
+    [106.5, 22.0],
+    [108.0, 21.5],
+    [109.5, 18.2],
+    [110.5, 20.0],
+    [109.5, 21.2],
+    [110.0, 21.5],
+    [113.5, 22.5],
+    [117.0, 23.5],
+    [118.5, 24.5],
+    [120.0, 26.0],
+    [121.5, 28.5],
+    [122.0, 30.5],
+    [121.5, 31.5],
+    [120.5, 32.5],
+    [119.5, 34.5],
+    [120.0, 36.0],
+    [122.5, 37.5],
+    [121.0, 38.0],
+    [121.2, 39.0],
+  ];
+
+  // Zero-based index of the last inland border point. Later points follow coastlines.
+  const MING_BORDER_INLAND_END = 34;
+
   const labelOffsets = {
     ryukyu_chuzan: [10, -21],
     ryukyu_sannan: [10, 0],
@@ -176,6 +234,75 @@
     ctx.restore();
   }
 
+  function drawMingTerritory() {
+    ctx.save();
+
+    ctx.beginPath();
+    for (const polygon of LAND_POLYGONS) {
+      polygon.forEach(([lng, lat], index) => {
+        const point = project(lng, lat);
+        if (index === 0) {
+          ctx.moveTo(point.x, point.y);
+        } else {
+          ctx.lineTo(point.x, point.y);
+        }
+      });
+      ctx.closePath();
+    }
+    ctx.clip();
+
+    ctx.beginPath();
+    MING_BORDER.forEach(([lng, lat], index) => {
+      const point = project(lng, lat);
+      if (index === 0) {
+        ctx.moveTo(point.x, point.y);
+      } else {
+        ctx.lineTo(point.x, point.y);
+      }
+    });
+    ctx.closePath();
+
+    const center = project(112, 32);
+    const gradient = ctx.createRadialGradient(center.x, center.y, 0, center.x, center.y, canvas.logicalWidth * 0.3);
+    gradient.addColorStop(0, "rgba(150, 120, 70, 0.06)");
+    gradient.addColorStop(0.6, "rgba(150, 120, 70, 0.03)");
+    gradient.addColorStop(1, "rgba(150, 120, 70, 0)");
+    ctx.fillStyle = gradient;
+    ctx.fill();
+    ctx.restore();
+
+    ctx.save();
+    ctx.strokeStyle = "rgba(139, 105, 20, 0.15)";
+    ctx.lineWidth = 0.7;
+    ctx.setLineDash([2, 4]);
+    ctx.lineJoin = "round";
+    ctx.lineCap = "round";
+    ctx.beginPath();
+    for (let index = 0; index <= MING_BORDER_INLAND_END; index += 1) {
+      const point = project(MING_BORDER[index][0], MING_BORDER[index][1]);
+      if (index === 0) {
+        ctx.moveTo(point.x, point.y);
+      } else {
+        ctx.lineTo(point.x, point.y);
+      }
+    }
+    ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.restore();
+
+    const textPos = project(108, 33);
+    ctx.save();
+    ctx.translate(textPos.x, textPos.y);
+    ctx.rotate(-0.05);
+    ctx.font = '22px "Noto Serif TC", "Noto Serif SC", serif';
+    ctx.fillStyle = "rgba(139, 105, 20, 0.08)";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.letterSpacing = "8px";
+    ctx.fillText("大  明", 0, 0);
+    ctx.restore();
+  }
+
   function drawCompass() {
     const cx = canvas.logicalWidth - 76;
     const cy = 82;
@@ -224,7 +351,6 @@
   function drawCoastline() {
     drawLand();
     drawRivers();
-    drawSeaLabels();
   }
 
   function drawCapital() {
@@ -317,9 +443,11 @@
     drawBaseWash();
     drawGrid();
     drawCoastline();
+    drawMingTerritory();
     Object.values(COUNTRIES).forEach(drawCountryPoint);
     drawCapital();
     drawCompass();
+    drawSeaLabels();
     drawLabels();
   }
 
