@@ -46,7 +46,7 @@ jobs:
     needs: validate
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}home.html
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
