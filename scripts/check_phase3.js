@@ -5,7 +5,8 @@ const fs = require("fs");
 const path = require("path");
 
 const root = path.resolve(__dirname, "..");
-const indexHtml = fs.readFileSync(path.join(root, "index.html"), "utf8");
+const mapHtmlPath = fs.existsSync(path.join(root, "map.html")) ? path.join(root, "map.html") : path.join(root, "index.html");
+const indexHtml = fs.readFileSync(mapHtmlPath, "utf8");
 const routeRenderer = fs.readFileSync(path.join(root, "js/routeRenderer.js"), "utf8");
 const { COUNTRIES, TRIBUTE_DATA } = require(path.join(root, "js/data.js"));
 const { ROUTE_TEMPLATES } = require(path.join(root, "js/config.js"));

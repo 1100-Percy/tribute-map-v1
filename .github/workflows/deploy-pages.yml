@@ -1,4 +1,4 @@
-name: Deploy v1 to GitHub Pages
+name: Validate and deploy tribute map demo
 
 on:
   push:
@@ -15,10 +15,38 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  validate:
+    name: Validate static project
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Check JavaScript syntax
+        run: |
+          for file in js/*.js scripts/*.js; do
+            node --check "$file"
+          done
+
+      - name: Run project checks
+        run: |
+          node scripts/check_phase0.js
+          node scripts/check_phase1.js
+          node scripts/check_phase3.js
+          node scripts/check_phase5.js
+          node scripts/check_phase6.js
+
   deploy:
+    name: Deploy GitHub Pages demo
+    needs: validate
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}home.html
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

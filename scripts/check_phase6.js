@@ -5,7 +5,8 @@ const fs = require("fs");
 const path = require("path");
 
 const root = path.resolve(__dirname, "..");
-const indexHtml = fs.readFileSync(path.join(root, "index.html"), "utf8");
+const mapHtmlPath = fs.existsSync(path.join(root, "map.html")) ? path.join(root, "map.html") : path.join(root, "index.html");
+const indexHtml = fs.readFileSync(mapHtmlPath, "utf8");
 const countryHtml = fs.readFileSync(path.join(root, "country.html"), "utf8");
 const css = fs.readFileSync(path.join(root, "css/style.css"), "utf8");
 const baseMap = fs.readFileSync(path.join(root, "js/baseMap.js"), "utf8");
@@ -21,7 +22,7 @@ function assertCheck(name, pass, detail = "") {
 
 const allHtml = `${indexHtml}\n${countryHtml}`;
 
-assertCheck("6-1 phase label updated", indexHtml.includes("打磨合規 · Phase 6"));
+assertCheck("6-1 phase 6 label removed", !indexHtml.includes("打磨合規 · Phase 6") && !indexHtml.includes("phase-note"));
 assertCheck("6-2 main page compliance panel removed", !indexHtml.includes("competition-compliance"));
 assertCheck("6-3 country page has compliance footer", countryHtml.includes("country-compliance") && countryHtml.includes("Natural Earth"));
 assertCheck(

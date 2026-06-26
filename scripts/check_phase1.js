@@ -5,7 +5,8 @@ const fs = require("fs");
 const path = require("path");
 
 const root = path.resolve(__dirname, "..");
-const indexHtml = fs.readFileSync(path.join(root, "index.html"), "utf8");
+const mapHtmlPath = fs.existsSync(path.join(root, "map.html")) ? path.join(root, "map.html") : path.join(root, "index.html");
+const indexHtml = fs.readFileSync(mapHtmlPath, "utf8");
 const css = fs.readFileSync(path.join(root, "css/style.css"), "utf8");
 const baseMap = fs.readFileSync(path.join(root, "js/baseMap.js"), "utf8");
 const { COUNTRIES } = require(path.join(root, "js/data.js"));
