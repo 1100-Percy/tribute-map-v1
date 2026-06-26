@@ -14,44 +14,45 @@
             <span class="filter-title">篩選條件</span>
             <div class="filter-actions">
               <button class="filter-collapse-btn" type="button" onclick="togglePanel()">收起</button>
+              <a class="filter-home-link" href="home.html">返回首頁</a>
               <button class="filter-clear" type="button" onclick="clearAllFilters()">清除全部</button>
             </div>
           </div>
 
           <div class="filter-section">
-            <div class="section-label time-section-label">
-              <span>時間</span>
-              <span id="time-gregorian-label" class="time-gregorian-label" aria-live="polite"></span>
+            <div class="filter-section-label"><span>時間（年月）</span></div>
+            <div class="filter-note" style="margin-bottom: 6px;">
+              點擊格子選月份 · 點擊年份選整年 · 色深=記錄多
             </div>
-            <div class="picker-row">
-              <div class="picker-box">
-                <button class="picker-btn" id="yr-btn" type="button" onclick="toggleDrop('yr')">
-                  <span id="yr-label">選擇年份</span>
-                  <span class="picker-arrow">▼</span>
-                </button>
-                <div class="picker-drop" id="yr-drop">
-                  <div class="drop-header">
-                    <span>洪武年份（可多選）</span>
-                    <button type="button" onclick="selectAllYears()">全選</button>
-                  </div>
-                  <div class="yr-grid" id="yr-grid"></div>
-                </div>
-              </div>
-              <div class="picker-box">
-                <button class="picker-btn" id="mo-btn" type="button" onclick="toggleDrop('mo')">
-                  <span id="mo-label">選擇月份</span>
-                  <span class="picker-arrow">▼</span>
-                </button>
-                <div class="picker-drop" id="mo-drop">
-                  <div class="drop-header">
-                    <span>月份（可多選）</span>
-                    <button type="button" onclick="selectAllMonths()">全選</button>
-                  </div>
-                  <div class="mo-grid" id="mo-grid"></div>
-                </div>
-              </div>
+
+            <div class="heatmap-header">
+              <span class="heatmap-yr-spacer"></span>
+              <span class="heatmap-mo-label">正</span>
+              <span class="heatmap-mo-label">二</span>
+              <span class="heatmap-mo-label">三</span>
+              <span class="heatmap-mo-label">四</span>
+              <span class="heatmap-mo-label">五</span>
+              <span class="heatmap-mo-label">六</span>
+              <span class="heatmap-mo-label">七</span>
+              <span class="heatmap-mo-label">八</span>
+              <span class="heatmap-mo-label">九</span>
+              <span class="heatmap-mo-label">十</span>
+              <span class="heatmap-mo-label">冬</span>
+              <span class="heatmap-mo-label">臘</span>
             </div>
-            <div class="filter-note">不選=全部 · 可多選組合</div>
+
+            <div class="heatmap-body" id="heatmap-body"></div>
+
+            <div class="heatmap-legend">
+              <span class="heatmap-legend-label">0</span>
+              <span class="heatmap-legend-cell" style="background:#F0EBE0; border:1px solid #D5CFC3;"></span>
+              <span class="heatmap-legend-cell" style="background:#E8C9A0;"></span>
+              <span class="heatmap-legend-cell" style="background:#DCA672;"></span>
+              <span class="heatmap-legend-cell" style="background:#D4956A;"></span>
+              <span class="heatmap-legend-cell" style="background:#B85C3A;"></span>
+              <span class="heatmap-legend-cell" style="background:#8B2500;"></span>
+              <span class="heatmap-legend-label">6+</span>
+            </div>
           </div>
 
           <hr class="filter-divider">
@@ -110,14 +111,6 @@
               <div class="filter-note">部分記錄未標註目的 · 不勾選=顯示全部</div>
             </div>
           </div>
-
-          <div class="filter-apply-bar" aria-label="套用篩選">
-            <div class="filter-apply-readout">
-              <span id="filter-apply-state">尚未套用新選項</span>
-              <strong id="draft-result-count">290 條 · 24 國</strong>
-            </div>
-            <button id="filter-apply-btn" class="filter-apply-btn" type="button" onclick="applyFilters()">應用篩選</button>
-          </div>
         </div>
       </aside>
       <button id="filter-toggle" class="filter-toggle" type="button" onclick="togglePanel()" aria-label="折疊篩選面板">◀</button>
@@ -134,7 +127,6 @@
         <div class="title-block">
           <p class="era-mark">洪武二年至三十一年 · 1369-1398</p>
           <h1>明洪武年間藩國朝貢圖</h1>
-          <p class="phase-note">打磨合規 · Phase 6</p>
         </div>
         <div class="map-legend" aria-label="圖例">
           <span><i class="legend-dot country-dot"></i>藩國位置</span>
@@ -143,6 +135,30 @@
       </section>
     </main>
 
+    <aside id="analysis-menu" class="analysis-menu" aria-label="分析入口">
+      <div class="font-size-switcher" role="group" aria-label="字體大小" data-font-size-control>
+        <button type="button" data-font-size-option="small" aria-label="小字體">小</button>
+        <button type="button" data-font-size-option="medium" aria-label="中字體">中</button>
+        <button type="button" data-font-size-option="large" aria-label="大字體">大</button>
+      </div>
+      <button id="analysis-menu-toggle" class="analysis-menu-toggle" type="button" aria-expanded="false" aria-controls="analysis-menu-list" aria-label="展開分析入口">
+        <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <rect x="10" y="12" width="28" height="5" rx="2.5"></rect>
+          <rect x="10" y="22" width="28" height="5" rx="2.5"></rect>
+          <rect x="10" y="32" width="28" height="5" rx="2.5"></rect>
+          <path d="M15 30l6-8 7 5 6-10" fill="none"></path>
+        </svg>
+      </button>
+      <div id="analysis-menu-list" class="analysis-menu-list" hidden>
+        <button class="analysis-entry" type="button" data-title="時間演進圖譜" data-src="analysis/timeline.html" aria-label="時間演進圖譜">時</button>
+        <button class="analysis-entry" type="button" data-title="地理分佈圖譜" data-src="analysis/geography.html" aria-label="地理分佈圖譜">地</button>
+        <button class="analysis-entry" type="button" data-title="貢物網絡圖譜" data-src="analysis/tribute-network.html" aria-label="貢物網絡圖譜">貢</button>
+        <button class="analysis-entry" type="button" data-title="時段對比分析" data-src="analysis/comparison.html" aria-label="時段對比分析">比</button>
+        <button class="analysis-entry" type="button" data-title="藩國關係光譜" data-src="analysis/spectrum.html" aria-label="藩國關係光譜">譜</button>
+      </div>
+    </aside>
+
+    <script src="js/fontSizeControls.js"></script>
     <script src="js/config.js"></script>
     <script src="js/data.js"></script>
     <script src="js/geodata.js"></script>
@@ -153,5 +169,6 @@
     <script src="js/caravanAnim.js"></script>
     <script src="js/bindEvents.js"></script>
     <script src="js/filterPanel.js"></script>
+    <script src="js/analysisMenu.js"></script>
   </body>
 </html>

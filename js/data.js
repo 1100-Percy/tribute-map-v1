@@ -15,7 +15,7 @@
     "monthSort": 2,
     "gregorianYear": 1369,
     "king": "阿答阿者",
-    "envoy": "虎都蛮",
+    "envoy": "虎都蠻",
     "purpose": "",
     "tributeRaw": "虎、象、方物",
     "tributeItems": [
@@ -25,8 +25,8 @@
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "大统历一本、织金绮叚纱罗四十匹； / 文绮纱罗（使节）",
-    "source": "《明太祖实录》，卷39，洪武二年二月己已条，第785页。"
+    "giftsRaw": "大統歷一本、織金綺叚紗羅四十匹； / 文綺紗羅（使節）",
+    "source": "《明太祖實錄》，卷39，洪武二年二月己已條，第785頁。"
   },
   {
     "id": "annam_02_06_001",
@@ -40,62 +40,62 @@
     "isLeapMonth": false,
     "monthSort": 6,
     "gregorianYear": 1369,
-    "king": "陈日煃",
-    "envoy": "同时敏（少中大夫）、叚悌（正大夫）、黎安世",
-    "purpose": "请封爵",
+    "king": "陳日煃",
+    "envoy": "同時敏（少中大夫）、叚悌（正大夫）、黎安世",
+    "purpose": "請封爵",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "大统历一本，织金文绮纱罗四十匹； / 文绮线罗各一匹，纱二匹（同时敏、叚悌、黎安世、阮法四人）其副阮勋及从二十三人赐有差。",
-    "source": "《明太祖实录》，卷43，洪武二年六月壬午条，第847-848页。"
+    "giftsRaw": "大統歷一本，織金文綺紗羅四十匹； / 文綺線羅各一匹，紗二匹（同時敏、叚悌、黎安世、阮法四人）其副阮勳及從二十三人賜有差。",
+    "source": "《明太祖實錄》，卷43，洪武二年六月壬午條，第847-848頁。"
   },
   {
     "id": "goryeo_02_08_001",
     "sourceRow": 4,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二年八月",
     "year": 2,
     "month": 8,
     "isLeapMonth": false,
     "monthSort": 8,
     "gregorianYear": 1369,
-    "king": "王颛",
-    "envoy": "洪尚载",
-    "purpose": "贺即位 / 请封爵 / 贡中宫、东宫",
+    "king": "王顓",
+    "envoy": "洪尚載",
+    "purpose": "賀即位 / 請封爵 / 貢中宮、東宮",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "罗、绮",
-    "source": "《明太祖实录》，卷44，洪武二年八月甲子条，第858页。"
+    "giftsRaw": "羅、綺",
+    "source": "《明太祖實錄》，卷44，洪武二年八月甲子條，第858頁。"
   },
   {
     "id": "goryeo_02_09_001",
     "sourceRow": 5,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二年九月",
     "year": 2,
     "month": 9,
     "isLeapMonth": false,
     "monthSort": 9,
     "gregorianYear": 1369,
-    "king": "王颛",
+    "king": "王顓",
     "envoy": "成惟得、金甲雨",
-    "purpose": "谢恩 / 天寿节 / 贡中宫、东宫 / 请祭服",
+    "purpose": "謝恩 / 天壽節 / 貢中宮、東宮 / 請祭服",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷45，洪武二年九月丙午条，第883页。"
+    "source": "《明太祖實錄》，卷45，洪武二年九月丙午條，第883頁。"
   },
   {
     "id": "champa_02_09_001",
@@ -117,31 +117,31 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "绮、帛",
-    "source": "《明太祖实录》，卷45，洪武二年九月丙午条，第883页。"
+    "giftsRaw": "綺、帛",
+    "source": "《明太祖實錄》，卷45，洪武二年九月丙午條，第883頁。"
   },
   {
     "id": "goryeo_02_12_001",
     "sourceRow": 7,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二年十二月",
     "year": 2,
     "month": 12,
     "isLeapMonth": false,
     "monthSort": 12,
     "gregorianYear": 1369,
-    "king": "王颛",
-    "envoy": "张子温",
-    "purpose": "谢封爵 / 贺正旦 / 贡中宫、东宫",
+    "king": "王顓",
+    "envoy": "張子溫",
+    "purpose": "謝封爵 / 賀正旦 / 貢中宮、東宮",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷47，洪武二年十二月甲戌条，第937页。"
+    "source": "《明太祖實錄》，卷47，洪武二年十二月甲戌條，第937頁。"
   },
   {
     "id": "annam_03_04_001",
@@ -156,15 +156,15 @@
     "monthSort": 4,
     "gregorianYear": 1370,
     "king": "",
-    "envoy": "杜舜钦",
-    "purpose": "告哀 / 请命",
+    "envoy": "杜舜欽",
+    "purpose": "告哀 / 請命",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷51，洪武三年四月壬申条，第1006-1007页。"
+    "source": "《明太祖實錄》，卷51，洪武三年四月壬申條，第1006-1007頁。"
   },
   {
     "id": "annam_03_06_001",
@@ -178,16 +178,16 @@
     "isLeapMonth": false,
     "monthSort": 6,
     "gregorianYear": 1370,
-    "king": "陈日熞",
-    "envoy": "阮兼（上大夫） / 莫季龙（中大夫） / 黎元普（下大夫）",
-    "purpose": "谢恩",
+    "king": "陳日熞",
+    "envoy": "阮兼（上大夫） / 莫季龍（中大夫） / 黎元普（下大夫）",
+    "purpose": "謝恩",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "纱縠各二匹、布、帛、银五十两",
-    "source": "《明太祖实录》，卷53，洪武三年六月癸酉条，第1042页。"
+    "giftsRaw": "紗縠各二匹、布、帛、銀五十兩",
+    "source": "《明太祖實錄》，卷53，洪武三年六月癸酉條，第1042頁。"
   },
   {
     "id": "champa_03_08_001",
@@ -210,14 +210,14 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷55，洪武三年八月辛酉条，第1077页。"
+    "source": "《明太祖實錄》，卷55，洪武三年八月辛酉條，第1077頁。"
   },
   {
     "id": "goryeo_03_08_001",
     "sourceRow": 11,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武三年八月",
     "year": 3,
     "month": 8,
@@ -225,15 +225,15 @@
     "monthSort": 8,
     "gregorianYear": 1370,
     "king": "",
-    "envoy": "姜德赞（三司使）",
-    "purpose": "谢赐冕 / 纳元所授金印",
+    "envoy": "姜德讚（三司使）",
+    "purpose": "謝賜冕 / 納元所授金印",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷55，洪武三年八月辛酉条，第1077页。"
+    "source": "《明太祖實錄》，卷55，洪武三年八月辛酉條，第1077頁。"
   },
   {
     "id": "java_03_09_001",
@@ -247,7 +247,7 @@
     "isLeapMonth": false,
     "monthSort": 9,
     "gregorianYear": 1370,
-    "king": "昔里八达剌八剌蒲",
+    "king": "昔里八達剌八剌蒲",
     "envoy": "臣郎加占必忽先",
     "purpose": "",
     "tributeRaw": "方物",
@@ -256,14 +256,14 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷56，洪武三年九月壬寅条，第1092页。"
+    "source": "《明太祖實錄》，卷56，洪武三年九月壬寅條，第1092頁。"
   },
   {
     "id": "goryeo_03_09_001",
     "sourceRow": 13,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武三年九月",
     "year": 3,
     "month": 9,
@@ -271,15 +271,15 @@
     "monthSort": 9,
     "gregorianYear": 1370,
     "king": "",
-    "envoy": "偰长寿",
-    "purpose": "贺皇太子千秋节",
+    "envoy": "偰長壽",
+    "purpose": "賀皇太子千秋節",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷56，洪武三年九月癸丑条，第1098页。"
+    "source": "《明太祖實錄》，卷56，洪武三年九月癸丑條，第1098頁。"
   },
   {
     "id": "xiyang_03_09_001",
@@ -293,31 +293,31 @@
     "isLeapMonth": false,
     "monthSort": 9,
     "gregorianYear": 1370,
-    "king": "别里提",
-    "envoy": "亦迭纳瓦里沙",
+    "king": "別里提",
+    "envoy": "亦迭納瓦里沙",
     "purpose": "",
-    "tributeRaw": "黑虎一兠，罗绵被四幅，漫折的花被八幅，皮剔布四匹，槁尼布三匹，沙马打里布二匹。",
+    "tributeRaw": "黑虎一兠，羅綿被四幅，漫折的花被八幅，皮剔布四匹，槁尼布三匹，沙馬打里布二匹。",
     "tributeItems": [
       "黑虎",
-      "罗绵被幅",
+      "羅綿被幅",
       "漫折的花被幅",
       "皮剔布",
       "槁尼布",
-      "沙马打里布"
+      "沙馬打里布"
     ],
     "tributeCategories": [
       "animal",
       "textile"
     ],
-    "giftsRaw": "织金文绮纱罗、大统历、绮、帛",
-    "source": "《明太祖实录》，卷56，洪武三年九月是月条，第1100-1101页。"
+    "giftsRaw": "織金文綺紗羅、大統歷、綺、帛",
+    "source": "《明太祖實錄》，卷56，洪武三年九月是月條，第1100-1101頁。"
   },
   {
     "id": "goryeo_03_10_001",
     "sourceRow": 15,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武三年十月",
     "year": 3,
     "month": 10,
@@ -326,14 +326,14 @@
     "gregorianYear": 1370,
     "king": "",
     "envoy": "尹控",
-    "purpose": "天寿圣节 / 封建亲王",
+    "purpose": "天壽聖節 / 封建親王",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "却贡",
-    "source": "《明太祖实录》，卷57，洪武三年十月辛酉条，第1116页； / 《高丽史》，卷42，《世家四十二‧恭愍王五》，第640页。"
+    "giftsRaw": "卻貢",
+    "source": "《明太祖實錄》，卷57，洪武三年十月辛酉條，第1116頁； / 《高麗史》，卷42，《世家四十二‧恭愍王五》，第640頁。"
   },
   {
     "id": "annam_04_01_001",
@@ -347,18 +347,18 @@
     "isLeapMonth": false,
     "monthSort": 1,
     "gregorianYear": 1371,
-    "king": "陈日熞",
-    "envoy": "陶宗会",
-    "purpose": "贺克沙漠",
-    "tributeRaw": "驯象",
+    "king": "陳日熞",
+    "envoy": "陶宗會",
+    "purpose": "賀克沙漠",
+    "tributeRaw": "馴象",
     "tributeItems": [
-      "驯象"
+      "馴象"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷60，洪武四年正月丙午条，第1181页。"
+    "source": "《明太祖實錄》，卷60，洪武四年正月丙午條，第1181頁。"
   },
   {
     "id": "annam_04_02_001",
@@ -372,16 +372,16 @@
     "isLeapMonth": false,
     "monthSort": 2,
     "gregorianYear": 1371,
-    "king": "陈日熞",
+    "king": "陳日熞",
     "envoy": "阮汝亮",
-    "purpose": "上表谢恩",
+    "purpose": "上表謝恩",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷61，洪武四年二月戊午条，第1184-1185页。"
+    "source": "《明太祖實錄》，卷61，洪武四年二月戊午條，第1184-1185頁。"
   },
   {
     "id": "champa_04_07_001",
@@ -396,7 +396,7 @@
     "monthSort": 7,
     "gregorianYear": 1371,
     "king": "阿荅阿者",
-    "envoy": "荅班瓜卜农",
+    "envoy": "荅班瓜卜農",
     "purpose": "上表言安南侵其土境",
     "tributeRaw": "",
     "tributeItems": [],
@@ -404,7 +404,7 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷67，洪武四年七月乙亥条，第1260-1261页。"
+    "source": "《明太祖實錄》，卷67，洪武四年七月乙亥條，第1260-1261頁。"
   },
   {
     "id": "brunei_04_08_001",
@@ -418,20 +418,20 @@
     "isLeapMonth": false,
     "monthSort": 8,
     "gregorianYear": 1371,
-    "king": "马合谟沙",
+    "king": "馬合謨沙",
     "envoy": "亦思麻逸",
     "purpose": "",
-    "tributeRaw": "鹤顶，生玳瑁，孔雀、梅花龙脑 / 、米脑、糠脑、西洋白布及降香、黄蜡",
+    "tributeRaw": "鶴頂，生玳瑁，孔雀、梅花龍腦 / 、米腦、糠腦、西洋白布及降香、黃蠟",
     "tributeItems": [
-      "鹤顶",
+      "鶴頂",
       "生玳瑁",
       "孔雀",
-      "梅花龙脑",
-      "米脑",
-      "糠脑",
+      "梅花龍腦",
+      "米腦",
+      "糠腦",
       "西洋白布",
       "降香",
-      "黄蜡"
+      "黃蠟"
     ],
     "tributeCategories": [
       "animal",
@@ -439,29 +439,29 @@
       "spice",
       "textile"
     ],
-    "giftsRaw": "织金文绮纱罗、绮、帛",
-    "source": "《明太祖实录》，卷67，洪武四年八月癸已条，第1264页。"
+    "giftsRaw": "織金文綺紗羅、綺、帛",
+    "source": "《明太祖實錄》，卷67，洪武四年八月癸已條，第1264頁。"
   },
   {
     "id": "goryeo_04_09_001",
     "sourceRow": 20,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武四年九月",
     "year": 4,
     "month": 9,
     "isLeapMonth": false,
     "monthSort": 9,
     "gregorianYear": 1371,
-    "king": "王颛",
+    "king": "王顓",
     "envoy": "姜仲祥",
-    "purpose": "天寿圣节 / 皇太子千秋节",
-    "tributeRaw": "金银龙盏，布文席，龟贝等物",
+    "purpose": "天壽聖節 / 皇太子千秋節",
+    "tributeRaw": "金銀龍盞，布文席，龜貝等物",
     "tributeItems": [
-      "金银龙盏",
+      "金銀龍盞",
       "布文席",
-      "龟贝"
+      "龜貝"
     ],
     "tributeCategories": [
       "animal",
@@ -469,31 +469,31 @@
       "vessel"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷68，洪武四年九月甲寅条，第1271页； / 《高丽史》，卷43，《世家四十三‧恭愍王六》，第643页。"
+    "source": "《明太祖實錄》，卷68，洪武四年九月甲寅條，第1271頁； / 《高麗史》，卷43，《世家四十三‧恭愍王六》，第643頁。"
   },
   {
     "id": "srivijaya_04_09_001",
     "sourceRow": 21,
     "countryId": "srivijaya",
-    "countryName": "三佛齐",
-    "countryRaw": "三佛齐",
+    "countryName": "三佛齊",
+    "countryRaw": "三佛齊",
     "timeRaw": "洪武四年九月",
     "year": 4,
     "month": 9,
     "isLeapMonth": false,
     "monthSort": 9,
     "gregorianYear": 1371,
-    "king": "马哈剌扎八剌卜",
-    "envoy": "玉的力马罕亦里牙思",
+    "king": "馬哈剌扎八剌卜",
+    "envoy": "玉的力馬罕亦里牙思",
     "purpose": "",
-    "tributeRaw": "黑熊，火鸡，孔雀，五色鹦鹉， / 诸香，兜罗绵被，苾布等物",
+    "tributeRaw": "黑熊，火雞，孔雀，五色鸚鵡， / 諸香，兜羅綿被，苾布等物",
     "tributeItems": [
       "黑熊",
-      "火鸡",
+      "火雞",
       "孔雀",
-      "色鹦鹉",
-      "诸香",
-      "兜罗绵被",
+      "色鸚鵡",
+      "諸香",
+      "兜羅綿被",
       "苾布"
     ],
     "tributeCategories": [
@@ -501,34 +501,34 @@
       "spice",
       "textile"
     ],
-    "giftsRaw": "大统历、织金纱罗文绮、罗、绮",
-    "source": "《明太祖实录》，卷68，洪武四年九月庚申条，第1274页。"
+    "giftsRaw": "大統歷、織金紗羅文綺、羅、綺",
+    "source": "《明太祖實錄》，卷68，洪武四年九月庚申條，第1274頁。"
   },
   {
     "id": "siam_04_09_001",
     "sourceRow": 22,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武四年九月",
     "year": 4,
     "month": 9,
     "isLeapMonth": false,
     "monthSort": 9,
     "gregorianYear": 1371,
-    "king": "参烈昭毘牙",
-    "envoy": "昭晏孤蛮",
+    "king": "參烈昭毘牙",
+    "envoy": "昭晏孤蠻",
     "purpose": "",
-    "tributeRaw": "驯象六足、龟及方物",
+    "tributeRaw": "馴象六足、龜及方物",
     "tributeItems": [
-      "驯象",
-      "龟"
+      "馴象",
+      "龜"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "织金纱罗文绮、衣人一袭",
-    "source": "《明太祖实录》，卷68，洪武四年九月辛未条，第1278页。"
+    "giftsRaw": "織金紗羅文綺、衣人一襲",
+    "source": "《明太祖實錄》，卷68，洪武四年九月辛未條，第1278頁。"
   },
   {
     "id": "japan_04_10_001",
@@ -542,71 +542,71 @@
     "isLeapMonth": false,
     "monthSort": 10,
     "gregorianYear": 1371,
-    "king": "良怀",
-    "envoy": "僧祖来",
+    "king": "良懷",
+    "envoy": "僧祖來",
     "purpose": "",
-    "tributeRaw": "马及方物",
+    "tributeRaw": "馬及方物",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "大统历、文绮纱罗、文、绮、帛、僧衣",
-    "source": "《明太祖实录》，卷68，洪武四年十月癸已条，第1280-1283页。"
+    "giftsRaw": "大統歷、文綺紗羅、文、綺、帛、僧衣",
+    "source": "《明太祖實錄》，卷68，洪武四年十月癸已條，第1280-1283頁。"
   },
   {
     "id": "cambodia_04_11_001",
     "sourceRow": 24,
     "countryId": "cambodia",
-    "countryName": "真腊",
-    "countryRaw": "真腊",
+    "countryName": "真臘",
+    "countryRaw": "真臘",
     "timeRaw": "洪武四年十一月",
     "year": 4,
     "month": 11,
     "isLeapMonth": false,
     "monthSort": 11,
     "gregorianYear": 1371,
-    "king": "巴山王忽儿那",
+    "king": "巴山王忽兒那",
     "envoy": "柰亦吉郎",
-    "purpose": "贺明年正旦",
+    "purpose": "賀明年正旦",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "大统历、织金文绮、纱、罗、文、绮",
-    "source": "《明太祖实录》，卷69，洪武四年十一月丙辰条，第1287页。"
+    "giftsRaw": "大統歷、織金文綺、紗、羅、文、綺",
+    "source": "《明太祖實錄》，卷69，洪武四年十一月丙辰條，第1287頁。"
   },
   {
     "id": "siam_04_12_001",
     "sourceRow": 25,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武四年十二月",
     "year": 4,
     "month": 12,
     "isLeapMonth": false,
     "monthSort": 12,
     "gregorianYear": 1371,
-    "king": "参烈昭毘牙",
-    "envoy": "柰思俚侪剌识悉替",
-    "purpose": "贺明年正旦",
+    "king": "參烈昭毘牙",
+    "envoy": "柰思俚儕剌識悉替",
+    "purpose": "賀明年正旦",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "大统历、织金文绮、衣、文、绮、布、帛",
-    "source": "《明太祖实录》，卷70，洪武四年十二月壬午条，第1295页。"
+    "giftsRaw": "大統歷、織金文綺、衣、文、綺、布、帛",
+    "source": "《明太祖實錄》，卷70，洪武四年十二月壬午條，第1295頁。"
   },
   {
     "id": "goryeo_04_12_001",
     "sourceRow": 26,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武四年十二月",
     "year": 4,
     "month": 12,
@@ -615,55 +615,55 @@
     "gregorianYear": 1371,
     "king": "",
     "envoy": "",
-    "purpose": "贺明年正旦",
+    "purpose": "賀明年正旦",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷70，洪武四年十二月是月条，第1312页。"
+    "source": "《明太祖實錄》，卷70，洪武四年十二月是月條，第1312頁。"
   },
   {
     "id": "soli_05_01_001",
     "sourceRow": 27,
     "countryId": "soli",
-    "countryName": "琐里",
-    "countryRaw": "琐里",
+    "countryName": "瑣里",
+    "countryRaw": "瑣里",
     "timeRaw": "洪武五年正月",
     "year": 5,
     "month": 1,
     "isLeapMonth": false,
     "monthSort": 1,
     "gregorianYear": 1372,
-    "king": "卜纳的",
-    "envoy": "撒马牙茶嘉儿、 / 斡的亦剌丹八儿山",
+    "king": "卜納的",
+    "envoy": "撒馬牙茶嘉兒、 / 斡的亦剌丹八兒山",
     "purpose": "",
-    "tributeRaw": "马一匹、红撒哈剌一连、红八者蓝布四疋，红番布二疋，觊木里布四疋，白苾布四疋，珠子项串一副，地图",
+    "tributeRaw": "馬一匹、紅撒哈剌一連、紅八者藍布四疋，紅番布二疋，覬木里布四疋，白苾布四疋，珠子項串一副，地圖",
     "tributeItems": [
-      "马",
-      "红撒哈剌连",
-      "红者蓝布",
-      "红番布",
-      "觊木里布",
+      "馬",
+      "紅撒哈剌連",
+      "紅者藍布",
+      "紅番布",
+      "覬木里布",
       "白苾布",
-      "珠子项串",
-      "地图"
+      "珠子項串",
+      "地圖"
     ],
     "tributeCategories": [
       "animal",
       "misc",
       "textile"
     ],
-    "giftsRaw": "大统历、织金文绮纱罗各四疋、文绮、纱罗各二疋，高丽布各二疋",
-    "source": "《明太祖实录》，卷71，洪武五年正月壬子条，第1313-1314页。"
+    "giftsRaw": "大統歷、織金文綺紗羅各四疋、文綺、紗羅各二疋，高麗布各二疋",
+    "source": "《明太祖實錄》，卷71，洪武五年正月壬子條，第1313-1314頁。"
   },
   {
     "id": "siam_05_01_001",
     "sourceRow": 28,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武五年正月",
     "year": 5,
     "month": 1,
@@ -671,13 +671,13 @@
     "monthSort": 1,
     "gregorianYear": 1372,
     "king": "",
-    "envoy": "宝财赋、李清（通事）",
+    "envoy": "寶財赋、李清（通事）",
     "purpose": "",
-    "tributeRaw": "黑熊，白猴，苏木，胡椒，丁香等物",
+    "tributeRaw": "黑熊，白猴，蘇木，胡椒，丁香等物",
     "tributeItems": [
       "黑熊",
       "白猴",
-      "苏木",
+      "蘇木",
       "胡椒",
       "丁香"
     ],
@@ -685,8 +685,8 @@
       "animal",
       "spice"
     ],
-    "giftsRaw": "织金纱罗文绮、衣物",
-    "source": "《明太祖实录》，卷71，洪武五年正月壬戌条，第1316-1317页。"
+    "giftsRaw": "織金紗羅文綺、衣物",
+    "source": "《明太祖實錄》，卷71，洪武五年正月壬戌條，第1316-1317頁。"
   },
   {
     "id": "java_05_01_001",
@@ -700,16 +700,16 @@
     "isLeapMonth": false,
     "monthSort": 1,
     "gregorianYear": 1372,
-    "king": "昔里八达剌八剌蒲",
+    "king": "昔里八達剌八剌蒲",
     "envoy": "八的占必",
-    "purpose": "纳前元勑三道",
+    "purpose": "納前元勑三道",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "文绮袭衣、靴韈、衣",
-    "source": "《明太祖实录》，卷71，洪武五年正月壬戌条，第1317页。"
+    "giftsRaw": "文綺襲衣、靴韈、衣",
+    "source": "《明太祖實錄》，卷71，洪武五年正月壬戌條，第1317頁。"
   },
   {
     "id": "annam_05_02_001",
@@ -723,44 +723,44 @@
     "isLeapMonth": false,
     "monthSort": 2,
     "gregorianYear": 1372,
-    "king": "陈叔明",
+    "king": "陳叔明",
     "envoy": "阮汝霖",
     "purpose": "",
-    "tributeRaw": "驯象",
+    "tributeRaw": "馴象",
     "tributeItems": [
-      "驯象"
+      "馴象"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "却贡",
-    "source": "《明太祖实录》，卷72，洪武五年二月丙戌条，第1327页。"
+    "giftsRaw": "卻貢",
+    "source": "《明太祖實錄》，卷72，洪武五年二月丙戌條，第1327頁。"
   },
   {
     "id": "goryeo_05_02_001",
     "sourceRow": 31,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武五年二月",
     "year": 5,
     "month": 2,
     "isLeapMonth": false,
     "monthSort": 2,
     "gregorianYear": 1372,
-    "king": "王颛",
-    "envoy": "韩邦彦（密直副使）",
+    "king": "王顓",
+    "envoy": "韓邦彥（密直副使）",
     "purpose": "",
-    "tributeRaw": "金龙舡台双盏、莲花台双盏、 / 金龙头镫银龙头镫六面、壶、 / 玳瑁、刀鞘、笔鞘、细布文席、豹皮之属",
+    "tributeRaw": "金龍舡臺雙盞、蓮花臺雙盞、 / 金龍頭鐙銀龍頭鐙六面、壺、 / 玳瑁、刀鞘、筆鞘、細布文席、豹皮之屬",
     "tributeItems": [
-      "金龙舡台双盏",
-      "莲花台双盏",
-      "金龙头镫银龙头镫面",
-      "壶",
+      "金龍舡臺雙盞",
+      "蓮花臺雙盞",
+      "金龍頭鐙銀龍頭鐙面",
+      "壺",
       "玳瑁",
       "刀鞘",
-      "笔鞘",
-      "细布文席",
+      "筆鞘",
+      "細布文席",
       "豹皮"
     ],
     "tributeCategories": [
@@ -770,75 +770,75 @@
       "vessel"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷72，洪武五年二月丁酉条，第1330页。"
+    "source": "《明太祖實錄》，卷72，洪武五年二月丁酉條，第1330頁。"
   },
   {
     "id": "goryeo_05_03_001",
     "sourceRow": 32,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武五年三月",
     "year": 5,
     "month": 3,
     "isLeapMonth": false,
     "monthSort": 3,
     "gregorianYear": 1372,
-    "king": "王颛",
-    "envoy": "洪师范、郑梦周（密直同知）",
-    "purpose": "贺平夏 / 请子弟入太学",
+    "king": "王顓",
+    "envoy": "洪師範、鄭夢周（密直同知）",
+    "purpose": "賀平夏 / 請子弟入太學",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷73，洪武五年三月是月条，第1340-1341页。"
+    "source": "《明太祖實錄》，卷73，洪武五年三月是月條，第1340-1341頁。"
   },
   {
     "id": "goryeo_05_07_001",
     "sourceRow": 33,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武五年七月",
     "year": 5,
     "month": 7,
     "isLeapMonth": false,
     "monthSort": 7,
     "gregorianYear": 1372,
-    "king": "王颛",
-    "envoy": "吴季南（礼部尚书）、张子温（民部尚书）",
-    "purpose": "请伐耽罗",
-    "tributeRaw": "马及方物",
+    "king": "王顓",
+    "envoy": "吳季南（禮部尚書）、張子溫（民部尚書）",
+    "purpose": "請伐耽羅",
+    "tributeRaw": "馬及方物",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷75，洪武五年七月庚午条，第1385-1386页。"
+    "source": "《明太祖實錄》，卷75，洪武五年七月庚午條，第1385-1386頁。"
   },
   {
     "id": "goryeo_05_09_001",
     "sourceRow": 34,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武五年九月",
     "year": 5,
     "month": 9,
     "isLeapMonth": false,
     "monthSort": 9,
     "gregorianYear": 1372,
-    "king": "王颛",
-    "envoy": "成揆（同知密直司事）、林完（版图判书）",
-    "purpose": "贺圣寿、贺皇太子千秋节",
-    "tributeRaw": "金银龙盏、龟贝、玳瑁",
+    "king": "王顓",
+    "envoy": "成揆（同知密直司事）、林完（版圖判書）",
+    "purpose": "賀聖壽、賀皇太子千秋節",
+    "tributeRaw": "金銀龍盞、龜貝、玳瑁",
     "tributeItems": [
-      "金银龙盏",
-      "龟贝",
+      "金銀龍盞",
+      "龜貝",
       "玳瑁"
     ],
     "tributeCategories": [
@@ -846,7 +846,7 @@
       "vessel"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷76，洪武五年九月壬戌条，第1397页。"
+    "source": "《明太祖實錄》，卷76，洪武五年九月壬戌條，第1397頁。"
   },
   {
     "id": "champa_05_09_001",
@@ -861,99 +861,99 @@
     "monthSort": 9,
     "gregorianYear": 1372,
     "king": "阿答阿者",
-    "envoy": "阳宝摩诃八的佛禄",
+    "envoy": "陽寶摩诃八的佛祿",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "织金文绮纱罗四十匹、纱、罗、文、绮、钱、帛",
-    "source": "《明太祖实录》，卷76，洪武五年九月甲子条，第1398页。"
+    "giftsRaw": "織金文綺紗羅四十匹、紗、羅、文、綺、錢、帛",
+    "source": "《明太祖實錄》，卷76，洪武五年九月甲子條，第1398頁。"
   },
   {
     "id": "goryeo_05_10_001",
     "sourceRow": 36,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武五年十月",
     "year": 5,
     "month": 10,
     "isLeapMonth": false,
     "monthSort": 10,
     "gregorianYear": 1372,
-    "king": "王颛",
+    "king": "王顓",
     "envoy": "金湑（同知密直司事)",
-    "purpose": "贺明年正旦",
-    "tributeRaw": "金银玳瑁等器",
+    "purpose": "賀明年正旦",
+    "tributeRaw": "金銀玳瑁等器",
     "tributeItems": [
-      "金银玳瑁等器"
+      "金銀玳瑁等器"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷76，洪武五年十月庚寅条，第1400页； / 《高丽史》，卷43，《世家四十三‧恭愍王六》，第649页。"
+    "source": "《明太祖實錄》，卷76，洪武五年十月庚寅條，第1400頁； / 《高麗史》，卷43，《世家四十三‧恭愍王六》，第649頁。"
   },
   {
     "id": "goryeo_05_10_002",
     "sourceRow": 37,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武五年十月",
     "year": 5,
     "month": 10,
     "isLeapMonth": false,
     "monthSort": 10,
     "gregorianYear": 1372,
-    "king": "王颛",
-    "envoy": "姜仁裕（门下赞成事）",
-    "purpose": "谢恩",
-    "tributeRaw": "马十七匹并锦囊弓矢金鞍及人参等物",
+    "king": "王顓",
+    "envoy": "姜仁裕（門下贊成事）",
+    "purpose": "謝恩",
+    "tributeRaw": "馬十七匹並錦囊弓矢金鞍及人參等物",
     "tributeItems": [
-      "马",
-      "锦囊弓矢金鞍",
-      "参"
+      "馬",
+      "錦囊弓矢金鞍",
+      "參"
     ],
     "tributeCategories": [
       "animal",
       "misc",
       "vessel"
     ],
-    "giftsRaw": "还国",
-    "source": "《明太祖实录》，卷76，洪武五年十月甲午条，第1400-1401页。"
+    "giftsRaw": "還國",
+    "source": "《明太祖實錄》，卷76，洪武五年十月甲午條，第1400-1401頁。"
   },
   {
     "id": "goryeo_05_11_001",
     "sourceRow": 38,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武五年十一月",
     "year": 5,
     "month": 11,
     "isLeapMonth": false,
     "monthSort": 11,
     "gregorianYear": 1372,
-    "king": "王颛",
-    "envoy": "宋坦以（中郎将）",
-    "purpose": "遣还",
+    "king": "王顓",
+    "envoy": "宋坦以（中郎將）",
+    "purpose": "遣還",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷76，洪武五年十一月戊申条，第1403页。"
+    "source": "《明太祖實錄》，卷76，洪武五年十一月戊申條，第1403頁。"
   },
   {
     "id": "ryukyu_chuzan_05_12_001",
     "sourceRow": 39,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武五年十二月",
     "year": 5,
     "month": 12,
@@ -968,8 +968,8 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "大统历、织金文绮纱罗各五匹、文、绮、纱、罗、袭衣",
-    "source": "《明太祖实录》，卷77，洪武五年十二月壬寅条，第1416-1417页。"
+    "giftsRaw": "大統歷、織金文綺紗羅各五匹、文、綺、紗、羅、襲衣",
+    "source": "《明太祖實錄》，卷77，洪武五年十二月壬寅條，第1416-1417頁。"
   },
   {
     "id": "annam_06_01_001",
@@ -983,43 +983,43 @@
     "isLeapMonth": false,
     "monthSort": 1,
     "gregorianYear": 1373,
-    "king": "陈叔明",
-    "envoy": "谭应昂",
-    "purpose": "谢罪 / 请封爵",
+    "king": "陳叔明",
+    "envoy": "譚應昂",
+    "purpose": "謝罪 / 請封爵",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "纱、罗、夏布",
-    "source": "《明太祖实录》，卷78，洪武六年正月是月条，第1433-1434页。"
+    "giftsRaw": "紗、羅、夏布",
+    "source": "《明太祖實錄》，卷78，洪武六年正月是月條，第1433-1434頁。"
   },
   {
     "id": "goryeo_06_04_001",
     "sourceRow": 41,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武六年四月",
     "year": 6,
     "month": 4,
     "isLeapMonth": false,
     "monthSort": 4,
     "gregorianYear": 1373,
-    "king": "王颛",
-    "envoy": "卢祯（判密直司）",
-    "purpose": "谢赐药饵 / 贡中宫、东宫",
-    "tributeRaw": "海错细布 / 贡方物于中宫东宫",
+    "king": "王顓",
+    "envoy": "盧禎（判密直司）",
+    "purpose": "謝賜藥饵 / 貢中宮、東宮",
+    "tributeRaw": "海错細布 / 貢方物於中宮東宮",
     "tributeItems": [
-      "海错细布",
-      "贡方物于中宫东宫"
+      "海错細布",
+      "貢方物於中宮東宮"
     ],
     "tributeCategories": [
       "misc",
       "textile"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷81，洪武六年四月癸已条，第1464页。"
+    "source": "《明太祖實錄》，卷81，洪武六年四月癸已條，第1464頁。"
   },
   {
     "id": "champa_06_08_001",
@@ -1034,81 +1034,81 @@
     "monthSort": 8,
     "gregorianYear": 1373,
     "king": "阿答阿者",
-    "envoy": "阳宝摩诃八的悦文旦",
+    "envoy": "陽寶摩诃八的悅文旦",
     "purpose": "",
-    "tributeRaw": "方物、 / 海舟二十艘苏木七万斤及从贼吴第四来献",
+    "tributeRaw": "方物、 / 海舟二十艘蘇木七萬斤及從賊吳第四來獻",
     "tributeItems": [
-      "海舟苏木",
-      "从贼吴第来献"
+      "海舟蘇木",
+      "從賊吳第來獻"
     ],
     "tributeCategories": [
       "misc",
       "spice"
     ],
-    "giftsRaw": "织金文绮纱罗四十疋、纱罗二疋，文绮四疋，衣一袭，钱一万二千、酒、金织文绮纱罗二十四匹",
-    "source": "《明太祖实录》，卷84,92，洪武六年八月戊戌条、洪武七年八月丁酉条，第1505,1607-1608页。"
+    "giftsRaw": "織金文綺紗羅四十疋、紗羅二疋，文綺四疋，衣一襲，錢一萬二千、酒、金織文綺紗羅二十四匹",
+    "source": "《明太祖實錄》，卷84,92，洪武六年八月戊戌條、洪武七年八月丁酉條，第1505,1607-1608頁。"
   },
   {
     "id": "siam_06_10_001",
     "sourceRow": 43,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武六年十月",
     "year": 6,
     "month": 10,
     "isLeapMonth": false,
     "monthSort": 10,
     "gregorianYear": 1373,
-    "king": "参烈思狞（国王女兄）",
+    "king": "參烈思獰（國王女兄）",
     "envoy": "",
-    "purpose": "贡中宫",
+    "purpose": "貢中宮",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "却贡",
-    "source": "《明太祖实录》，卷85，洪武六年九月辛巳条，第1518页。"
+    "giftsRaw": "卻貢",
+    "source": "《明太祖實錄》，卷85，洪武六年九月辛巳條，第1518頁。"
   },
   {
     "id": "goryeo_06_10_001",
     "sourceRow": 44,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武六年十月",
     "year": 6,
     "month": 10,
     "isLeapMonth": false,
     "monthSort": 10,
     "gregorianYear": 1373,
-    "king": "王颛",
-    "envoy": "金甲雨（大护军）",
+    "king": "王顓",
+    "envoy": "金甲雨（大護軍）",
     "purpose": "",
-    "tributeRaw": "贡马五十匹（道亡二匹）",
+    "tributeRaw": "貢馬五十匹（道亡二匹）",
     "tributeItems": [
-      "贡马"
+      "貢馬"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "却贡",
-    "source": "《明太祖实录》，卷85，洪武六年十月辛已条，第1518-1520页。"
+    "giftsRaw": "卻貢",
+    "source": "《明太祖實錄》，卷85，洪武六年十月辛已條，第1518-1520頁。"
   },
   {
     "id": "cambodia_06_10_001",
     "sourceRow": 45,
     "countryId": "cambodia",
-    "countryName": "真腊",
-    "countryRaw": "真腊",
+    "countryName": "真臘",
+    "countryRaw": "真臘",
     "timeRaw": "洪武六年十月",
     "year": 6,
     "month": 10,
     "isLeapMonth": false,
     "monthSort": 10,
     "gregorianYear": 1373,
-    "king": "巴山王忽儿那",
+    "king": "巴山王忽兒那",
     "envoy": "柰亦吉郎",
     "purpose": "",
     "tributeRaw": "方物",
@@ -1116,15 +1116,15 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "大统历、织金文绮纱罗、绮、罗、靴韈",
-    "source": "《明太祖实录》，卷85，洪武六年十月庚寅条，第1520页。"
+    "giftsRaw": "大統歷、織金文綺紗羅、綺、羅、靴韈",
+    "source": "《明太祖實錄》，卷85，洪武六年十月庚寅條，第1520頁。"
   },
   {
     "id": "siam_06_10_002",
     "sourceRow": 46,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武六年十月",
     "year": 6,
     "month": 10,
@@ -1139,8 +1139,8 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "大统历、织金文绮纱罗、绮、罗、靴韈",
-    "source": "《明太祖实录》，卷85，洪武六年十月庚寅条，第1520页。"
+    "giftsRaw": "大統歷、織金文綺紗羅、綺、羅、靴韈",
+    "source": "《明太祖實錄》，卷85，洪武六年十月庚寅條，第1520頁。"
   },
   {
     "id": "champa_06_11_001",
@@ -1162,38 +1162,38 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "文、绮",
-    "source": "《明太祖实录》，卷86，洪武六年十一月己酉条，第1524-1525页。"
+    "giftsRaw": "文、綺",
+    "source": "《明太祖實錄》，卷86，洪武六年十一月己酉條，第1524-1525頁。"
   },
   {
     "id": "siam_06_11_001",
     "sourceRow": 48,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武六年十一月",
     "year": 6,
     "month": 11,
     "isLeapMonth": false,
     "monthSort": 11,
     "gregorianYear": 1373,
-    "king": "参烈思狞（国王女兄）",
+    "king": "參烈思獰（國王女兄）",
     "envoy": "柰文隶啰",
-    "purpose": "贡中宫",
+    "purpose": "貢中宮",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "却贡，但赐使者文、绮、袭衣",
-    "source": "《明太祖实录》，卷86，洪武六年十一月癸丑条，第1526-1527页。"
+    "giftsRaw": "卻貢，但賜使者文、綺、襲衣",
+    "source": "《明太祖實錄》，卷86，洪武六年十一月癸丑條，第1526-1527頁。"
   },
   {
     "id": "siam_06_11_002",
     "sourceRow": 49,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武六年十一月",
     "year": 6,
     "month": 11,
@@ -1201,91 +1201,91 @@
     "monthSort": 11,
     "gregorianYear": 1373,
     "king": "",
-    "envoy": "柰思俚侪剌识悉",
-    "purpose": "告国事",
+    "envoy": "柰思俚儕剌識悉",
+    "purpose": "告國事",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "织金纱罗文绮各八匹、绮罗各四匹、袭衣、靴韈",
-    "source": "《明太祖实录》，卷86，洪武六年十一月庚申条，第1530-1531页。"
+    "giftsRaw": "織金紗羅文綺各八匹、綺羅各四匹、襲衣、靴韈",
+    "source": "《明太祖實錄》，卷86，洪武六年十一月庚申條，第1530-1531頁。"
   },
   {
     "id": "siam_06_r11_001",
     "sourceRow": 50,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武六年闰十一月",
     "year": 6,
     "month": 11,
     "isLeapMonth": true,
     "monthSort": 11.5,
     "gregorianYear": 1373,
-    "king": "参烈宝毘牙嗯哩哆啰禄",
-    "envoy": "柰昭毡哆啰",
-    "purpose": "谢恩",
-    "tributeRaw": "方物 / (使臣亦自有献)",
+    "king": "參烈寶毘牙嗯哩哆啰祿",
+    "envoy": "柰昭氈哆啰",
+    "purpose": "謝恩",
+    "tributeRaw": "方物 / (使臣亦自有獻)",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "却贡 / (上命却其使臣所贡)",
-    "source": "《明太祖实录》，卷86，洪武六年闰十一月庚寅条，第1535-1536页。"
+    "giftsRaw": "卻貢 / (上命卻其使臣所貢)",
+    "source": "《明太祖實錄》，卷86，洪武六年闰十一月庚寅條，第1535-1536頁。"
   },
   {
     "id": "srivijaya_06_12_001",
     "sourceRow": 51,
     "countryId": "srivijaya",
-    "countryName": "三佛齐",
-    "countryRaw": "三佛齐",
+    "countryName": "三佛齊",
+    "countryRaw": "三佛齊",
     "timeRaw": "洪武六年十二月",
     "year": 6,
     "month": 12,
     "isLeapMonth": false,
     "monthSort": 12,
     "gregorianYear": 1373,
-    "king": "怛麻来萨那阿者",
+    "king": "怛麻來薩那阿者",
     "envoy": "八蹄足翰",
-    "purpose": "贺明年正旦",
+    "purpose": "賀明年正旦",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "织金文绮纱罗杂彩二十四匹、文绮纱罗六匹，衣三袭、绮、罗二匹、布、帛",
-    "source": "《明太祖实录》，卷86，洪武六年十二月庚申条，第1540页。"
+    "giftsRaw": "織金文綺紗羅雜彩二十四匹、文綺紗羅六匹，衣三襲、綺、羅二匹、布、帛",
+    "source": "《明太祖實錄》，卷86，洪武六年十二月庚申條，第1540頁。"
   },
   {
     "id": "siam_06_12_001",
     "sourceRow": 52,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武六年十二月",
     "year": 6,
     "month": 12,
     "isLeapMonth": false,
     "monthSort": 12,
     "gregorianYear": 1373,
-    "king": "参烈宝毘牙嗯哩哆啰禄",
-    "envoy": "婆坤冈信、陈举（副使）",
-    "purpose": "贺明年正旦",
-    "tributeRaw": "方物、本国地图",
+    "king": "參烈寶毘牙嗯哩哆啰祿",
+    "envoy": "婆坤岡信、陳举（副使）",
+    "purpose": "賀明年正旦",
+    "tributeRaw": "方物、本國地圖",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "织金文绮、纱罗、杂彩各八匹、衣服、绮、罗、布",
-    "source": "《明太祖实录》，卷86，洪武六年十二月乙丑条，第1540。"
+    "giftsRaw": "織金文綺、紗羅、雜彩各八匹、衣服、綺、羅、布",
+    "source": "《明太祖實錄》，卷86，洪武六年十二月乙丑條，第1540。"
   },
   {
     "id": "goryeo_06_12_001",
     "sourceRow": 53,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武六年十二月",
     "year": 6,
     "month": 12,
@@ -1293,22 +1293,22 @@
     "monthSort": 12,
     "gregorianYear": 1373,
     "king": "",
-    "envoy": "郑庇（奉翊大夫密直副使）",
-    "purpose": "贺明年正旦",
+    "envoy": "鄭庇（奉翊大夫密直副使）",
+    "purpose": "賀明年正旦",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷86，洪武六年十二月丙寅条，第1541页。"
+    "source": "《明太祖實錄》，卷86，洪武六年十二月丙寅條，第1541頁。"
   },
   {
     "id": "siam_07_03_001",
     "sourceRow": 54,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武七年三月",
     "year": 7,
     "month": 3,
@@ -1323,8 +1323,8 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "却贡",
-    "source": "《明太祖实录》，卷88，洪武七年三月癸已条，第1564-1565页。"
+    "giftsRaw": "卻貢",
+    "source": "《明太祖實錄》，卷88，洪武七年三月癸已條，第1564-1565頁。"
   },
   {
     "id": "annam_07_03_001",
@@ -1338,39 +1338,39 @@
     "isLeapMonth": false,
     "monthSort": 3,
     "gregorianYear": 1374,
-    "king": "陈叔明",
-    "envoy": "阮时中（正大夫）",
-    "purpose": "上表谢恩、自称年老以弟煓代视事",
+    "king": "陳叔明",
+    "envoy": "阮時中（正大夫）",
+    "purpose": "上表謝恩、自稱年老以弟煓代視事",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷88，洪武七年三月是月条，第1566页。"
+    "source": "《明太祖實錄》，卷88，洪武七年三月是月條，第1566頁。"
   },
   {
     "id": "goryeo_07_05_001",
     "sourceRow": 56,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武七年五月",
     "year": 7,
     "month": 5,
     "isLeapMonth": false,
     "monthSort": 5,
     "gregorianYear": 1374,
-    "king": "王颛",
-    "envoy": "周谊、郑庇（监门卫上护军）",
+    "king": "王顓",
+    "envoy": "周誼、鄭庇（監門衛上護軍）",
     "purpose": "上表五事",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "却贡",
-    "source": "《明太祖实录》，卷89，洪武七年五月壬申条，第1574-1575页。"
+    "giftsRaw": "卻貢",
+    "source": "《明太祖實錄》，卷89，洪武七年五月壬申條，第1574-1575頁。"
   },
   {
     "id": "annam_07_05_001",
@@ -1384,16 +1384,16 @@
     "isLeapMonth": false,
     "monthSort": 5,
     "gregorianYear": 1374,
-    "king": "陈煓",
+    "king": "陳煓",
     "envoy": "黎必先",
-    "purpose": "谢恩",
+    "purpose": "謝恩",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "文、绮、布",
-    "source": "《明太祖实录》，卷89，洪武七年五月甲午条，第1579页。"
+    "giftsRaw": "文、綺、布",
+    "source": "《明太祖實錄》，卷89，洪武七年五月甲午條，第1579頁。"
   },
   {
     "id": "japan_07_06_001",
@@ -1408,47 +1408,47 @@
     "monthSort": 6,
     "gregorianYear": 1374,
     "king": "",
-    "envoy": "宣闻溪、凈业、喜春",
+    "envoy": "宣聞溪、凈业、喜春",
     "purpose": "",
-    "tributeRaw": "马及方物",
+    "tributeRaw": "馬及方物",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "却贡",
-    "source": "《明太祖实录》，卷90，洪武七年六月乙未朔，第1581-1583页。"
+    "giftsRaw": "卻貢",
+    "source": "《明太祖實錄》，卷90，洪武七年六月乙未朔，第1581-1583頁。"
   },
   {
     "id": "srivijaya_07_09_001",
     "sourceRow": 59,
     "countryId": "srivijaya",
-    "countryName": "三佛齐",
-    "countryRaw": "三佛齐",
+    "countryName": "三佛齊",
+    "countryRaw": "三佛齊",
     "timeRaw": "洪武七年九月",
     "year": 7,
     "month": 9,
     "isLeapMonth": false,
     "monthSort": 9,
     "gregorianYear": 1374,
-    "king": "麻那答宝林邦",
-    "envoy": "没那遐噔",
+    "king": "麻那答寶林邦",
+    "envoy": "沒那遐噔",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "大统历、织金文绮罗共四十匹、绮、罗各二匹、衣一袭、绮、罗各一匹、文、绮各一匹、高丽布各一",
-    "source": "《明太祖实录》，卷93，洪武七年九月是月条，第1626-1627页。"
+    "giftsRaw": "大統歷、織金文綺羅共四十匹、綺、羅各二匹、衣一襲、綺、羅各一匹、文、綺各一匹、高麗布各一",
+    "source": "《明太祖實錄》，卷93，洪武七年九月是月條，第1626-1627頁。"
   },
   {
     "id": "ryukyu_chuzan_07_10_001",
     "sourceRow": 60,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武七年十月",
     "year": 7,
     "month": 10,
@@ -1457,46 +1457,46 @@
     "gregorianYear": 1374,
     "king": "察度",
     "envoy": "泰期（王弟）",
-    "purpose": "上皇太子笺",
-    "tributeRaw": "马及方物",
+    "purpose": "上皇太子箋",
+    "tributeRaw": "馬及方物",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "大统历、金织文绮纱罗二十四匹、文绮四匹、罗二匹、帛六匹、袭衣、靴韈、文绮、罗各三匹、衣一袭、钞、靴韈",
-    "source": "《明太祖实录》，卷93，洪武七年十月庚申条，第1629页。"
+    "giftsRaw": "大統歷、金織文綺紗羅二十四匹、文綺四匹、羅二匹、帛六匹、襲衣、靴韈、文綺、羅各三匹、衣一襲、鈔、靴韈",
+    "source": "《明太祖實錄》，卷93，洪武七年十月庚申條，第1629頁。"
   },
   {
     "id": "siam_07_11_001",
     "sourceRow": 61,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武七年十一月",
     "year": 7,
     "month": 11,
     "isLeapMonth": false,
     "monthSort": 11,
     "gregorianYear": 1374,
-    "king": "苏门邦王昭禄群膺 / （王世子）",
+    "king": "蘇門邦王昭祿群膺 / （王世子）",
     "envoy": "昭悉里直",
-    "purpose": "上皇太子笺",
+    "purpose": "上皇太子箋",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "织金文绮、纱罗、杂彩各四匹、绮、罗各二匹、袭衣、靴韈、帛",
-    "source": "《明太祖实录》，卷94，洪武七年十一月丁丑条，第1638页。"
+    "giftsRaw": "織金文綺、紗羅、雜彩各四匹、綺、羅各二匹、襲衣、靴韈、帛",
+    "source": "《明太祖實錄》，卷94，洪武七年十一月丁丑條，第1638頁。"
   },
   {
     "id": "goryeo_08_01_001",
     "sourceRow": 62,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武八年正月",
     "year": 8,
     "month": 1,
@@ -1512,7 +1512,7 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷96，洪武八年正月是月条，第1656页。"
+    "source": "《明太祖實錄》，卷96，洪武八年正月是月條，第1656頁。"
   },
   {
     "id": "champa_08_01_001",
@@ -1535,14 +1535,14 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷96，洪武八年正月是月条，第1656页。"
+    "source": "《明太祖實錄》，卷96，洪武八年正月是月條，第1656頁。"
   },
   {
     "id": "siam_08_01_001",
     "sourceRow": 64,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武八年正月",
     "year": 8,
     "month": 1,
@@ -1558,7 +1558,7 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷96，洪武八年正月是月条，第1656页。"
+    "source": "《明太祖實錄》，卷96，洪武八年正月是月條，第1656頁。"
   },
   {
     "id": "japan_08_01_001",
@@ -1581,7 +1581,7 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷96，洪武八年正月是月条，第1656页。"
+    "source": "《明太祖實錄》，卷96，洪武八年正月是月條，第1656頁。"
   },
   {
     "id": "java_08_01_001",
@@ -1604,14 +1604,14 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷96，洪武八年正月是月条，第1656页。"
+    "source": "《明太祖實錄》，卷96，洪武八年正月是月條，第1656頁。"
   },
   {
     "id": "srivijaya_08_01_001",
     "sourceRow": 67,
     "countryId": "srivijaya",
-    "countryName": "三佛齐",
-    "countryRaw": "三佛齐",
+    "countryName": "三佛齊",
+    "countryRaw": "三佛齊",
     "timeRaw": "洪武八年正月",
     "year": 8,
     "month": 1,
@@ -1627,14 +1627,14 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷96，洪武八年正月是月条，第1661页。"
+    "source": "《明太祖實錄》，卷96，洪武八年正月是月條，第1661頁。"
   },
   {
     "id": "goryeo_08_03_001",
     "sourceRow": 68,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武八年三月",
     "year": 8,
     "month": 3,
@@ -1650,7 +1650,7 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷98，洪武八年三月丁卯条，第1672页。"
+    "source": "《明太祖實錄》，卷98，洪武八年三月丁卯條，第1672頁。"
   },
   {
     "id": "annam_08_06_001",
@@ -1664,46 +1664,46 @@
     "isLeapMonth": false,
     "monthSort": 6,
     "gregorianYear": 1375,
-    "king": "陈煓",
-    "envoy": "阮若金（通议大夫）",
-    "purpose": "请朝贡期",
+    "king": "陳煓",
+    "envoy": "阮若金（通議大夫）",
+    "purpose": "請朝貢期",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷100，洪武八年六月甲午条，第1696-1697页。"
+    "source": "《明太祖實錄》，卷100，洪武八年六月甲午條，第1696-1697頁。"
   },
   {
     "id": "srivijaya_08_09_001",
     "sourceRow": 70,
     "countryId": "srivijaya",
-    "countryName": "三佛齐",
-    "countryRaw": "三佛齐",
+    "countryName": "三佛齊",
+    "countryRaw": "三佛齊",
     "timeRaw": "洪武八年九月",
     "year": 8,
     "month": 9,
     "isLeapMonth": false,
     "monthSort": 9,
     "gregorianYear": 1375,
-    "king": "僧伽烈宇兰",
-    "envoy": "谈蒙马哈麻",
-    "purpose": "从诏谕",
+    "king": "僧伽烈宇蘭",
+    "envoy": "談蒙馬哈麻",
+    "purpose": "從詔諭",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "织金文绮纱罗二十四匹、绮、罗各二匹、帛一匹",
-    "source": "《明太祖实录》，卷101，洪武八年九月丙戌条，第1708页。"
+    "giftsRaw": "織金文綺紗羅二十四匹、綺、羅各二匹、帛一匹",
+    "source": "《明太祖實錄》，卷101，洪武八年九月丙戌條，第1708頁。"
   },
   {
     "id": "fulin_08_09_001",
     "sourceRow": 71,
     "countryId": "fulin",
-    "countryName": "拂菻国",
-    "countryRaw": "拂菻国",
+    "countryName": "拂菻國",
+    "countryRaw": "拂菻國",
     "timeRaw": "洪武八年九月",
     "year": 8,
     "month": 9,
@@ -1718,15 +1718,15 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "织金文绮纱罗二十四匹、绮、罗各二匹、帛一匹",
-    "source": "《明太祖实录》，卷101，洪武八年九月丙戌条，第1708页。"
+    "giftsRaw": "織金文綺紗羅二十四匹、綺、羅各二匹、帛一匹",
+    "source": "《明太祖實錄》，卷101，洪武八年九月丙戌條，第1708頁。"
   },
   {
     "id": "siam_08_10_001",
     "sourceRow": 72,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武八年十月",
     "year": 8,
     "month": 10,
@@ -1734,15 +1734,15 @@
     "monthSort": 10,
     "gregorianYear": 1375,
     "king": "",
-    "envoy": "婆坤冈信 / 昭毡哆啰（副使）",
+    "envoy": "婆坤岡信 / 昭氈哆啰（副使）",
     "purpose": "",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "织金文绮、纱罗、缯彩、服物",
-    "source": "《明太祖实录》，卷101，洪武八年十月丁酉条，第1709页。"
+    "giftsRaw": "織金文綺、紗羅、繒彩、服物",
+    "source": "《明太祖實錄》，卷101，洪武八年十月丁酉條，第1709頁。"
   },
   {
     "id": "champa_08_10_001",
@@ -1757,45 +1757,45 @@
     "monthSort": 10,
     "gregorianYear": 1375,
     "king": "阿答阿者",
-    "envoy": "宝圭赛西那八的",
+    "envoy": "寶圭賽西那八的",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "织金文绮、纱罗、服物",
-    "source": "《明太祖实录》，卷101，洪武八年十月丁酉条，第1709-1710页。"
+    "giftsRaw": "織金文綺、紗羅、服物",
+    "source": "《明太祖實錄》，卷101，洪武八年十月丁酉條，第1709-1710頁。"
   },
   {
     "id": "siam_08_11_001",
     "sourceRow": 74,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武八年十一月",
     "year": 8,
     "month": 11,
     "isLeapMonth": false,
     "monthSort": 11,
     "gregorianYear": 1375,
-    "king": "昭勃罗𡱈 / （旧明台王世子）",
-    "envoy": "柰暴仑",
+    "king": "昭勃羅𡱈 / （舊明臺王世子）",
+    "envoy": "柰暴侖",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "织金文绮、杂彩、纱罗各六匹，绮罗各二匹，衣一袭，鞾韈",
-    "source": "《明太祖实录》，卷102，洪武八年十一月丁卯条，第1721页。"
+    "giftsRaw": "織金文綺、雜彩、紗羅各六匹，綺羅各二匹，衣一襲，鞾韈",
+    "source": "《明太祖實錄》，卷102，洪武八年十一月丁卯條，第1721頁。"
   },
   {
     "id": "ryukyu_chuzan_09_04_001",
     "sourceRow": 75,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武九年四月",
     "year": 9,
     "month": 4,
@@ -1804,14 +1804,14 @@
     "gregorianYear": 1376,
     "king": "察度",
     "envoy": "泰期（王弟）",
-    "purpose": "谢恩",
+    "purpose": "謝恩",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "罗绮，纱，帛，袭衣，鞾韈",
-    "source": "《明太祖实录》，卷105，洪武九年四月甲申条，第1754-1755页。"
+    "giftsRaw": "羅綺，紗，帛，襲衣，鞾韈",
+    "source": "《明太祖實錄》，卷105，洪武九年四月甲申條，第1754-1755頁。"
   },
   {
     "id": "japan_09_04_001",
@@ -1825,18 +1825,18 @@
     "isLeapMonth": false,
     "monthSort": 4,
     "gregorianYear": 1376,
-    "king": "良怀",
-    "envoy": "沙门圭庭",
-    "purpose": "谢罪",
-    "tributeRaw": "马、方物",
+    "king": "良懷",
+    "envoy": "沙門圭庭",
+    "purpose": "謝罪",
+    "tributeRaw": "馬、方物",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "文绮，帛",
-    "source": "《明太祖实录》，卷105，洪武九年四月甲申条，第1755-1756页。"
+    "giftsRaw": "文綺，帛",
+    "source": "《明太祖實錄》，卷105，洪武九年四月甲申條，第1755-1756頁。"
   },
   {
     "id": "annam_09_05_001",
@@ -1850,8 +1850,8 @@
     "isLeapMonth": false,
     "monthSort": 5,
     "gregorianYear": 1376,
-    "king": "陈煓",
-    "envoy": "黎亚夫（通议大夫）",
+    "king": "陳煓",
+    "envoy": "黎亞夫（通議大夫）",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
@@ -1859,27 +1859,27 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷106，洪武九年五月甲寅朔，第1763页。"
+    "source": "《明太祖實錄》，卷106，洪武九年五月甲寅朔，第1763頁。"
   },
   {
     "id": "lambri_09_08_001",
     "sourceRow": 78,
     "countryId": "lambri",
-    "countryName": "览邦",
-    "countryRaw": "览邦",
+    "countryName": "覽邦",
+    "countryRaw": "覽邦",
     "timeRaw": "洪武九年八月",
     "year": 9,
     "month": 8,
     "isLeapMonth": false,
     "monthSort": 8,
     "gregorianYear": 1376,
-    "king": "昔里马哈剌扎的剌扎",
+    "king": "昔里馬哈剌扎的剌扎",
     "envoy": "吾剌里剌沙",
     "purpose": "",
-    "tributeRaw": "马、苏木、檀降香、胡椒、孔雀等物",
+    "tributeRaw": "馬、蘇木、檀降香、胡椒、孔雀等物",
     "tributeItems": [
-      "马",
-      "苏木",
+      "馬",
+      "蘇木",
       "檀降香",
       "胡椒",
       "孔雀"
@@ -1888,15 +1888,15 @@
       "animal",
       "spice"
     ],
-    "giftsRaw": "金织文绮纱罗，绮，帛，衣靴",
-    "source": "《明太祖实录》，卷108，洪武九年八月己亥条，第1799页。"
+    "giftsRaw": "金織文綺紗羅，綺，帛，衣靴",
+    "source": "《明太祖實錄》，卷108，洪武九年八月己亥條，第1799頁。"
   },
   {
     "id": "goryeo_09_09_001",
     "sourceRow": 79,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武九年九月",
     "year": 9,
     "month": 9,
@@ -1905,21 +1905,21 @@
     "gregorianYear": 1376,
     "king": "王禑（世子）",
     "envoy": "",
-    "purpose": "贺天寿圣节",
+    "purpose": "賀天壽聖節",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷108，洪武九年九月丁卯条，第1805页。"
+    "source": "《明太祖實錄》，卷108，洪武九年九月丁卯條，第1805頁。"
   },
   {
     "id": "ryukyu_chuzan_10_01_001",
     "sourceRow": 80,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武十年正月",
     "year": 10,
     "month": 1,
@@ -1928,25 +1928,25 @@
     "gregorianYear": 1377,
     "king": "察度",
     "envoy": "泰期（王弟）",
-    "purpose": "贺正旦",
-    "tributeRaw": "马十六匹、硫黄一千斤",
+    "purpose": "賀正旦",
+    "tributeRaw": "馬十六匹、硫黃一千斤",
     "tributeItems": [
-      "马",
-      "硫黄"
+      "馬",
+      "硫黃"
     ],
     "tributeCategories": [
       "animal",
       "misc"
     ],
-    "giftsRaw": "钞",
-    "source": "《明太祖实录》，卷111，洪武十年正月是月条，第1842页。"
+    "giftsRaw": "鈔",
+    "source": "《明太祖實錄》，卷111，洪武十年正月是月條，第1842頁。"
   },
   {
     "id": "goryeo_10_01_001",
     "sourceRow": 81,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武十年正月",
     "year": 10,
     "month": 1,
@@ -1955,21 +1955,21 @@
     "gregorianYear": 1377,
     "king": "",
     "envoy": "",
-    "purpose": "请谥号",
+    "purpose": "請谥號",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷111，洪武十年正月是月条，第1842-1843页。"
+    "source": "《明太祖實錄》，卷111，洪武十年正月是月條，第1842-1843頁。"
   },
   {
     "id": "goryeo_10_05_001",
     "sourceRow": 82,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武十年五月",
     "year": 10,
     "month": 5,
@@ -1977,17 +1977,17 @@
     "monthSort": 5,
     "gregorianYear": 1377,
     "king": "王禑（世子）",
-    "envoy": "周谊（礼仪判书）",
+    "envoy": "周誼（禮儀判書）",
     "purpose": "",
-    "tributeRaw": "马六十疋、方物",
+    "tributeRaw": "馬六十疋、方物",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "却贡",
-    "source": "《明太祖实录》，卷112，洪武十年五月丙戌条，第1856页。"
+    "giftsRaw": "卻貢",
+    "source": "《明太祖實錄》，卷112，洪武十年五月丙戌條，第1856頁。"
   },
   {
     "id": "timor_10_07_001",
@@ -2004,10 +2004,10 @@
     "king": "佛喝思啰",
     "envoy": "施那八智",
     "purpose": "",
-    "tributeRaw": "苾布、兜罗绵被、沉檀、速香、胡椒等物",
+    "tributeRaw": "苾布、兜羅綿被、沉檀、速香、胡椒等物",
     "tributeItems": [
       "苾布",
-      "兜罗绵被",
+      "兜羅綿被",
       "沉檀",
       "速香",
       "胡椒"
@@ -2016,15 +2016,15 @@
       "spice",
       "textile"
     ],
-    "giftsRaw": "金织文绮、纱罗，文绮，袭衣等",
-    "source": "《明太祖实录》，卷113，洪武十年七月是月条，第1871-1872页。"
+    "giftsRaw": "金織文綺、紗羅，文綺，襲衣等",
+    "source": "《明太祖實錄》，卷113，洪武十年七月是月條，第1871-1872頁。"
   },
   {
     "id": "srivijaya_10_08_001",
     "sourceRow": 84,
     "countryId": "srivijaya",
-    "countryName": "三佛齐",
-    "countryRaw": "三佛齐",
+    "countryName": "三佛齊",
+    "countryRaw": "三佛齊",
     "timeRaw": "洪武十年八月",
     "year": 10,
     "month": 8,
@@ -2032,22 +2032,22 @@
     "monthSort": 8,
     "gregorianYear": 1377,
     "king": "麻那者巫里（世子）",
-    "envoy": "生阿烈足谏",
-    "purpose": "请印绶",
-    "tributeRaw": "犀牛、黑熊、火鸡、红绿鹦鹉、白猴、 龟筒 / 胡椒、丁香、木香、肉豆蔻、番油子、米脑等 / 又贡小番奴一人",
+    "envoy": "生阿烈足諫",
+    "purpose": "請印綬",
+    "tributeRaw": "犀牛、黑熊、火雞、紅綠鸚鵡、白猴、 龜筒 / 胡椒、丁香、木香、肉豆蔻、番油子、米腦等 / 又貢小番奴一人",
     "tributeItems": [
       "犀牛",
       "黑熊",
-      "火鸡",
-      "红绿鹦鹉",
+      "火雞",
+      "紅綠鸚鵡",
       "白猴",
-      "龟筒",
+      "龜筒",
       "胡椒",
       "丁香",
       "木香",
       "肉豆蔻",
       "番油子",
-      "米脑等",
+      "米腦等",
       "小番奴"
     ],
     "tributeCategories": [
@@ -2055,15 +2055,15 @@
       "misc",
       "spice"
     ],
-    "giftsRaw": "金织文绮，靴韈等物",
-    "source": "《明太祖实录》，卷114，洪武十年八月丁已条，第1879页。"
+    "giftsRaw": "金織文綺，靴韈等物",
+    "source": "《明太祖實錄》，卷114，洪武十年八月丁已條，第1879頁。"
   },
   {
     "id": "siam_10_09_001",
     "sourceRow": 85,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武十年九月",
     "year": 10,
     "month": 9,
@@ -2071,21 +2071,21 @@
     "monthSort": 9,
     "gregorianYear": 1377,
     "king": "",
-    "envoy": "昭禄群膺（王子）",
+    "envoy": "昭祿群膺（王子）",
     "purpose": "",
-    "tributeRaw": "象、象牙、胡椒、苏木之属",
+    "tributeRaw": "象、象牙、胡椒、蘇木之屬",
     "tributeItems": [
       "象",
       "象牙",
       "胡椒",
-      "苏木"
+      "蘇木"
     ],
     "tributeCategories": [
       "animal",
       "spice"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷115，洪武十年九月乙酉条，第1883页。"
+    "source": "《明太祖實錄》，卷115，洪武十年九月乙酉條，第1883頁。"
   },
   {
     "id": "champa_10_09_001",
@@ -2100,15 +2100,15 @@
     "monthSort": 9,
     "gregorianYear": 1377,
     "king": "阿答阿者",
-    "envoy": "保圭尸那八的",
+    "envoy": "保圭屍那八的",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "文，绮",
-    "source": "《明太祖实录》，卷115，洪武十年九月丙戌条，第1883-1884页。"
+    "giftsRaw": "文，綺",
+    "source": "《明太祖實錄》，卷115，洪武十年九月丙戌條，第1883-1884頁。"
   },
   {
     "id": "java_10_11_001",
@@ -2122,12 +2122,12 @@
     "isLeapMonth": false,
     "monthSort": 11,
     "gregorianYear": 1377,
-    "king": "八达那巴那务",
+    "king": "八達那巴那務",
     "envoy": "八智巫沙",
     "purpose": "",
-    "tributeRaw": "马、白鹿、孔雀、犀角之属",
+    "tributeRaw": "馬、白鹿、孔雀、犀角之屬",
     "tributeItems": [
-      "马",
+      "馬",
       "白鹿",
       "孔雀",
       "犀角"
@@ -2135,38 +2135,38 @@
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "金织文绮、纱罗，罗绮，袭衣，鞾韈",
-    "source": "《明太祖实录》，卷116，洪武十年十一月癸未条，第1892页。"
+    "giftsRaw": "金織文綺、紗羅，羅綺，襲衣，鞾韈",
+    "source": "《明太祖實錄》，卷116，洪武十年十一月癸未條，第1892頁。"
   },
   {
     "id": "cambodia_10_12_001",
     "sourceRow": 88,
     "countryId": "cambodia",
-    "countryName": "真腊",
-    "countryRaw": "真腊",
+    "countryName": "真臘",
+    "countryRaw": "真臘",
     "timeRaw": "洪武十年十二月",
     "year": 10,
     "month": 12,
     "isLeapMonth": false,
     "monthSort": 12,
     "gregorianYear": 1377,
-    "king": "参答甘武者持达志",
+    "king": "參答甘武者持達志",
     "envoy": "奈妹",
-    "purpose": "贺明年正旦",
+    "purpose": "賀明年正旦",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "织金文绮纱罗，衣，帛",
-    "source": "《明太祖实录》，卷116，洪武十年十二月辛亥条，第1901页。"
+    "giftsRaw": "織金文綺紗羅，衣，帛",
+    "source": "《明太祖實錄》，卷116，洪武十年十二月辛亥條，第1901頁。"
   },
   {
     "id": "goryeo_10_12_001",
     "sourceRow": 89,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武十年十二月",
     "year": 10,
     "month": 12,
@@ -2175,14 +2175,14 @@
     "gregorianYear": 1377,
     "king": "",
     "envoy": "",
-    "purpose": "贺明年正旦",
+    "purpose": "賀明年正旦",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷116，洪武十年十二月是月条，第1903-1905页。"
+    "source": "《明太祖實錄》，卷116，洪武十年十二月是月條，第1903-1905頁。"
   },
   {
     "id": "annam_11_01_001",
@@ -2196,23 +2196,23 @@
     "isLeapMonth": false,
     "monthSort": 1,
     "gregorianYear": 1378,
-    "king": "陈炜",
-    "envoy": "陈建琛、阮士谔",
+    "king": "陳煒",
+    "envoy": "陳建琛、阮士谔",
     "purpose": "告哀",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "衣物，文绮，纱罗",
-    "source": "《明太祖实录》，卷117，洪武十一年正月是月条，第1908。"
+    "giftsRaw": "衣物，文綺，紗羅",
+    "source": "《明太祖實錄》，卷117，洪武十一年正月是月條，第1908。"
   },
   {
     "id": "siam_11_03_001",
     "sourceRow": 91,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武十一年三月",
     "year": 11,
     "month": 3,
@@ -2227,15 +2227,15 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "绮，帛，衣服",
-    "source": "《明太祖实录》，卷117，洪武十一年三月癸酉条，第1916页。"
+    "giftsRaw": "綺，帛，衣服",
+    "source": "《明太祖實錄》，卷117，洪武十一年三月癸酉條，第1916頁。"
   },
   {
     "id": "jawa_11_04_001",
     "sourceRow": 92,
     "countryId": "jawa",
-    "countryName": "阇婆",
-    "countryRaw": "阇婆",
+    "countryName": "闍婆",
+    "countryRaw": "闍婆",
     "timeRaw": "洪武十一年四月",
     "year": 11,
     "month": 4,
@@ -2245,10 +2245,10 @@
     "king": "磨那陀喃",
     "envoy": "淡罔巴",
     "purpose": "",
-    "tributeRaw": "苾布、油红布、檀香、豆蔻等物",
+    "tributeRaw": "苾布、油紅布、檀香、豆蔻等物",
     "tributeItems": [
       "苾布",
-      "油红布",
+      "油紅布",
       "檀香",
       "豆蔻"
     ],
@@ -2257,14 +2257,14 @@
       "textile"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷118，洪武十一年四月己酉条，第1923页。"
+    "source": "《明太祖實錄》，卷118，洪武十一年四月己酉條，第1923頁。"
   },
   {
     "id": "goryeo_11_05_001",
     "sourceRow": 93,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武十一年五月",
     "year": 11,
     "month": 5,
@@ -2272,28 +2272,28 @@
     "monthSort": 5,
     "gregorianYear": 1378,
     "king": "王禑（世子）",
-    "envoy": "周谊（礼仪判书）",
+    "envoy": "周誼（禮儀判書）",
     "purpose": "",
-    "tributeRaw": "马六十匹、白黑布一百疋、金银器用",
+    "tributeRaw": "馬六十匹、白黑布一百疋、金銀器用",
     "tributeItems": [
-      "马",
+      "馬",
       "白黑布",
-      "金银器用"
+      "金銀器用"
     ],
     "tributeCategories": [
       "animal",
       "textile",
       "vessel"
     ],
-    "giftsRaw": "钞物",
-    "source": "《明太祖实录》，卷118，洪武十一年五月丙子条，第1930页。"
+    "giftsRaw": "鈔物",
+    "source": "《明太祖實錄》，卷118，洪武十一年五月丙子條，第1930頁。"
   },
   {
     "id": "ryukyu_chuzan_11_05_001",
     "sourceRow": 94,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武十一年五月",
     "year": 11,
     "month": 5,
@@ -2308,8 +2308,8 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "文绮，缯帛",
-    "source": "《明太祖实录》，卷118，洪武十一年五月丙子条，第1930页。"
+    "giftsRaw": "文綺，繒帛",
+    "source": "《明太祖實錄》，卷118，洪武十一年五月丙子條，第1930頁。"
   },
   {
     "id": "champa_11_10_001",
@@ -2325,16 +2325,16 @@
     "gregorianYear": 1378,
     "king": "阿答阿者",
     "envoy": "",
-    "purpose": "谢玺书 / 上尊文绮之赐",
-    "tributeRaw": "方物、良马",
+    "purpose": "謝璽書 / 上尊文綺之賜",
+    "tributeRaw": "方物、良馬",
     "tributeItems": [
-      "良马"
+      "良馬"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "金织文绮纱罗衣各一袭",
-    "source": "《明太祖实录》，卷120，洪武十一年十月戊午条，第1956页。"
+    "giftsRaw": "金織文綺紗羅衣各一襲",
+    "source": "《明太祖實錄》，卷120，洪武十一年十月戊午條，第1956頁。"
   },
   {
     "id": "champa_11_11_001",
@@ -2349,12 +2349,12 @@
     "monthSort": 11,
     "gregorianYear": 1378,
     "king": "阿答阿者",
-    "envoy": "宝禄圭照婆郎",
+    "envoy": "寶祿圭照婆郎",
     "purpose": "",
-    "tributeRaw": "象、马、茄南、木香",
+    "tributeRaw": "象、馬、茄南、木香",
     "tributeItems": [
       "象",
-      "马",
+      "馬",
       "茄南",
       "木香"
     ],
@@ -2363,8 +2363,8 @@
       "misc",
       "spice"
     ],
-    "giftsRaw": "织金文绮，文绮，衣服，钞",
-    "source": "《明太祖实录》，卷121，洪武十一年十一月甲戌条，第1960页。"
+    "giftsRaw": "織金文綺，文綺，衣服，鈔",
+    "source": "《明太祖實錄》，卷121，洪武十一年十一月甲戌條，第1960頁。"
   },
   {
     "id": "pahang_11_12_001",
@@ -2381,20 +2381,20 @@
     "king": "麻哈剌惹答饶",
     "envoy": "淡罔麻都",
     "purpose": "",
-    "tributeRaw": "番奴六人、胡椒二千斤、 / 苏木四千斤、檀乳脑、诸香药",
+    "tributeRaw": "番奴六人、胡椒二千斤、 / 蘇木四千斤、檀乳腦、諸香藥",
     "tributeItems": [
       "番奴",
       "胡椒",
-      "苏木",
-      "檀乳脑",
-      "诸香药"
+      "蘇木",
+      "檀乳腦",
+      "諸香藥"
     ],
     "tributeCategories": [
       "animal",
       "spice"
     ],
-    "giftsRaw": "金织文绮，纱罗，衣服",
-    "source": "《明太祖实录》，卷121，洪武十一年十二月丁未条，第1964页。"
+    "giftsRaw": "金織文綺，紗羅，衣服",
+    "source": "《明太祖實錄》，卷121，洪武十一年十二月丁未條，第1964頁。"
   },
   {
     "id": "baihua_11_12_001",
@@ -2409,35 +2409,35 @@
     "monthSort": 12,
     "gregorianYear": 1378,
     "king": "剌丁剌者望沙亦",
-    "envoy": "八智亚坛",
+    "envoy": "八智亞壇",
     "purpose": "",
-    "tributeRaw": "白鹿、红猴、龟筒、玳瑁、孔雀、 / 鹦鹉、哇哇、倒挂、胡椒、香蜡等物",
+    "tributeRaw": "白鹿、紅猴、龜筒、玳瑁、孔雀、 / 鸚鵡、哇哇、倒掛、胡椒、香蠟等物",
     "tributeItems": [
       "白鹿",
-      "红猴",
-      "龟筒",
+      "紅猴",
+      "龜筒",
       "玳瑁",
       "孔雀",
-      "鹦鹉",
+      "鸚鵡",
       "哇哇",
-      "倒挂",
+      "倒掛",
       "胡椒",
-      "香蜡"
+      "香蠟"
     ],
     "tributeCategories": [
       "animal",
       "misc",
       "spice"
     ],
-    "giftsRaw": "金织文绮，纱罗，衣服",
-    "source": "《明太祖实录》，卷121，洪武十一年十二月丁未条，第1964页。"
+    "giftsRaw": "金織文綺，紗羅，衣服",
+    "source": "《明太祖實錄》，卷121，洪武十一年十二月丁未條，第1964頁。"
   },
   {
     "id": "siam_11_12_001",
     "sourceRow": 99,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武十一年十二月",
     "year": 11,
     "month": 12,
@@ -2453,7 +2453,7 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷121，洪武十一年十二月辛亥条，第1964页。"
+    "source": "《明太祖實錄》，卷121，洪武十一年十二月辛亥條，第1964頁。"
   },
   {
     "id": "japan_12_r05_001",
@@ -2467,23 +2467,23 @@
     "isLeapMonth": true,
     "monthSort": 5.5,
     "gregorianYear": 1379,
-    "king": "良怀",
-    "envoy": "刘宗秩 / 尤虔、俞丰（通事）",
+    "king": "良懷",
+    "envoy": "劉宗秩 / 尤虔、俞豐（通事）",
     "purpose": "",
-    "tributeRaw": "马、刀、甲、硫黄等物",
+    "tributeRaw": "馬、刀、甲、硫黃等物",
     "tributeItems": [
-      "马",
+      "馬",
       "刀",
       "甲",
-      "硫黄"
+      "硫黃"
     ],
     "tributeCategories": [
       "animal",
       "misc",
       "vessel"
     ],
-    "giftsRaw": "织金文绮，服物",
-    "source": "《明太祖实录》，卷125，洪武十二年闰五月丁未条，第1997页。"
+    "giftsRaw": "織金文綺，服物",
+    "source": "《明太祖實錄》，卷125，洪武十二年闰五月丁未條，第1997頁。"
   },
   {
     "id": "champa_12_09_001",
@@ -2498,41 +2498,41 @@
     "monthSort": 9,
     "gregorianYear": 1379,
     "king": "阿答阿者",
-    "envoy": "阳须文旦",
+    "envoy": "陽鬚文旦",
     "purpose": "",
-    "tributeRaw": "象、马、方物",
+    "tributeRaw": "象、馬、方物",
     "tributeItems": [
       "象",
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷126，洪武十二年九月戊午条，第2016页。"
+    "source": "《明太祖實錄》，卷126，洪武十二年九月戊午條，第2016頁。"
   },
   {
     "id": "java_east_12_09_001",
     "sourceRow": 102,
     "countryId": "java_east",
-    "countryName": "爪哇东番",
-    "countryRaw": "爪哇东番",
+    "countryName": "爪哇東番",
+    "countryRaw": "爪哇東番",
     "timeRaw": "洪武十二年九月",
     "year": 12,
     "month": 9,
     "isLeapMonth": false,
     "monthSort": 9,
     "gregorianYear": 1379,
-    "king": "勿陀劳网结",
-    "envoy": "阿烈苏阿那",
+    "king": "勿陀勞網結",
+    "envoy": "阿烈蘇阿那",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "其礼意不诚留其使者至是释而遣之",
-    "source": "《明太祖实录》，卷126，洪武十二年九月壬戌条，第2016-2017页。"
+    "giftsRaw": "其禮意不誠留其使者至是釋而遣之",
+    "source": "《明太祖實錄》，卷126，洪武十二年九月壬戌條，第2016-2017頁。"
   },
   {
     "id": "java_west_12_09_001",
@@ -2546,7 +2546,7 @@
     "isLeapMonth": false,
     "monthSort": 9,
     "gregorianYear": 1379,
-    "king": "勿劳波务",
+    "king": "勿勞波務",
     "envoy": "阿烈占璧",
     "purpose": "",
     "tributeRaw": "方物",
@@ -2554,8 +2554,8 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "其礼意不诚留其使者至是释而遣之",
-    "source": "《明太祖实录》，卷126，洪武十二年九月壬戌条，第2016-2017页。"
+    "giftsRaw": "其禮意不誠留其使者至是釋而遣之",
+    "source": "《明太祖實錄》，卷126，洪武十二年九月壬戌條，第2016-2017頁。"
   },
   {
     "id": "java_12_10_001",
@@ -2569,7 +2569,7 @@
     "isLeapMonth": false,
     "monthSort": 10,
     "gregorianYear": 1379,
-    "king": "八达那巴那务",
+    "king": "八達那巴那務",
     "envoy": "八智巫沙",
     "purpose": "",
     "tributeRaw": "方物",
@@ -2578,30 +2578,30 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷126，洪武十二年十月己卯条，第2018页。"
+    "source": "《明太祖實錄》，卷126，洪武十二年十月己卯條，第2018頁。"
   },
   {
     "id": "siam_12_10_001",
     "sourceRow": 105,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武十二年十月",
     "year": 12,
     "month": 10,
     "isLeapMonth": false,
     "monthSort": 10,
     "gregorianYear": 1379,
-    "king": "参烈宝毘牙嗯哩哆啰禄",
-    "envoy": "亚剌儿文智利",
+    "king": "參烈寶毘牙嗯哩哆啰祿",
+    "envoy": "亞剌兒文智利",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "织金文绮纱罗，绮，帛，服物",
-    "source": "《明太祖实录》，卷126，洪武十二年十月乙酉条，第2018-2019页。"
+    "giftsRaw": "織金文綺紗羅，綺，帛，服物",
+    "source": "《明太祖實錄》，卷126，洪武十二年十月乙酉條，第2018-2019頁。"
   },
   {
     "id": "annam_12_12_001",
@@ -2615,7 +2615,7 @@
     "isLeapMonth": false,
     "monthSort": 12,
     "gregorianYear": 1379,
-    "king": "陈炜",
+    "king": "陳煒",
     "envoy": "",
     "purpose": "",
     "tributeRaw": "",
@@ -2624,14 +2624,14 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷128，洪武十二年十二月是月条，第2039-2040页。"
+    "source": "《明太祖實錄》，卷128，洪武十二年十二月是月條，第2039-2040頁。"
   },
   {
     "id": "goryeo_12_12_001",
     "sourceRow": 107,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武十二年十二月",
     "year": 12,
     "month": 12,
@@ -2641,23 +2641,23 @@
     "king": "王禑",
     "envoy": "李茂芳",
     "purpose": "",
-    "tributeRaw": "黄金百斤、银一万两",
+    "tributeRaw": "黃金百斤、銀一萬兩",
     "tributeItems": [
-      "黄金",
-      "银"
+      "黃金",
+      "銀"
     ],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "其贡不如约却之",
-    "source": "《明太祖实录》，卷128，洪武十二年十二月是月条，第2040页。"
+    "giftsRaw": "其貢不如約卻之",
+    "source": "《明太祖實錄》，卷128，洪武十二年十二月是月條，第2040頁。"
   },
   {
     "id": "ryukyu_chuzan_13_03_001",
     "sourceRow": 108,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武十三年三月",
     "year": 13,
     "month": 3,
@@ -2667,15 +2667,15 @@
     "king": "察度",
     "envoy": "",
     "purpose": "",
-    "tributeRaw": "马、方物",
+    "tributeRaw": "馬、方物",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "织金文绮纱罗",
-    "source": "《明太祖实录》，卷130，洪武十三年三月庚戌条，第2073页。"
+    "giftsRaw": "織金文綺紗羅",
+    "source": "《明太祖實錄》，卷130，洪武十三年三月庚戌條，第2073頁。"
   },
   {
     "id": "japan_13_05_001",
@@ -2689,13 +2689,13 @@
     "isLeapMonth": false,
     "monthSort": 5,
     "gregorianYear": 1380,
-    "king": "良怀",
-    "envoy": "庆有僧",
+    "king": "良懷",
+    "envoy": "慶有僧",
     "purpose": "",
-    "tributeRaw": "马、硫黄、刀扇等物",
+    "tributeRaw": "馬、硫黃、刀扇等物",
     "tributeItems": [
-      "马",
-      "硫黄",
+      "馬",
+      "硫黃",
       "刀扇"
     ],
     "tributeCategories": [
@@ -2703,8 +2703,8 @@
       "misc",
       "vessel"
     ],
-    "giftsRaw": "上以其不诚却之",
-    "source": "《明太祖实录》，卷131，洪武十三年五月是月条，第2092页。"
+    "giftsRaw": "上以其不誠卻之",
+    "source": "《明太祖實錄》，卷131，洪武十三年五月是月條，第2092頁。"
   },
   {
     "id": "annam_13_06_001",
@@ -2718,23 +2718,23 @@
     "isLeapMonth": false,
     "monthSort": 6,
     "gregorianYear": 1380,
-    "king": "陈叔明",
+    "king": "陳叔明",
     "envoy": "",
-    "purpose": "谢恩",
+    "purpose": "謝恩",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "文绮",
-    "source": "《明太祖实录》，卷132，洪武十三年六月癸亥条，第2094页。"
+    "giftsRaw": "文綺",
+    "source": "《明太祖實錄》，卷132，洪武十三年六月癸亥條，第2094頁。"
   },
   {
     "id": "siam_13_06_001",
     "sourceRow": 111,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武十三年六月",
     "year": 13,
     "month": 6,
@@ -2750,14 +2750,14 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷132，洪武十三年六月甲申条，第2099页。"
+    "source": "《明太祖實錄》，卷132，洪武十三年六月甲申條，第2099頁。"
   },
   {
     "id": "goryeo_13_07_001",
     "sourceRow": 112,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武十三年七月",
     "year": 13,
     "month": 7,
@@ -2765,15 +2765,15 @@
     "monthSort": 7,
     "gregorianYear": 1380,
     "king": "",
-    "envoy": "周谊（礼仪判书）",
+    "envoy": "周誼（禮儀判書）",
     "purpose": "",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "冬、夏袭衣",
-    "source": "《明太祖实录》，卷132，洪武十三年七月甲午条，第2101-2103。"
+    "giftsRaw": "冬、夏襲衣",
+    "source": "《明太祖實錄》，卷132，洪武十三年七月甲午條，第2101-2103。"
   },
   {
     "id": "japan_13_09_001",
@@ -2795,8 +2795,8 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "却贡",
-    "source": "《明太祖实录》，卷133，洪武十三年九月甲午条，第2112页。"
+    "giftsRaw": "卻貢",
+    "source": "《明太祖實錄》，卷133，洪武十三年九月甲午條，第2112頁。"
   },
   {
     "id": "champa_13_09_001",
@@ -2811,7 +2811,7 @@
     "monthSort": 9,
     "gregorianYear": 1380,
     "king": "阿答阿者",
-    "envoy": "大并仑",
+    "envoy": "大並侖",
     "purpose": "",
     "tributeRaw": "象、侍童一百二十五人",
     "tributeItems": [
@@ -2822,21 +2822,21 @@
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷133，洪武十三年九月乙已条，第2114页。"
+    "source": "《明太祖實錄》，卷133，洪武十三年九月乙已條，第2114頁。"
   },
   {
     "id": "cambodia_13_10_001",
     "sourceRow": 115,
     "countryId": "cambodia",
-    "countryName": "真腊",
-    "countryRaw": "真腊",
+    "countryName": "真臘",
+    "countryRaw": "真臘",
     "timeRaw": "洪武十三年十月",
     "year": 13,
     "month": 10,
     "isLeapMonth": false,
     "monthSort": 10,
     "gregorianYear": 1380,
-    "king": "参答甘武者持达志",
+    "king": "參答甘武者持達志",
     "envoy": "坤明昭",
     "purpose": "",
     "tributeRaw": "方物",
@@ -2844,15 +2844,15 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "钞，绮，帛",
-    "source": "《明太祖实录》，卷134，洪武十三年十月己已条，第2123页。"
+    "giftsRaw": "鈔，綺，帛",
+    "source": "《明太祖實錄》，卷134，洪武十三年十月己已條，第2123頁。"
   },
   {
     "id": "ryukyu_sannan_13_10_001",
     "sourceRow": 116,
     "countryId": "ryukyu_sannan",
-    "countryName": "琉球山南国",
-    "countryRaw": "琉球山南国",
+    "countryName": "琉球山南國",
+    "countryRaw": "琉球山南國",
     "timeRaw": "洪武十三年十月",
     "year": 13,
     "month": 10,
@@ -2860,15 +2860,15 @@
     "monthSort": 10,
     "gregorianYear": 1380,
     "king": "承察度",
-    "envoy": "师惹",
+    "envoy": "師惹",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "大统历，金织文绮，文绮，钞",
-    "source": "《明太祖实录》，卷134，洪武十三年十月丁丑条，第2124-2125页。"
+    "giftsRaw": "大統歷，金織文綺，文綺，鈔",
+    "source": "《明太祖實錄》，卷134，洪武十三年十月丁丑條，第2124-2125頁。"
   },
   {
     "id": "java_13_10_001",
@@ -2882,8 +2882,8 @@
     "isLeapMonth": false,
     "monthSort": 10,
     "gregorianYear": 1380,
-    "king": "八达那巴那务",
-    "envoy": "阿烈彛烈时",
+    "king": "八達那巴那務",
+    "envoy": "阿烈彛烈時",
     "purpose": "",
     "tributeRaw": "",
     "tributeItems": [],
@@ -2891,14 +2891,14 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷134，洪武十三年十月丁丑条，第2125页。"
+    "source": "《明太祖實錄》，卷134，洪武十三年十月丁丑條，第2125頁。"
   },
   {
     "id": "siam_14_02_001",
     "sourceRow": 118,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武十四年二月",
     "year": 14,
     "month": 2,
@@ -2906,15 +2906,15 @@
     "monthSort": 2,
     "gregorianYear": 1381,
     "king": "",
-    "envoy": "陈子仁",
+    "envoy": "陳子仁",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "钞二百四十锭",
-    "source": "《明太祖实录》，卷135，洪武十四年二月丙寅条，第2146页。"
+    "giftsRaw": "鈔二百四十錠",
+    "source": "《明太祖實錄》，卷135，洪武十四年二月丙寅條，第2146頁。"
   },
   {
     "id": "annam_14_06_001",
@@ -2928,16 +2928,16 @@
     "isLeapMonth": false,
     "monthSort": 6,
     "gregorianYear": 1381,
-    "king": "陈炜",
-    "envoy": "罗伯长（大中大夫）",
+    "king": "陳煒",
+    "envoy": "羅伯長（大中大夫）",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "却贡",
-    "source": "《明太祖实录》，卷137，洪武十四年六月丙辰条，第2168-2169页。"
+    "giftsRaw": "卻貢",
+    "source": "《明太祖實錄》，卷137，洪武十四年六月丙辰條，第2168-2169頁。"
   },
   {
     "id": "japan_14_07_001",
@@ -2951,18 +2951,18 @@
     "isLeapMonth": false,
     "monthSort": 7,
     "gregorianYear": 1381,
-    "king": "良怀",
-    "envoy": "僧如瑶",
+    "king": "良懷",
+    "envoy": "僧如瑤",
     "purpose": "",
-    "tributeRaw": "方物、马十匹",
+    "tributeRaw": "方物、馬十匹",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "却贡",
-    "source": "《明太祖实录》，卷138，洪武十四年七月戊戌条，第2173-2177页。"
+    "giftsRaw": "卻貢",
+    "source": "《明太祖實錄》，卷138，洪武十四年七月戊戌條，第2173-2177頁。"
   },
   {
     "id": "java_14_10_001",
@@ -2976,8 +2976,8 @@
     "isLeapMonth": false,
     "monthSort": 10,
     "gregorianYear": 1381,
-    "king": "八达那巴那务",
-    "envoy": "阿烈彛烈时",
+    "king": "八達那巴那務",
+    "envoy": "阿烈彛烈時",
     "purpose": "",
     "tributeRaw": "方物、黑奴三百人",
     "tributeItems": [
@@ -2986,8 +2986,8 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "衣，钞",
-    "source": "《明太祖实录》，卷139，洪武十四年十月是月条，第2200页。"
+    "giftsRaw": "衣，鈔",
+    "source": "《明太祖實錄》，卷139，洪武十四年十月是月條，第2200頁。"
   },
   {
     "id": "java_15_01_001",
@@ -3002,9 +3002,9 @@
     "monthSort": 1,
     "gregorianYear": 1382,
     "king": "",
-    "envoy": "僧阿烈阿儿",
+    "envoy": "僧阿烈阿兒",
     "purpose": "",
-    "tributeRaw": "黑奴男女一百一人、大珠八颗、 / 胡椒七万五千斤",
+    "tributeRaw": "黑奴男女一百一人、大珠八顆、 / 胡椒七萬五千斤",
     "tributeItems": [
       "黑奴男女",
       "大珠",
@@ -3014,15 +3014,15 @@
       "misc",
       "spice"
     ],
-    "giftsRaw": "绮，帛，衣，钞",
-    "source": "《明太祖实录》，卷141，洪武十五年正月乙未条，第2225页。"
+    "giftsRaw": "綺，帛，衣，鈔",
+    "source": "《明太祖實錄》，卷141，洪武十五年正月乙未條，第2225頁。"
   },
   {
     "id": "ryukyu_chuzan_15_02_001",
     "sourceRow": 123,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武十五年二月",
     "year": 15,
     "month": 2,
@@ -3030,19 +3030,19 @@
     "monthSort": 2,
     "gregorianYear": 1382,
     "king": "察度",
-    "envoy": "泰期（王弟）、亚兰匏",
+    "envoy": "泰期（王弟）、亞蘭匏",
     "purpose": "",
-    "tributeRaw": "马二十匹、硫黄二十斤",
+    "tributeRaw": "馬二十匹、硫黃二十斤",
     "tributeItems": [
-      "马",
-      "硫黄"
+      "馬",
+      "硫黃"
     ],
     "tributeCategories": [
       "animal",
       "misc"
     ],
-    "giftsRaw": "织金文绮纱罗十二疋，绮，帛",
-    "source": "《明太祖实录》，卷142，洪武十五年二月乙丑条，第2236页。"
+    "giftsRaw": "織金文綺紗羅十二疋，綺，帛",
+    "source": "《明太祖實錄》，卷142，洪武十五年二月乙丑條，第2236頁。"
   },
   {
     "id": "annam_15_05_001",
@@ -3056,25 +3056,25 @@
     "isLeapMonth": false,
     "monthSort": 5,
     "gregorianYear": 1382,
-    "king": "陈炜",
-    "envoy": "谢师言（大中大夫）",
+    "king": "陳煒",
+    "envoy": "謝師言（大中大夫）",
     "purpose": "",
-    "tributeRaw": "阍者十五人",
+    "tributeRaw": "閽者十五人",
     "tributeItems": [
-      "阍者"
+      "閽者"
     ],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "钞锭",
-    "source": "《明太祖实录》，卷145，洪武十五年五月丙子条，第2281页。"
+    "giftsRaw": "鈔錠",
+    "source": "《明太祖實錄》，卷145，洪武十五年五月丙子條，第2281頁。"
   },
   {
     "id": "siam_15_06_001",
     "sourceRow": 125,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武十五年六月",
     "year": 15,
     "month": 6,
@@ -3089,8 +3089,8 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "衣，钞",
-    "source": "《明太祖实录》，卷146，洪武十五年六月甲午条，第2289页。"
+    "giftsRaw": "衣，鈔",
+    "source": "《明太祖實錄》，卷146，洪武十五年六月甲午條，第2289頁。"
   },
   {
     "id": "champa_15_09_001",
@@ -3105,22 +3105,22 @@
     "monthSort": 9,
     "gregorianYear": 1382,
     "king": "阿答阿者",
-    "envoy": "杨麻加益",
+    "envoy": "楊麻加益",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "文绮，袭衣，钞",
-    "source": "《明太祖实录》，卷148，洪武十五年九月庚午条，第2342-2343页。"
+    "giftsRaw": "文綺，襲衣，鈔",
+    "source": "《明太祖實錄》，卷148，洪武十五年九月庚午條，第2342-2343頁。"
   },
   {
     "id": "ryukyu_chuzan_16_01_001",
     "sourceRow": 127,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武十六年正月",
     "year": 16,
     "month": 1,
@@ -3128,24 +3128,24 @@
     "monthSort": 1,
     "gregorianYear": 1383,
     "king": "察度",
-    "envoy": "亚兰匏",
+    "envoy": "亞蘭匏",
     "purpose": "",
-    "tributeRaw": "马、方物",
+    "tributeRaw": "馬、方物",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "镀金银印，织金文绮、帛、纱罗凡七十二匹，文绮，钞，帛",
-    "source": "《明太祖实录》，卷151，洪武十六年正月乙已条,丁未条，第2375,2375-2377页。"
+    "giftsRaw": "镀金銀印，織金文綺、帛、紗羅凡七十二匹，文綺，鈔，帛",
+    "source": "《明太祖實錄》，卷151，洪武十六年正月乙已條,丁未條，第2375,2375-2377頁。"
   },
   {
     "id": "ryukyu_sannan_16_01_001",
     "sourceRow": 128,
     "countryId": "ryukyu_sannan",
-    "countryName": "琉球山南国",
-    "countryRaw": "琉球山南国",
+    "countryName": "琉球山南國",
+    "countryRaw": "琉球山南國",
     "timeRaw": "洪武十六年正月",
     "year": 16,
     "month": 1,
@@ -3153,24 +3153,24 @@
     "monthSort": 1,
     "gregorianYear": 1383,
     "king": "承察度",
-    "envoy": "师惹",
+    "envoy": "師惹",
     "purpose": "",
-    "tributeRaw": "马、方物",
+    "tributeRaw": "馬、方物",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "镀金银印，织金文绮、帛、纱罗凡七十二匹，文绮，钞，帛",
-    "source": "《明太祖实录》，卷151，洪武十六年正月乙已条、丁未条，第2375,2375-2377页。"
+    "giftsRaw": "镀金銀印，織金文綺、帛、紗羅凡七十二匹，文綺，鈔，帛",
+    "source": "《明太祖實錄》，卷151，洪武十六年正月乙已條、丁未條，第2375,2375-2377頁。"
   },
   {
     "id": "siam_16_01_001",
     "sourceRow": 129,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武十六年正月",
     "year": 16,
     "month": 1,
@@ -3185,8 +3185,8 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "绮，帛，钞",
-    "source": "《明太祖实录》，卷151，洪武十六年正月己已条，第2380页。"
+    "giftsRaw": "綺，帛，鈔",
+    "source": "《明太祖實錄》，卷151，洪武十六年正月己已條，第2380頁。"
   },
   {
     "id": "champa_16_02_001",
@@ -3201,13 +3201,13 @@
     "monthSort": 2,
     "gregorianYear": 1383,
     "king": "阿答阿者",
-    "envoy": "杨麻加益",
+    "envoy": "楊麻加益",
     "purpose": "",
-    "tributeRaw": "象牙二百枝、檀香八百斤、 / 没药四百斤、番布六百匹",
+    "tributeRaw": "象牙二百枝、檀香八百斤、 / 沒藥四百斤、番布六百匹",
     "tributeItems": [
       "象牙",
       "檀香",
-      "没药",
+      "沒藥",
       "番布"
     ],
     "tributeCategories": [
@@ -3215,8 +3215,8 @@
       "spice",
       "textile"
     ],
-    "giftsRaw": "织金文绮，钞",
-    "source": "《明太祖实录》，卷152，洪武十六年二月庚子条，第2388-2389。"
+    "giftsRaw": "織金文綺，鈔",
+    "source": "《明太祖實錄》，卷152，洪武十六年二月庚子條，第2388-2389。"
   },
   {
     "id": "annam_16_06_001",
@@ -3230,25 +3230,25 @@
     "isLeapMonth": false,
     "monthSort": 6,
     "gregorianYear": 1383,
-    "king": "陈炜",
-    "envoy": "黎与义（通奉大夫）",
+    "king": "陳煒",
+    "envoy": "黎與義（通奉大夫）",
     "purpose": "",
-    "tributeRaw": "阉竖二十五人",
+    "tributeRaw": "閹豎二十五人",
     "tributeItems": [
-      "阉竖"
+      "閹豎"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "文绮，钞锭",
-    "source": "《明太祖实录》，卷155，洪武十六年六月壬午条，第2412页。"
+    "giftsRaw": "文綺，鈔錠",
+    "source": "《明太祖實錄》，卷155，洪武十六年六月壬午條，第2412頁。"
   },
   {
     "id": "cambodia_16_09_001",
     "sourceRow": 132,
     "countryId": "cambodia",
-    "countryName": "真腊",
-    "countryRaw": "真腊",
+    "countryName": "真臘",
+    "countryRaw": "真臘",
     "timeRaw": "洪武十六年九月",
     "year": 16,
     "month": 9,
@@ -3258,24 +3258,24 @@
     "king": "",
     "envoy": "柰伯剌勤",
     "purpose": "",
-    "tributeRaw": "驯象、香腊",
+    "tributeRaw": "馴象、香臘",
     "tributeItems": [
-      "驯象",
-      "香腊"
+      "馴象",
+      "香臘"
     ],
     "tributeCategories": [
       "animal",
       "spice"
     ],
-    "giftsRaw": "衣服，文绮，衣靴，钞锭",
-    "source": "《明太祖实录》，卷156,157，洪武十六年九月戊午条、九月是月条、十月癸未条，第2428-2429,2432,2434页。"
+    "giftsRaw": "衣服，文綺，衣靴，鈔錠",
+    "source": "《明太祖實錄》，卷156,157，洪武十六年九月戊午條、九月是月條、十月癸未條，第2428-2429,2432,2434頁。"
   },
   {
     "id": "goryeo_16_10_001",
     "sourceRow": 133,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武十六年十月",
     "year": 16,
     "month": 10,
@@ -3283,22 +3283,22 @@
     "monthSort": 10,
     "gregorianYear": 1383,
     "king": "",
-    "envoy": "张伯、崔涓",
+    "envoy": "張伯、崔涓",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "却贡",
-    "source": "《明太祖实录》，卷157，洪武十六年十月戊子条，第2435页。"
+    "giftsRaw": "卻貢",
+    "source": "《明太祖實錄》，卷157，洪武十六年十月戊子條，第2435頁。"
   },
   {
     "id": "ryukyu_hokuzan_16_12_001",
     "sourceRow": 134,
     "countryId": "ryukyu_hokuzan",
-    "countryName": "琉球山北国",
-    "countryRaw": "琉球山北国",
+    "countryName": "琉球山北國",
+    "countryRaw": "琉球山北國",
     "timeRaw": "洪武十六年十二月",
     "year": 16,
     "month": 12,
@@ -3306,44 +3306,44 @@
     "monthSort": 12,
     "gregorianYear": 1383,
     "king": "帕尼芝",
-    "envoy": "摸结习",
+    "envoy": "摸結習",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "衣一袭",
-    "source": "《明太祖实录》，卷158，洪武十六年十二月甲申条，第2446页。"
+    "giftsRaw": "衣一襲",
+    "source": "《明太祖實錄》，卷158，洪武十六年十二月甲申條，第2446頁。"
   },
   {
     "id": "samudra_16_12_001",
     "sourceRow": 135,
     "countryId": "samudra",
-    "countryName": "须文那达",
-    "countryRaw": "须文那达",
+    "countryName": "鬚文那達",
+    "countryRaw": "鬚文那達",
     "timeRaw": "洪武十六年十二月",
     "year": 16,
     "month": 12,
     "isLeapMonth": false,
     "monthSort": 12,
     "gregorianYear": 1383,
-    "king": "殊旦麻勒兀达盻",
-    "envoy": "俺八儿",
+    "king": "殊旦麻勒兀達盻",
+    "envoy": "俺八兒",
     "purpose": "",
-    "tributeRaw": "马二匹、幼苾布十五匹、隔着布二匹、 / 入的力布二匹、花满直地二番、 / 绵紬直地二兠、罗绵二斤、撒剌八二个、 / 幼赖隔着一个、撒哈剌一个、蔷薇水、 / 降香、沉速香等物",
+    "tributeRaw": "馬二匹、幼苾布十五匹、隔著布二匹、 / 入的力布二匹、花滿直地二番、 / 綿紬直地二兠、羅綿二斤、撒剌八二個、 / 幼賴隔著一個、撒哈剌一個、薔薇水、 / 降香、沉速香等物",
     "tributeItems": [
-      "马",
+      "馬",
       "幼苾布",
-      "隔着布",
+      "隔著布",
       "入的力布",
-      "花满直地番",
-      "绵紬直地",
-      "罗绵",
+      "花滿直地番",
+      "綿紬直地",
+      "羅綿",
       "撒剌",
-      "幼赖隔着",
+      "幼賴隔著",
       "撒哈剌",
-      "蔷薇水",
+      "薔薇水",
       "降香",
       "沉速香"
     ],
@@ -3353,15 +3353,15 @@
       "spice",
       "textile"
     ],
-    "giftsRaw": "织金绮帛各十六匹（国王）、绮帛（俺八儿） / 大统历，绮罗，钞，袭衣",
-    "source": "《明太祖实录》，卷158、159，洪武十六年十二月是月条、十七年正月甲寅条，第2450，2459页。"
+    "giftsRaw": "織金綺帛各十六匹（國王）、綺帛（俺八兒） / 大統歷，綺羅，鈔，襲衣",
+    "source": "《明太祖實錄》，卷158、159，洪武十六年十二月是月條、十七年正月甲寅條，第2450，2459頁。"
   },
   {
     "id": "ryukyu_chuzan_17_01_001",
     "sourceRow": 136,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武十七年正月",
     "year": 17,
     "month": 1,
@@ -3376,15 +3376,15 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "文绮，衣服",
-    "source": "《明太祖实录》，卷159，洪武十七年正月己亥条，第2453页。"
+    "giftsRaw": "文綺，衣服",
+    "source": "《明太祖實錄》，卷159，洪武十七年正月己亥條，第2453頁。"
   },
   {
     "id": "ryukyu_sannan_17_01_001",
     "sourceRow": 137,
     "countryId": "ryukyu_sannan",
-    "countryName": "琉球山南国",
-    "countryRaw": "琉球山南国",
+    "countryName": "琉球山南國",
+    "countryRaw": "琉球山南國",
     "timeRaw": "洪武十七年正月",
     "year": 17,
     "month": 1,
@@ -3399,15 +3399,15 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "文绮，衣服",
-    "source": "《明太祖实录》，卷159，洪武十七年正月己亥条，第2453页。"
+    "giftsRaw": "文綺，衣服",
+    "source": "《明太祖實錄》，卷159，洪武十七年正月己亥條，第2453頁。"
   },
   {
     "id": "ryukyu_hokuzan_17_01_001",
     "sourceRow": 138,
     "countryId": "ryukyu_hokuzan",
-    "countryName": "琉球山北国",
-    "countryRaw": "琉球山北国",
+    "countryName": "琉球山北國",
+    "countryRaw": "琉球山北國",
     "timeRaw": "洪武十七年正月",
     "year": 17,
     "month": 1,
@@ -3422,22 +3422,22 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "文绮，衣服",
-    "source": "《明太祖实录》，卷159，洪武十七年正月己亥条，第2453页。"
+    "giftsRaw": "文綺，衣服",
+    "source": "《明太祖實錄》，卷159，洪武十七年正月己亥條，第2453頁。"
   },
   {
     "id": "siam_17_01_001",
     "sourceRow": 139,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武十七年正月",
     "year": 17,
     "month": 1,
     "isLeapMonth": false,
     "monthSort": 1,
     "gregorianYear": 1384,
-    "king": "参烈宝毘牙嗯哩哆啰禄",
+    "king": "參烈寶毘牙嗯哩哆啰祿",
     "envoy": "",
     "purpose": "",
     "tributeRaw": "方物",
@@ -3445,8 +3445,8 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "文绮，衣服",
-    "source": "《明太祖实录》，卷159，洪武十七年正月己亥条，第2456页。"
+    "giftsRaw": "文綺，衣服",
+    "source": "《明太祖實錄》，卷159，洪武十七年正月己亥條，第2456頁。"
   },
   {
     "id": "annam_17_02_001",
@@ -3460,23 +3460,23 @@
     "isLeapMonth": false,
     "monthSort": 2,
     "gregorianYear": 1384,
-    "king": "陈炜",
+    "king": "陳煒",
     "envoy": "",
     "purpose": "",
-    "tributeRaw": "金五十两，银三百两，绢三十匹，紫金盘九",
+    "tributeRaw": "金五十兩，銀三百兩，絹三十匹，紫金盤九",
     "tributeItems": [
       "金",
-      "银",
-      "绢",
-      "紫金盘"
+      "銀",
+      "絹",
+      "紫金盤"
     ],
     "tributeCategories": [
       "misc",
       "textile",
       "vessel"
     ],
-    "giftsRaw": "袭衣，绮叚，钞",
-    "source": "《明太祖实录》，卷159，洪武十七年二月庚午条，第2462页。"
+    "giftsRaw": "襲衣，綺叚，鈔",
+    "source": "《明太祖實錄》，卷159，洪武十七年二月庚午條，第2462頁。"
   },
   {
     "id": "annam_17_05_001",
@@ -3490,8 +3490,8 @@
     "isLeapMonth": false,
     "monthSort": 5,
     "gregorianYear": 1384,
-    "king": "陈炜",
-    "envoy": "黎宗彻（中大夫） / 裴鑋（朝仪大夫）",
+    "king": "陳煒",
+    "envoy": "黎宗徹（中大夫） / 裴鑋（朝儀大夫）",
     "purpose": "",
     "tributeRaw": "象",
     "tributeItems": [
@@ -3500,15 +3500,15 @@
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "冠带，钞",
-    "source": "《明太祖实录》，卷162，洪武十七年五月癸丑条，第2513页。"
+    "giftsRaw": "冠帶，鈔",
+    "source": "《明太祖實錄》，卷162，洪武十七年五月癸丑條，第2513頁。"
   },
   {
     "id": "ryukyu_chuzan_17_06_001",
     "sourceRow": 142,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武十七年六月",
     "year": 17,
     "month": 6,
@@ -3523,15 +3523,15 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "文绮，钞锭",
-    "source": "《明太祖实录》，卷162，洪武十七年六月丁卯条，第2515页。"
+    "giftsRaw": "文綺，鈔錠",
+    "source": "《明太祖實錄》，卷162，洪武十七年六月丁卯條，第2515頁。"
   },
   {
     "id": "goryeo_17_07_001",
     "sourceRow": 143,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武十七年七月",
     "year": 17,
     "month": 7,
@@ -3539,24 +3539,24 @@
     "monthSort": 7,
     "gregorianYear": 1384,
     "king": "",
-    "envoy": "崔涓（司仆正） / 金进宜（礼仪判书）",
+    "envoy": "崔涓（司僕正） / 金進宜（禮儀判書）",
     "purpose": "",
-    "tributeRaw": "马二千匹",
+    "tributeRaw": "馬二千匹",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷162、163，洪武十七年六月戊寅条、七月丙辰条，第2518，2528页。"
+    "source": "《明太祖實錄》，卷162、163，洪武十七年六月戊寅條、七月丙辰條，第2518，2528頁。"
   },
   {
     "id": "siam_17_08_001",
     "sourceRow": 144,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武十七年八月",
     "year": 17,
     "month": 8,
@@ -3564,22 +3564,22 @@
     "monthSort": 8,
     "gregorianYear": 1384,
     "king": "",
-    "envoy": "昭禄李霭观",
+    "envoy": "昭祿李霭觀",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "衣，钞",
-    "source": "《明太祖实录》，卷164，洪武十七年八月己卯条，第2535-2536页。"
+    "giftsRaw": "衣，鈔",
+    "source": "《明太祖實錄》，卷164，洪武十七年八月己卯條，第2535-2536頁。"
   },
   {
     "id": "goryeo_17_09_001",
     "sourceRow": 145,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武十七年九月",
     "year": 17,
     "month": 9,
@@ -3587,15 +3587,15 @@
     "monthSort": 9,
     "gregorianYear": 1384,
     "king": "王禑",
-    "envoy": "郑梦周（评理）",
-    "purpose": "请袭王爵 / 请谥号",
+    "envoy": "鄭夢周（評理）",
+    "purpose": "請襲王爵 / 請谥號",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "却贡",
-    "source": "《明太祖实录》，卷165，洪武十七年九月甲寅条，第2543页。"
+    "giftsRaw": "卻貢",
+    "source": "《明太祖實錄》，卷165，洪武十七年九月甲寅條，第2543頁。"
   },
   {
     "id": "champa_17_09_001",
@@ -3610,15 +3610,15 @@
     "monthSort": 9,
     "gregorianYear": 1384,
     "king": "阿答阿者",
-    "envoy": "昭闻部",
+    "envoy": "昭聞部",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "文绮，钞锭",
-    "source": "《明太祖实录》，卷165，洪武十七年九月癸亥条，第2546页。"
+    "giftsRaw": "文綺，鈔錠",
+    "source": "《明太祖實錄》，卷165，洪武十七年九月癸亥條，第2546頁。"
   },
   {
     "id": "annam_17_12_001",
@@ -3632,25 +3632,25 @@
     "isLeapMonth": false,
     "monthSort": 12,
     "gregorianYear": 1384,
-    "king": "陈炜",
+    "king": "陳煒",
     "envoy": "黎亜夫",
-    "purpose": "贺明年正旦",
-    "tributeRaw": "阉竖三十人",
+    "purpose": "賀明年正旦",
+    "tributeRaw": "閹豎三十人",
     "tributeItems": [
-      "阉竖"
+      "閹豎"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷169，洪武十七年十二月是月条，第2580页。"
+    "source": "《明太祖實錄》，卷169，洪武十七年十二月是月條，第2580頁。"
   },
   {
     "id": "goryeo_18_01_001",
     "sourceRow": 148,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武十八年正月",
     "year": 18,
     "month": 1,
@@ -3659,21 +3659,21 @@
     "gregorianYear": 1385,
     "king": "",
     "envoy": "",
-    "purpose": "上贺",
+    "purpose": "上賀",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷170，洪武十八年正月癸亥条，第2581页。"
+    "source": "《明太祖實錄》，卷170，洪武十八年正月癸亥條，第2581頁。"
   },
   {
     "id": "siam_18_01_001",
     "sourceRow": 149,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武十八年正月",
     "year": 18,
     "month": 1,
@@ -3681,21 +3681,21 @@
     "monthSort": 1,
     "gregorianYear": 1385,
     "king": "",
-    "envoy": "昭禄巴霭",
-    "purpose": "上贺",
+    "envoy": "昭祿巴霭",
+    "purpose": "上賀",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "钞",
-    "source": "《明太祖实录》，卷170，洪武十八年正月癸亥条、戊寅条，第2581，2585页。"
+    "giftsRaw": "鈔",
+    "source": "《明太祖實錄》，卷170，洪武十八年正月癸亥條、戊寅條，第2581，2585頁。"
   },
   {
     "id": "ryukyu_chuzan_18_01_001",
     "sourceRow": 150,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
+    "countryName": "琉球中山國",
     "countryRaw": "琉球",
     "timeRaw": "洪武十八年正月",
     "year": 18,
@@ -3705,21 +3705,21 @@
     "gregorianYear": 1385,
     "king": "",
     "envoy": "",
-    "purpose": "上贺",
+    "purpose": "上賀",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷170，洪武十八年正月癸亥条，第2583页。"
+    "source": "《明太祖實錄》，卷170，洪武十八年正月癸亥條，第2583頁。"
   },
   {
     "id": "goryeo_18_01_002",
     "sourceRow": 151,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武十八年正月",
     "year": 18,
     "month": 1,
@@ -3729,11 +3729,11 @@
     "king": "",
     "envoy": "金庾等八十七人",
     "purpose": "",
-    "tributeRaw": "马五千匹、金五百斤、银五万两、布五万匹",
+    "tributeRaw": "馬五千匹、金五百斤、銀五萬兩、布五萬匹",
     "tributeItems": [
-      "马",
+      "馬",
       "金",
-      "银",
+      "銀",
       "布"
     ],
     "tributeCategories": [
@@ -3741,15 +3741,15 @@
       "misc",
       "textile"
     ],
-    "giftsRaw": "钞三百八十二锭",
-    "source": "《明太祖实录》，卷170，洪武十八年正月丁丑条，第2584页；《高丽史》，卷135，《列传四十八‧辛禑三》，第725页。"
+    "giftsRaw": "鈔三百八十二錠",
+    "source": "《明太祖實錄》，卷170，洪武十八年正月丁丑條，第2584頁；《高麗史》，卷135，《列傳四十八‧辛禑三》，第725頁。"
   },
   {
     "id": "goryeo_18_07_001",
     "sourceRow": 152,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武十八年七月",
     "year": 18,
     "month": 7,
@@ -3757,24 +3757,24 @@
     "monthSort": 7,
     "gregorianYear": 1385,
     "king": "王禑",
-    "envoy": "尹虎（门下评理） / 赵胖（密直副使）",
-    "purpose": "请袭王爵 / 请谥号",
-    "tributeRaw": "马",
+    "envoy": "尹虎（門下評理） / 趙胖（密直副使）",
+    "purpose": "請襲王爵 / 請谥號",
+    "tributeRaw": "馬",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷171，洪武十八年七月癸亥条，第2645页。"
+    "source": "《明太祖實錄》，卷171，洪武十八年七月癸亥條，第2645頁。"
   },
   {
     "id": "goryeo_18_09_001",
     "sourceRow": 153,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武十八年九月",
     "year": 18,
     "month": 9,
@@ -3782,22 +3782,22 @@
     "monthSort": 9,
     "gregorianYear": 1385,
     "king": "王禑",
-    "envoy": "安翊（都评议司密直使） / 柳和（密直副使）",
-    "purpose": "贺圣节 / 皇太子千秋节",
+    "envoy": "安翊（都評議司密直使） / 柳和（密直副使）",
+    "purpose": "賀聖節 / 皇太子千秋節",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷175，洪武十八年九月丁丑条，第2660页；《高丽史》，卷136，《列传四十九‧辛禑四》，第736-737页。"
+    "source": "《明太祖實錄》，卷175，洪武十八年九月丁丑條，第2660頁；《高麗史》，卷136，《列傳四十九‧辛禑四》，第736-737頁。"
   },
   {
     "id": "goryeo_18_12_001",
     "sourceRow": 154,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武十八年十二月",
     "year": 18,
     "month": 12,
@@ -3805,22 +3805,22 @@
     "monthSort": 12,
     "gregorianYear": 1385,
     "king": "王禑",
-    "envoy": "曹敏修（门下事）",
-    "purpose": "贺明年正旦",
+    "envoy": "曹敏修（門下事）",
+    "purpose": "賀明年正旦",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷176，洪武十八年十二月戊申条，第2672页。"
+    "source": "《明太祖實錄》，卷176，洪武十八年十二月戊申條，第2672頁。"
   },
   {
     "id": "ryukyu_chuzan_19_01_001",
     "sourceRow": 155,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武十九年正月",
     "year": 19,
     "month": 1,
@@ -3828,26 +3828,26 @@
     "monthSort": 1,
     "gregorianYear": 1386,
     "king": "察度",
-    "envoy": "亚兰匏",
+    "envoy": "亞蘭匏",
     "purpose": "",
-    "tributeRaw": "马百二十四匹、琉黄万一千斤",
+    "tributeRaw": "馬百二十四匹、琉黃萬一千斤",
     "tributeItems": [
-      "马",
-      "琉黄"
+      "馬",
+      "琉黃"
     ],
     "tributeCategories": [
       "animal",
       "misc"
     ],
-    "giftsRaw": "宴，钞",
-    "source": "《明太祖实录》，卷177，洪武十九年正月辛酉条，第2675页。"
+    "giftsRaw": "宴，鈔",
+    "source": "《明太祖實錄》，卷177，洪武十九年正月辛酉條，第2675頁。"
   },
   {
     "id": "goryeo_19_02_001",
     "sourceRow": 156,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武十九年二月",
     "year": 19,
     "month": 2,
@@ -3857,24 +3857,24 @@
     "king": "王禑",
     "envoy": "姜淮伯（密直副使）",
     "purpose": "",
-    "tributeRaw": "白黑布一万匹、马千匹",
+    "tributeRaw": "白黑布一萬匹、馬千匹",
     "tributeItems": [
       "白黑布",
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal",
       "textile"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷177，洪武十九年二月己丑条，第2678页。"
+    "source": "《明太祖實錄》，卷177，洪武十九年二月己丑條，第2678頁。"
   },
   {
     "id": "siam_19_02_001",
     "sourceRow": 157,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武十九年二月",
     "year": 19,
     "month": 2,
@@ -3884,17 +3884,17 @@
     "king": "",
     "envoy": "昭依仁",
     "purpose": "",
-    "tributeRaw": "胡椒、苏木、乳香等物",
+    "tributeRaw": "胡椒、蘇木、乳香等物",
     "tributeItems": [
       "胡椒",
-      "苏木",
+      "蘇木",
       "乳香"
     ],
     "tributeCategories": [
       "spice"
     ],
-    "giftsRaw": "文绮，衣服",
-    "source": "《明太祖实录》，卷177，洪武十九年二月甲辰条，第2678页。"
+    "giftsRaw": "文綺，衣服",
+    "source": "《明太祖實錄》，卷177，洪武十九年二月甲辰條，第2678頁。"
   },
   {
     "id": "champa_19_09_001",
@@ -3909,17 +3909,17 @@
     "monthSort": 9,
     "gregorianYear": 1386,
     "king": "阿答阿者",
-    "envoy": "宝部领诗那日勿（王子）",
-    "purpose": "贺天寿圣节",
-    "tributeRaw": "象五十四只、象牙、犀角、胡椒、乌木 / 、降香、花丝布 / 皇太子象牙等物",
+    "envoy": "寶部領詩那日勿（王子）",
+    "purpose": "賀天壽聖節",
+    "tributeRaw": "象五十四隻、象牙、犀角、胡椒、烏木 / 、降香、花絲布 / 皇太子象牙等物",
     "tributeItems": [
       "象",
       "象牙",
       "犀角",
       "胡椒",
-      "乌木",
+      "烏木",
       "降香",
-      "花丝布",
+      "花絲布",
       "皇太子象牙"
     ],
     "tributeCategories": [
@@ -3928,15 +3928,15 @@
       "spice",
       "textile"
     ],
-    "giftsRaw": "冠带、织金文绮、袭衣，金二百两、银一千两、织金青罗衣四袭、红罗衣四袭、绣金文青绮衣二袭，红绮衣四袭，绿文绮衣二袭，绮叚六匹，银一百五十两，钞，罗绮衣，叚，衣服",
-    "source": "《明太祖实录》，卷179，洪武十九年九月甲寅条，第2708-2709页。"
+    "giftsRaw": "冠帶、織金文綺、襲衣，金二百兩、銀一千兩、織金青羅衣四襲、紅羅衣四襲、繡金文青綺衣二襲，紅綺衣四襲，綠文綺衣二襲，綺叚六匹，銀一百五十兩，鈔，羅綺衣，叚，衣服",
+    "source": "《明太祖實錄》，卷179，洪武十九年九月甲寅條，第2708-2709頁。"
   },
   {
     "id": "goryeo_19_09_001",
     "sourceRow": 159,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武十九年九月",
     "year": 19,
     "month": 9,
@@ -3944,22 +3944,22 @@
     "monthSort": 9,
     "gregorianYear": 1386,
     "king": "王禑",
-    "envoy": "安翊（门下评理）",
+    "envoy": "安翊（門下評理）",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "绮，钞，衣服",
-    "source": "《明太祖实录》，卷179，洪武十九年九月辛未条，第2710页。"
+    "giftsRaw": "綺，鈔，衣服",
+    "source": "《明太祖實錄》，卷179，洪武十九年九月辛未條，第2710頁。"
   },
   {
     "id": "siam_19_09_001",
     "sourceRow": 160,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武十九年九月",
     "year": 19,
     "month": 9,
@@ -3967,15 +3967,15 @@
     "monthSort": 9,
     "gregorianYear": 1386,
     "king": "",
-    "envoy": "冒罗",
+    "envoy": "冒羅",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "绮，钞，衣服",
-    "source": "《明太祖实录》，卷179，洪武十九年九月辛未条，第2710。"
+    "giftsRaw": "綺，鈔，衣服",
+    "source": "《明太祖實錄》，卷179，洪武十九年九月辛未條，第2710。"
   },
   {
     "id": "japan_19_11_001",
@@ -3989,7 +3989,7 @@
     "isLeapMonth": false,
     "monthSort": 11,
     "gregorianYear": 1386,
-    "king": "良怀",
+    "king": "良懷",
     "envoy": "僧宗嗣亮",
     "purpose": "",
     "tributeRaw": "方物",
@@ -3997,15 +3997,15 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "却贡",
-    "source": "《明太祖实录》，卷179，洪武十九年十一月辛酉条，第2713页。"
+    "giftsRaw": "卻貢",
+    "source": "《明太祖實錄》，卷179，洪武十九年十一月辛酉條，第2713頁。"
   },
   {
     "id": "goryeo_19_11_001",
     "sourceRow": 162,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武十九年十一月",
     "year": 19,
     "month": 11,
@@ -4014,14 +4014,14 @@
     "gregorianYear": 1386,
     "king": "",
     "envoy": "",
-    "purpose": "请易冠服",
+    "purpose": "請易冠服",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷179，洪武十九年十一月丁卯条，第2713页。"
+    "source": "《明太祖實錄》，卷179，洪武十九年十一月丁卯條，第2713頁。"
   },
   {
     "id": "annam_19_12_001",
@@ -4035,27 +4035,27 @@
     "isLeapMonth": false,
     "monthSort": 12,
     "gregorianYear": 1386,
-    "king": "陈炜",
+    "king": "陳煒",
     "envoy": "杜英弼（中大夫）",
     "purpose": "",
-    "tributeRaw": "金银酒器三十三事并阉竖一十九人",
+    "tributeRaw": "金銀酒器三十三事並閹豎一十九人",
     "tributeItems": [
-      "金银酒器事",
-      "阉竖"
+      "金銀酒器事",
+      "閹豎"
     ],
     "tributeCategories": [
       "animal",
       "vessel"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷179，洪武十九年十二月戊申条，第2717-2718页。"
+    "source": "《明太祖實錄》，卷179，洪武十九年十二月戊申條，第2717-2718頁。"
   },
   {
     "id": "ryukyu_chuzan_20_02_001",
     "sourceRow": 164,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武二十年二月",
     "year": 20,
     "month": 2,
@@ -4063,17 +4063,17 @@
     "monthSort": 2,
     "gregorianYear": 1387,
     "king": "察度",
-    "envoy": "亚兰匏",
+    "envoy": "亞蘭匏",
     "purpose": "",
-    "tributeRaw": "方物、马三十七匹",
+    "tributeRaw": "方物、馬三十七匹",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷180，洪武二十年二月辛卯条，第2727页。"
+    "source": "《明太祖實錄》，卷180，洪武二十年二月辛卯條，第2727頁。"
   },
   {
     "id": "annam_20_05_001",
@@ -4087,25 +4087,25 @@
     "isLeapMonth": false,
     "monthSort": 5,
     "gregorianYear": 1387,
-    "king": "陈炜",
+    "king": "陳煒",
     "envoy": "杜日墩",
     "purpose": "",
-    "tributeRaw": "槟榔波罗蜜蕉栽",
+    "tributeRaw": "檳榔波羅蜜蕉栽",
     "tributeItems": [
-      "槟榔波罗蜜蕉栽"
+      "檳榔波羅蜜蕉栽"
     ],
     "tributeCategories": [
       "spice"
     ],
-    "giftsRaw": "钞锭",
-    "source": "《明太祖实录》，卷182，洪武二十年五月丙子条，第2743页。"
+    "giftsRaw": "鈔錠",
+    "source": "《明太祖實錄》，卷182，洪武二十年五月丙子條，第2743頁。"
   },
   {
     "id": "goryeo_20_07_001",
     "sourceRow": 166,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十年七月",
     "year": 20,
     "month": 7,
@@ -4113,24 +4113,24 @@
     "monthSort": 7,
     "gregorianYear": 1387,
     "king": "王禑",
-    "envoy": "李羙冲、金仍贵、任寿、柳克恕",
-    "purpose": "市马",
-    "tributeRaw": "进所市马五千匹",
+    "envoy": "李羙沖、金仍貴、任壽、柳克恕",
+    "purpose": "市馬",
+    "tributeRaw": "進所市馬五千匹",
     "tributeItems": [
-      "进所市马"
+      "進所市馬"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "文绮二千六百七十匹、布三万一百八十六匹酬之",
-    "source": "《明太祖实录》，卷183，洪武二十年七月辛卯条，第2757页。"
+    "giftsRaw": "文綺二千六百七十匹、布三萬一百八十六匹酬之",
+    "source": "《明太祖實錄》，卷183，洪武二十年七月辛卯條，第2757頁。"
   },
   {
     "id": "cambodia_20_07_001",
     "sourceRow": 167,
     "countryId": "cambodia",
-    "countryName": "真腊",
-    "countryRaw": "真腊",
+    "countryName": "真臘",
+    "countryRaw": "真臘",
     "timeRaw": "洪武二十年七月",
     "year": 20,
     "month": 7,
@@ -4140,7 +4140,7 @@
     "king": "",
     "envoy": "",
     "purpose": "",
-    "tributeRaw": "象五十九只、香六万斤",
+    "tributeRaw": "象五十九隻、香六萬斤",
     "tributeItems": [
       "象",
       "香"
@@ -4150,14 +4150,14 @@
       "spice"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷183，洪武二十年七月乙已条，第2761页。"
+    "source": "《明太祖實錄》，卷183，洪武二十年七月乙已條，第2761頁。"
   },
   {
     "id": "siam_20_07_001",
     "sourceRow": 168,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武二十年七月",
     "year": 20,
     "month": 7,
@@ -4165,12 +4165,12 @@
     "monthSort": 7,
     "gregorianYear": 1387,
     "king": "",
-    "envoy": "坤思利济剌试职替",
+    "envoy": "坤思利濟剌試職替",
     "purpose": "",
-    "tributeRaw": "胡椒一万斤、苏木十万斤 / 使者（献翠羽香物）",
+    "tributeRaw": "胡椒一萬斤、蘇木十萬斤 / 使者（獻翠羽香物）",
     "tributeItems": [
       "胡椒",
-      "苏木",
+      "蘇木",
       "使者"
     ],
     "tributeCategories": [
@@ -4178,7 +4178,7 @@
       "spice"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷183，洪武二十年七月乙已条，第2761页。"
+    "source": "《明太祖實錄》，卷183，洪武二十年七月乙已條，第2761頁。"
   },
   {
     "id": "annam_20_08_001",
@@ -4192,20 +4192,20 @@
     "isLeapMonth": false,
     "monthSort": 8,
     "gregorianYear": 1387,
-    "king": "陈炜",
-    "envoy": "阮太冲、陈叔衡（通议大夫）",
+    "king": "陳煒",
+    "envoy": "阮太沖、陳叔衡（通議大夫）",
     "purpose": "",
-    "tributeRaw": "象、黄金酒樽",
+    "tributeRaw": "象、黃金酒樽",
     "tributeItems": [
       "象",
-      "黄金酒樽"
+      "黃金酒樽"
     ],
     "tributeCategories": [
       "animal",
       "vessel"
     ],
-    "giftsRaw": "钞一百三十锭",
-    "source": "《明太祖实录》，卷184，洪武二十年八月丁巳条，第2766-2767页。"
+    "giftsRaw": "鈔一百三十錠",
+    "source": "《明太祖實錄》，卷184，洪武二十年八月丁巳條，第2766-2767頁。"
   },
   {
     "id": "champa_20_08_001",
@@ -4222,7 +4222,7 @@
     "king": "阿答阿者",
     "envoy": "辛加咄",
     "purpose": "",
-    "tributeRaw": "象五十一只、伽南木犀角等",
+    "tributeRaw": "象五十一隻、伽南木犀角等",
     "tributeItems": [
       "象",
       "伽南木犀角等"
@@ -4230,15 +4230,15 @@
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "织金文绮二十匹、锦四匹，绵被、寒衣一袭，钞二十锭",
-    "source": "《明太祖实录》，卷184,187，洪武二十年八月丁卯条、十一月戊戌条，第2768,2800页。"
+    "giftsRaw": "織金文綺二十匹、錦四匹，綿被、寒衣一襲，鈔二十錠",
+    "source": "《明太祖實錄》，卷184,187，洪武二十年八月丁卯條、十一月戊戌條，第2768,2800頁。"
   },
   {
     "id": "goryeo_20_09_001",
     "sourceRow": 171,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十年九月",
     "year": 20,
     "month": 9,
@@ -4247,21 +4247,21 @@
     "gregorianYear": 1387,
     "king": "王禑",
     "envoy": "月就",
-    "purpose": "贺皇太子千秋",
+    "purpose": "賀皇太子千秋",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "文绮，钞锭",
-    "source": "《明太祖实录》，卷185，洪武二十年九月壬午条，第2776页。"
+    "giftsRaw": "文綺，鈔錠",
+    "source": "《明太祖實錄》，卷185，洪武二十年九月壬午條，第2776頁。"
   },
   {
     "id": "goryeo_20_09_002",
     "sourceRow": 172,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十年九月",
     "year": 20,
     "month": 9,
@@ -4269,24 +4269,24 @@
     "monthSort": 9,
     "gregorianYear": 1387,
     "king": "",
-    "envoy": "张士温（门下赞成事）",
-    "purpose": "表谢赐冠带",
-    "tributeRaw": "马十六匹",
+    "envoy": "張士溫（門下贊成事）",
+    "purpose": "表謝賜冠帶",
+    "tributeRaw": "馬十六匹",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "钞锭",
-    "source": "《明太祖实录》，卷185，洪武二十年九月庚寅条，第2779页。"
+    "giftsRaw": "鈔錠",
+    "source": "《明太祖實錄》，卷185，洪武二十年九月庚寅條，第2779頁。"
   },
   {
     "id": "goryeo_20_09_003",
     "sourceRow": 173,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十年九月",
     "year": 20,
     "month": 9,
@@ -4294,16 +4294,16 @@
     "monthSort": 9,
     "gregorianYear": 1387,
     "king": "王禑",
-    "envoy": "偰长寿（门下评理） / 尹就（密直副使）",
+    "envoy": "偰長壽（門下評理） / 尹就（密直副使）",
     "purpose": "",
-    "tributeRaw": "金龙双台盏一，金盂一，金银钟二，银罐一，玳瑁笔鞘十，黄、白、黑布六十匹",
+    "tributeRaw": "金龍雙臺盞一，金盂一，金銀钟二，銀罐一，玳瑁筆鞘十，黃、白、黑布六十匹",
     "tributeItems": [
-      "金龙双台盏",
+      "金龍雙臺盞",
       "金盂",
-      "金银钟",
-      "银罐",
-      "玳瑁笔鞘",
-      "黄",
+      "金銀钟",
+      "銀罐",
+      "玳瑁筆鞘",
+      "黃",
       "白",
       "黑布"
     ],
@@ -4313,8 +4313,8 @@
       "textile",
       "vessel"
     ],
-    "giftsRaw": "金织文绮，衣，钞",
-    "source": "《明太祖实录》，卷185，洪武二十年九月乙未条，第2781页。"
+    "giftsRaw": "金織文綺，衣，鈔",
+    "source": "《明太祖實錄》，卷185，洪武二十年九月乙未條，第2781頁。"
   },
   {
     "id": "annam_20_09_001",
@@ -4328,32 +4328,32 @@
     "isLeapMonth": false,
     "monthSort": 9,
     "gregorianYear": 1387,
-    "king": "陈炜",
+    "king": "陳煒",
     "envoy": "",
     "purpose": "",
-    "tributeRaw": "马三十匹",
+    "tributeRaw": "馬三十匹",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "金织文绮，衣，钞",
-    "source": "《明太祖实录》，卷185，洪武二十年九月乙未条，第2781页。"
+    "giftsRaw": "金織文綺，衣，鈔",
+    "source": "《明太祖實錄》，卷185，洪武二十年九月乙未條，第2781頁。"
   },
   {
     "id": "cambodia_20_09_001",
     "sourceRow": 175,
     "countryId": "cambodia",
-    "countryName": "真腊",
-    "countryRaw": "真腊",
+    "countryName": "真臘",
+    "countryRaw": "真臘",
     "timeRaw": "洪武二十年九月",
     "year": 20,
     "month": 9,
     "isLeapMonth": false,
     "monthSort": 9,
     "gregorianYear": 1387,
-    "king": "参烈宝毘耶甘菩者",
+    "king": "參烈寶毘耶甘菩者",
     "envoy": "",
     "purpose": "",
     "tributeRaw": "象、方物",
@@ -4363,15 +4363,15 @@
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "金织文绮，衣，钞",
-    "source": "《明太祖实录》，卷185，洪武二十年九月乙未条，第2781页。"
+    "giftsRaw": "金織文綺，衣，鈔",
+    "source": "《明太祖實錄》，卷185，洪武二十年九月乙未條，第2781頁。"
   },
   {
     "id": "siam_20_10_001",
     "sourceRow": 176,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武二十年十月",
     "year": 20,
     "month": 10,
@@ -4379,15 +4379,15 @@
     "monthSort": 10,
     "gregorianYear": 1387,
     "king": "",
-    "envoy": "坤思利济剌替",
+    "envoy": "坤思利濟剌替",
     "purpose": "",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "杂彩九十疋，药饵，衣，钞",
-    "source": "《明太祖实录》，卷186，洪武二十年十月庚戌条，第2786。"
+    "giftsRaw": "雜彩九十疋，藥饵，衣，鈔",
+    "source": "《明太祖實錄》，卷186，洪武二十年十月庚戌條，第2786。"
   },
   {
     "id": "champa_20_10_001",
@@ -4402,22 +4402,22 @@
     "monthSort": 10,
     "gregorianYear": 1387,
     "king": "阿答阿者",
-    "envoy": "宝络圭阿那来郁等一百五十八人",
+    "envoy": "寶絡圭阿那來郁等一百五十八人",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "衣，钞",
-    "source": "《明太祖实录》，卷186，洪武二十年十月辛亥条，第2787页。"
+    "giftsRaw": "衣，鈔",
+    "source": "《明太祖實錄》，卷186，洪武二十年十月辛亥條，第2787頁。"
   },
   {
     "id": "ryukyu_sannan_20_12_001",
     "sourceRow": 178,
     "countryId": "ryukyu_sannan",
-    "countryName": "琉球山南国",
-    "countryRaw": "琉球山南国",
+    "countryName": "琉球山南國",
+    "countryRaw": "琉球山南國",
     "timeRaw": "洪武二十年十二月",
     "year": 20,
     "month": 12,
@@ -4425,24 +4425,24 @@
     "monthSort": 12,
     "gregorianYear": 1387,
     "king": "承察度",
-    "envoy": "耶师姑",
-    "purpose": "贺明年正旦",
-    "tributeRaw": "马三十匹",
+    "envoy": "耶師姑",
+    "purpose": "賀明年正旦",
+    "tributeRaw": "馬三十匹",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "宴，钞",
-    "source": "《明太祖实录》，卷187，洪武二十年十二月丁未条，第2801页。"
+    "giftsRaw": "宴，鈔",
+    "source": "《明太祖實錄》，卷187，洪武二十年十二月丁未條，第2801頁。"
   },
   {
     "id": "ryukyu_sannan_21_01_001",
     "sourceRow": 179,
     "countryId": "ryukyu_sannan",
-    "countryName": "琉球山南国",
-    "countryRaw": "琉球山南国",
+    "countryName": "琉球山南國",
+    "countryRaw": "琉球山南國",
     "timeRaw": "洪武二十一年正月",
     "year": 21,
     "month": 1,
@@ -4450,22 +4450,22 @@
     "monthSort": 1,
     "gregorianYear": 1388,
     "king": "",
-    "envoy": "汪英紫氏（王叔） / 函宁寿（弟）",
+    "envoy": "汪英紫氏（王叔） / 函寧壽（弟）",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "白金文锜、钞",
-    "source": "《明太祖实录》，卷188，洪武二十一年正月丙子条、甲申条，第2811，2813页。"
+    "giftsRaw": "白金文锜、鈔",
+    "source": "《明太祖實錄》，卷188，洪武二十一年正月丙子條、甲申條，第2811，2813頁。"
   },
   {
     "id": "ryukyu_hokuzan_21_01_001",
     "sourceRow": 180,
     "countryId": "ryukyu_hokuzan",
-    "countryName": "琉球山北国",
-    "countryRaw": "琉球山北国",
+    "countryName": "琉球山北國",
+    "countryRaw": "琉球山北國",
     "timeRaw": "洪武二十一年正月",
     "year": 21,
     "month": 1,
@@ -4481,7 +4481,7 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷188，洪武二十一年正月戊子条，第2814。"
+    "source": "《明太祖實錄》，卷188，洪武二十一年正月戊子條，第2814。"
   },
   {
     "id": "champa_21_01_001",
@@ -4496,22 +4496,22 @@
     "monthSort": 1,
     "gregorianYear": 1388,
     "king": "",
-    "envoy": "其使者及从人一百五十二人",
+    "envoy": "其使者及從人一百五十二人",
     "purpose": "",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "钞",
-    "source": "《明太祖实录》，卷188，洪武二十一年正月丁酉条，第2815页。"
+    "giftsRaw": "鈔",
+    "source": "《明太祖實錄》，卷188，洪武二十一年正月丁酉條，第2815頁。"
   },
   {
     "id": "ryukyu_chuzan_21_01_001",
     "sourceRow": 182,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武二十一年正月",
     "year": 21,
     "month": 1,
@@ -4519,17 +4519,17 @@
     "monthSort": 1,
     "gregorianYear": 1388,
     "king": "察度",
-    "envoy": "亚兰匏",
+    "envoy": "亞蘭匏",
     "purpose": "",
-    "tributeRaw": "马、方物",
+    "tributeRaw": "馬、方物",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷188，洪武二十一年正月辛丑条，第2816页。"
+    "source": "《明太祖實錄》，卷188，洪武二十一年正月辛丑條，第2816頁。"
   },
   {
     "id": "annam_21_02_001",
@@ -4543,20 +4543,20 @@
     "isLeapMonth": false,
     "monthSort": 2,
     "gregorianYear": 1388,
-    "king": "陈炜",
+    "king": "陳煒",
     "envoy": "",
     "purpose": "",
-    "tributeRaw": "象、金银器",
+    "tributeRaw": "象、金銀器",
     "tributeItems": [
       "象",
-      "金银器"
+      "金銀器"
     ],
     "tributeCategories": [
       "animal",
       "vessel"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷188，洪武二十一年二月辛酉条，第2823页。"
+    "source": "《明太祖實錄》，卷188，洪武二十一年二月辛酉條，第2823頁。"
   },
   {
     "id": "annam_21_03_001",
@@ -4571,15 +4571,15 @@
     "monthSort": 3,
     "gregorianYear": 1388,
     "king": "",
-    "envoy": "黎仁统",
+    "envoy": "黎仁統",
     "purpose": "",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "钞三十锭",
-    "source": "《明太祖实录》，卷189，洪武二十一年三月庚寅条，第2855页。"
+    "giftsRaw": "鈔三十錠",
+    "source": "《明太祖實錄》，卷189，洪武二十一年三月庚寅條，第2855頁。"
   },
   {
     "id": "champa_21_07_001",
@@ -4594,7 +4594,7 @@
     "monthSort": 7,
     "gregorianYear": 1388,
     "king": "阿答阿者",
-    "envoy": "不剌机伯剌拍弟",
+    "envoy": "不剌機伯剌拍弟",
     "purpose": "",
     "tributeRaw": "伽南、木香",
     "tributeItems": [
@@ -4606,14 +4606,14 @@
       "spice"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷192，洪武二十一年七月是月条，第2891页。"
+    "source": "《明太祖實錄》，卷192，洪武二十一年七月是月條，第2891頁。"
   },
   {
     "id": "siam_21_08_001",
     "sourceRow": 186,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武二十一年八月",
     "year": 21,
     "month": 8,
@@ -4623,7 +4623,7 @@
     "king": "",
     "envoy": "",
     "purpose": "",
-    "tributeRaw": "象三十只、方物、番奴六十人",
+    "tributeRaw": "象三十隻、方物、番奴六十人",
     "tributeItems": [
       "象",
       "番奴"
@@ -4632,14 +4632,14 @@
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷193，洪武二十一年八月壬寅条，第2893页。"
+    "source": "《明太祖實錄》，卷193，洪武二十一年八月壬寅條，第2893頁。"
   },
   {
     "id": "cambodia_21_09_001",
     "sourceRow": 187,
     "countryId": "cambodia",
-    "countryName": "真腊",
-    "countryRaw": "真腊",
+    "countryName": "真臘",
+    "countryRaw": "真臘",
     "timeRaw": "洪武二十一年九月",
     "year": 21,
     "month": 9,
@@ -4649,7 +4649,7 @@
     "king": "",
     "envoy": "柰茅俚",
     "purpose": "",
-    "tributeRaw": "象二十八只、象奴三十四 人、番奴四十五人",
+    "tributeRaw": "象二十八隻、象奴三十四 人、番奴四十五人",
     "tributeItems": [
       "象",
       "象奴",
@@ -4658,15 +4658,15 @@
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "衣，钞",
-    "source": "《明太祖实录》，卷193，洪武二十一年九月丙戌条，第2904页。"
+    "giftsRaw": "衣，鈔",
+    "source": "《明太祖實錄》，卷193，洪武二十一年九月丙戌條，第2904頁。"
   },
   {
     "id": "ryukyu_chuzan_21_09_001",
     "sourceRow": 188,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武二十一年九月",
     "year": 21,
     "month": 9,
@@ -4675,23 +4675,23 @@
     "gregorianYear": 1388,
     "king": "察度",
     "envoy": "",
-    "purpose": "贺天寿节",
-    "tributeRaw": "马",
+    "purpose": "賀天壽節",
+    "tributeRaw": "馬",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "钞",
-    "source": "《明太祖实录》，卷193，洪武二十一年九月丁亥条，第2905页。"
+    "giftsRaw": "鈔",
+    "source": "《明太祖實錄》，卷193，洪武二十一年九月丁亥條，第2905頁。"
   },
   {
     "id": "ryukyu_hokuzan_21_09_001",
     "sourceRow": 189,
     "countryId": "ryukyu_hokuzan",
-    "countryName": "琉球山北国",
-    "countryRaw": "琉球山北国",
+    "countryName": "琉球山北國",
+    "countryRaw": "琉球山北國",
     "timeRaw": "洪武二十一年九月",
     "year": 21,
     "month": 9,
@@ -4699,24 +4699,24 @@
     "monthSort": 9,
     "gregorianYear": 1388,
     "king": "帕尼芝",
-    "envoy": "甚模结致",
-    "purpose": "贺天寿节",
-    "tributeRaw": "马",
+    "envoy": "甚模結致",
+    "purpose": "賀天壽節",
+    "tributeRaw": "馬",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "钞",
-    "source": "《明太祖实录》，卷193，洪武二十一年九月丁亥条，第2905页。"
+    "giftsRaw": "鈔",
+    "source": "《明太祖實錄》，卷193，洪武二十一年九月丁亥條，第2905頁。"
   },
   {
     "id": "goryeo_21_10_001",
     "sourceRow": 190,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十一年十月",
     "year": 21,
     "month": 10,
@@ -4725,21 +4725,21 @@
     "gregorianYear": 1388,
     "king": "王禑",
     "envoy": "禹仁烈",
-    "purpose": "请逊位",
+    "purpose": "請遜位",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷194，洪武二十一年十月庚申条，第2911页。"
+    "source": "《明太祖實錄》，卷194，洪武二十一年十月庚申條，第2911頁。"
   },
   {
     "id": "goryeo_21_12_001",
     "sourceRow": 191,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十一年十二月",
     "year": 21,
     "month": 12,
@@ -4747,28 +4747,28 @@
     "monthSort": 12,
     "gregorianYear": 1388,
     "king": "",
-    "envoy": "李穑",
-    "purpose": "贺明年正旦",
-    "tributeRaw": "金龙头双台盏一、金盂一、 / 镀金银莲花台盏二、银盂三十八、 / 镂金银罇一、镀金盆六、银壸三、 / 镂金银丝龙头镫二、黄白黑布八十疋、花席四十领",
+    "envoy": "李穡",
+    "purpose": "賀明年正旦",
+    "tributeRaw": "金龍頭雙臺盞一、金盂一、 / 镀金銀蓮花臺盞二、銀盂三十八、 / 镂金銀罇一、镀金盆六、銀壸三、 / 镂金銀絲龍頭鐙二、黃白黑布八十疋、花席四十領",
     "tributeItems": [
-      "金龙头双台盏",
+      "金龍頭雙臺盞",
       "金盂",
-      "镀金银莲花台盏",
-      "银盂",
-      "镂金银罇",
+      "镀金銀蓮花臺盞",
+      "銀盂",
+      "镂金銀罇",
       "镀金盆",
-      "银壸",
-      "镂金银丝龙头镫",
-      "黄白黑布",
-      "花席领"
+      "銀壸",
+      "镂金銀絲龍頭鐙",
+      "黃白黑布",
+      "花席領"
     ],
     "tributeCategories": [
       "misc",
       "textile",
       "vessel"
     ],
-    "giftsRaw": "绮，钞",
-    "source": "《明太祖实录》，卷194，洪武二十一年十二月壬子条，第2917页。"
+    "giftsRaw": "綺，鈔",
+    "source": "《明太祖實錄》，卷194，洪武二十一年十二月壬子條，第2917頁。"
   },
   {
     "id": "annam_21_12_001",
@@ -4784,17 +4784,17 @@
     "gregorianYear": 1388,
     "king": "",
     "envoy": "阮完",
-    "purpose": "谢赐勑书文绮",
-    "tributeRaw": "贡象四只、象奴三人",
+    "purpose": "謝賜勑書文綺",
+    "tributeRaw": "貢象四隻、象奴三人",
     "tributeItems": [
-      "贡象",
+      "貢象",
       "象奴"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷194，洪武二十一年十二月癸丑条，第2917-2918页。"
+    "source": "《明太祖實錄》，卷194，洪武二十一年十二月癸丑條，第2917-2918頁。"
   },
   {
     "id": "champa_22_01_001",
@@ -4810,49 +4810,49 @@
     "gregorianYear": 1389,
     "king": "阿答阿者",
     "envoy": "",
-    "purpose": "谢赐诏",
+    "purpose": "謝賜詔",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "绮，帛，钞锭",
-    "source": "《明太祖实录》，卷195，洪武二十二年正月己卯条，第2924。"
+    "giftsRaw": "綺，帛，鈔錠",
+    "source": "《明太祖實錄》，卷195，洪武二十二年正月己卯條，第2924。"
   },
   {
     "id": "siam_22_01_001",
     "sourceRow": 194,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武二十二年正月",
     "year": 22,
     "month": 1,
     "isLeapMonth": false,
     "monthSort": 1,
     "gregorianYear": 1389,
-    "king": "苏门邦王昭禄羣膺（王世子）",
-    "envoy": "冐罗",
+    "king": "蘇門邦王昭祿羣膺（王世子）",
+    "envoy": "冐羅",
     "purpose": "",
-    "tributeRaw": "马、苏木、丁香等物",
+    "tributeRaw": "馬、蘇木、丁香等物",
     "tributeItems": [
-      "马",
-      "苏木",
+      "馬",
+      "蘇木",
       "丁香"
     ],
     "tributeCategories": [
       "animal",
       "spice"
     ],
-    "giftsRaw": "衣，钞",
-    "source": "《明太祖实录》，卷195，洪武二十二年正月丙戌条，第2925页。"
+    "giftsRaw": "衣，鈔",
+    "source": "《明太祖實錄》，卷195，洪武二十二年正月丙戌條，第2925頁。"
   },
   {
     "id": "goryeo_22_01_001",
     "sourceRow": 195,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十二年正月",
     "year": 22,
     "month": 1,
@@ -4861,21 +4861,21 @@
     "gregorianYear": 1389,
     "king": "王昌",
     "envoy": "姜淮伯",
-    "purpose": "请入朝",
+    "purpose": "請入朝",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷195，洪武二十二年正月庚寅条，第2927页。"
+    "source": "《明太祖實錄》，卷195，洪武二十二年正月庚寅條，第2927頁。"
   },
   {
     "id": "cambodia_22_04_001",
     "sourceRow": 196,
     "countryId": "cambodia",
-    "countryName": "真腊",
-    "countryRaw": "真腊",
+    "countryName": "真臘",
+    "countryRaw": "真臘",
     "timeRaw": "洪武二十二年四月",
     "year": 22,
     "month": 4,
@@ -4885,28 +4885,28 @@
     "king": "",
     "envoy": "",
     "purpose": "",
-    "tributeRaw": "丁檀、速香、蔷薇露、琉璃、椒、蜡等物",
+    "tributeRaw": "丁檀、速香、薔薇露、琉璃、椒、蠟等物",
     "tributeItems": [
       "丁檀",
       "速香",
-      "蔷薇露",
+      "薔薇露",
       "琉璃",
       "椒",
-      "蜡"
+      "蠟"
     ],
     "tributeCategories": [
       "misc",
       "spice"
     ],
-    "giftsRaw": "绮，帛，钞",
-    "source": "《明太祖实录》，卷196，洪武二十二年四月癸亥条，第2943页。"
+    "giftsRaw": "綺，帛，鈔",
+    "source": "《明太祖實錄》，卷196，洪武二十二年四月癸亥條，第2943頁。"
   },
   {
     "id": "cambodia_22_06_001",
     "sourceRow": 197,
     "countryId": "cambodia",
-    "countryName": "真腊",
-    "countryRaw": "真腊",
+    "countryName": "真臘",
+    "countryRaw": "真臘",
     "timeRaw": "洪武二十二年六月",
     "year": 22,
     "month": 6,
@@ -4922,14 +4922,14 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷196，洪武二十二年六月辛亥条，第2948页。"
+    "source": "《明太祖實錄》，卷196，洪武二十二年六月辛亥條，第2948頁。"
   },
   {
     "id": "siam_22_06_001",
     "sourceRow": 198,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武二十二年六月",
     "year": 22,
     "month": 6,
@@ -4945,14 +4945,14 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷196，洪武二十二年六月辛亥条，第2948页。"
+    "source": "《明太祖實錄》，卷196，洪武二十二年六月辛亥條，第2948頁。"
   },
   {
     "id": "goryeo_22_08_001",
     "sourceRow": 199,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十二年八月",
     "year": 22,
     "month": 8,
@@ -4961,21 +4961,21 @@
     "gregorianYear": 1389,
     "king": "王昌",
     "envoy": "",
-    "purpose": "请入朝",
+    "purpose": "請入朝",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷197，洪武二十二年八月癸卯条，第2953-2954页。"
+    "source": "《明太祖實錄》，卷197，洪武二十二年八月癸卯條，第2953-2954頁。"
   },
   {
     "id": "goryeo_22_09_001",
     "sourceRow": 200,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十二年九月",
     "year": 22,
     "month": 9,
@@ -4984,21 +4984,21 @@
     "gregorianYear": 1389,
     "king": "",
     "envoy": "",
-    "purpose": "皇太子千秋节",
+    "purpose": "皇太子千秋節",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷197，洪武二十二年九月庚午条、九月癸未条，第2958,2961页。"
+    "source": "《明太祖實錄》，卷197，洪武二十二年九月庚午條、九月癸未條，第2958,2961頁。"
   },
   {
     "id": "cambodia_22_09_001",
     "sourceRow": 201,
     "countryId": "cambodia",
-    "countryName": "真腊",
-    "countryRaw": "真腊",
+    "countryName": "真臘",
+    "countryRaw": "真臘",
     "timeRaw": "洪武二十二年九月",
     "year": 22,
     "month": 9,
@@ -5006,29 +5006,29 @@
     "monthSort": 9,
     "gregorianYear": 1389,
     "king": "",
-    "envoy": "柰祖祝识替",
+    "envoy": "柰祖祝識替",
     "purpose": "",
-    "tributeRaw": "象、象齿、香、蜡等物",
+    "tributeRaw": "象、象齒、香、蠟等物",
     "tributeItems": [
       "象",
-      "象齿",
+      "象齒",
       "香",
-      "蜡"
+      "蠟"
     ],
     "tributeCategories": [
       "animal",
       "misc",
       "spice"
     ],
-    "giftsRaw": "文绮，衣服",
-    "source": "《明太祖实录》，卷197，洪武二十二年九月是月条，第2962页。"
+    "giftsRaw": "文綺，衣服",
+    "source": "《明太祖實錄》，卷197，洪武二十二年九月是月條，第2962頁。"
   },
   {
     "id": "siam_22_10_001",
     "sourceRow": 202,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武二十二年十月",
     "year": 22,
     "month": 10,
@@ -5036,13 +5036,13 @@
     "monthSort": 10,
     "gregorianYear": 1389,
     "king": "",
-    "envoy": "思利檀剌儿思谛",
+    "envoy": "思利檀剌兒思谛",
     "purpose": "",
-    "tributeRaw": "番马、象齿、硫黄、胡椒、降香等物",
+    "tributeRaw": "番馬、象齒、硫黃、胡椒、降香等物",
     "tributeItems": [
-      "番马",
-      "象齿",
-      "硫黄",
+      "番馬",
+      "象齒",
+      "硫黃",
       "胡椒",
       "降香"
     ],
@@ -5051,8 +5051,8 @@
       "misc",
       "spice"
     ],
-    "giftsRaw": "衣，钞",
-    "source": "《明太祖实录》，卷197，洪武二十二年十月辛亥条，第2964页。"
+    "giftsRaw": "衣，鈔",
+    "source": "《明太祖實錄》，卷197，洪武二十二年十月辛亥條，第2964頁。"
   },
   {
     "id": "annam_22_11_001",
@@ -5066,25 +5066,25 @@
     "isLeapMonth": false,
     "monthSort": 11,
     "gregorianYear": 1389,
-    "king": "陈炜",
+    "king": "陳煒",
     "envoy": "阮同叔",
     "purpose": "",
-    "tributeRaw": "方物、金银器皿",
+    "tributeRaw": "方物、金銀器皿",
     "tributeItems": [
-      "金银器皿"
+      "金銀器皿"
     ],
     "tributeCategories": [
       "vessel"
     ],
-    "giftsRaw": "钞",
-    "source": "《明太祖实录》，卷198，洪武二十二年十一月乙酉条，第2971页。"
+    "giftsRaw": "鈔",
+    "source": "《明太祖實錄》，卷198，洪武二十二年十一月乙酉條，第2971頁。"
   },
   {
     "id": "goryeo_22_12_001",
     "sourceRow": 204,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十二年十二月",
     "year": 22,
     "month": 12,
@@ -5092,24 +5092,24 @@
     "monthSort": 12,
     "gregorianYear": 1389,
     "king": "",
-    "envoy": "安宗源（门下赞成事） / 郭海龙（通事）",
+    "envoy": "安宗源（門下贊成事） / 郭海龍（通事）",
     "purpose": "",
-    "tributeRaw": "金银器、方物",
+    "tributeRaw": "金銀器、方物",
     "tributeItems": [
-      "金银器"
+      "金銀器"
     ],
     "tributeCategories": [
       "vessel"
     ],
-    "giftsRaw": "文绮，钞",
-    "source": "《明太祖实录》，卷198，洪武二十二年十二月甲子条，第2978页。"
+    "giftsRaw": "文綺，鈔",
+    "source": "《明太祖實錄》，卷198，洪武二十二年十二月甲子條，第2978頁。"
   },
   {
     "id": "goryeo_23_01_001",
     "sourceRow": 205,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十三年正月",
     "year": 23,
     "month": 1,
@@ -5118,21 +5118,21 @@
     "gregorianYear": 1390,
     "king": "",
     "envoy": "",
-    "purpose": "言国王王昌非王氏后，请立新王",
+    "purpose": "言國王王昌非王氏後，請立新王",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷199，洪武二十三年正月癸未条，第2985页。"
+    "source": "《明太祖實錄》，卷199，洪武二十三年正月癸未條，第2985頁。"
   },
   {
     "id": "ryukyu_chuzan_23_01_001",
     "sourceRow": 206,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武二十三年正月",
     "year": 23,
     "month": 1,
@@ -5140,20 +5140,20 @@
     "monthSort": 1,
     "gregorianYear": 1390,
     "king": "察度",
-    "envoy": "亚兰匏",
-    "purpose": "贺正旦",
-    "tributeRaw": "马二十六匹、硫黄四千斤、 / 胡椒五百斤、苏木三百斤 / 王子武宁： / 马五匹、硫黄二千斤、 / 胡椒二百斤、苏木三百斤 / 通事屋之结者：（没其货） / 胡椒三百余斤、乳香十斤",
+    "envoy": "亞蘭匏",
+    "purpose": "賀正旦",
+    "tributeRaw": "馬二十六匹、硫黃四千斤、 / 胡椒五百斤、蘇木三百斤 / 王子武寧： / 馬五匹、硫黃二千斤、 / 胡椒二百斤、蘇木三百斤 / 通事屋之結者：（沒其貨） / 胡椒三百餘斤、乳香十斤",
     "tributeItems": [
-      "马",
-      "硫黄",
+      "馬",
+      "硫黃",
       "胡椒",
-      "苏木",
-      "王子武宁",
-      "马",
-      "硫黄",
+      "蘇木",
+      "王子武寧",
+      "馬",
+      "硫黃",
       "胡椒",
-      "苏木",
-      "通事屋之结者",
+      "蘇木",
+      "通事屋之結者",
       "胡椒",
       "乳香"
     ],
@@ -5162,15 +5162,15 @@
       "misc",
       "spice"
     ],
-    "giftsRaw": "钞六百锭",
-    "source": "《明太祖实录》，卷199，洪武二十三年正月庚寅条，第2989-2990页。"
+    "giftsRaw": "鈔六百錠",
+    "source": "《明太祖實錄》，卷199，洪武二十三年正月庚寅條，第2989-2990頁。"
   },
   {
     "id": "ryukyu_hokuzan_23_01_001",
     "sourceRow": 207,
     "countryId": "ryukyu_hokuzan",
-    "countryName": "琉球山北国",
-    "countryRaw": "琉球山北国",
+    "countryName": "琉球山北國",
+    "countryRaw": "琉球山北國",
     "timeRaw": "洪武二十三年正月",
     "year": 23,
     "month": 1,
@@ -5179,25 +5179,25 @@
     "gregorianYear": 1390,
     "king": "帕尼芝",
     "envoy": "李仲",
-    "purpose": "贺正旦",
-    "tributeRaw": "马一十匹、硫黄二千斤",
+    "purpose": "賀正旦",
+    "tributeRaw": "馬一十匹、硫黃二千斤",
     "tributeItems": [
-      "马",
-      "硫黄"
+      "馬",
+      "硫黃"
     ],
     "tributeCategories": [
       "animal",
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷199，洪武二十三年正月庚寅条，第2989-2990页。"
+    "source": "《明太祖實錄》，卷199，洪武二十三年正月庚寅條，第2989-2990頁。"
   },
   {
     "id": "goryeo_23_01_002",
     "sourceRow": 208,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十三年正月",
     "year": 23,
     "month": 1,
@@ -5205,22 +5205,22 @@
     "monthSort": 1,
     "gregorianYear": 1390,
     "king": "",
-    "envoy": "裴克廉（门下赞成事）",
-    "purpose": "贺正旦",
+    "envoy": "裴克廉（門下贊成事）",
+    "purpose": "賀正旦",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "文绮，钞",
-    "source": "《明太祖实录》，卷199，洪武二十三年正月癸已条，第2992页。"
+    "giftsRaw": "文綺，鈔",
+    "source": "《明太祖實錄》，卷199，洪武二十三年正月癸已條，第2992頁。"
   },
   {
     "id": "siam_23_04_001",
     "sourceRow": 209,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武二十三年四月",
     "year": 23,
     "month": 4,
@@ -5228,19 +5228,19 @@
     "monthSort": 4,
     "gregorianYear": 1390,
     "king": "",
-    "envoy": "思利檀剌儿思谛",
+    "envoy": "思利檀剌兒思谛",
     "purpose": "",
-    "tributeRaw": "苏木、胡椒、 / 降真等物一十七万一千八百八十斤",
+    "tributeRaw": "蘇木、胡椒、 / 降真等物一十七萬一千八百八十斤",
     "tributeItems": [
-      "苏木",
+      "蘇木",
       "胡椒",
       "降真"
     ],
     "tributeCategories": [
       "spice"
     ],
-    "giftsRaw": "文绮，衣服，钞",
-    "source": "《明太祖实录》，卷201，洪武二十三年四月甲辰条，第3008页。"
+    "giftsRaw": "文綺，衣服，鈔",
+    "source": "《明太祖實錄》，卷201，洪武二十三年四月甲辰條，第3008頁。"
   },
   {
     "id": "annam_23_r04_001",
@@ -5262,15 +5262,15 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "却贡",
-    "source": "《明太祖实录》，卷201，洪武二十三年闰四月乙丑条，第3011页。"
+    "giftsRaw": "卻貢",
+    "source": "《明太祖實錄》，卷201，洪武二十三年闰四月乙丑條，第3011頁。"
   },
   {
     "id": "goryeo_23_05_001",
     "sourceRow": 211,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十三年五月",
     "year": 23,
     "month": 5,
@@ -5279,21 +5279,21 @@
     "gregorianYear": 1390,
     "king": "",
     "envoy": "柳爰（密直副使）",
-    "purpose": "致祭鲁王",
+    "purpose": "致祭魯王",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷202，洪武二十三年五月戊戌条，第3023页。"
+    "source": "《明太祖實錄》，卷202，洪武二十三年五月戊戌條，第3023頁。"
   },
   {
     "id": "goryeo_23_07_001",
     "sourceRow": 212,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十三年七月",
     "year": 23,
     "month": 7,
@@ -5309,14 +5309,14 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷203，洪武二十三年七月甲辰条，第3039页。"
+    "source": "《明太祖實錄》，卷203，洪武二十三年七月甲辰條，第3039頁。"
   },
   {
     "id": "goryeo_23_09_001",
     "sourceRow": 213,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十三年九月",
     "year": 23,
     "month": 9,
@@ -5324,15 +5324,15 @@
     "monthSort": 9,
     "gregorianYear": 1390,
     "king": "",
-    "envoy": "韩尚质（密直副使）",
-    "purpose": "皇太子千秋节",
+    "envoy": "韓尚質（密直副使）",
+    "purpose": "皇太子千秋節",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷204，洪武二十三年九月甲午条，第3051页。"
+    "source": "《明太祖實錄》，卷204，洪武二十三年九月甲午條，第3051頁。"
   },
   {
     "id": "champa_23_09_001",
@@ -5355,14 +5355,14 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷204，洪武二十三年九月壬寅条，第3055页。"
+    "source": "《明太祖實錄》，卷204，洪武二十三年九月壬寅條，第3055頁。"
   },
   {
     "id": "goryeo_23_09_002",
     "sourceRow": 215,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十三年九月",
     "year": 23,
     "month": 9,
@@ -5370,22 +5370,22 @@
     "monthSort": 9,
     "gregorianYear": 1390,
     "king": "",
-    "envoy": "郑道传（门下评理）",
+    "envoy": "鄭道傳（門下評理）",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "钞人二十锭、文绮各二疋",
-    "source": "《明太祖实录》，卷204，洪武二十三年九月丁未条，第3056-3057页。"
+    "giftsRaw": "鈔人二十錠、文綺各二疋",
+    "source": "《明太祖實錄》，卷204，洪武二十三年九月丁未條，第3056-3057頁。"
   },
   {
     "id": "cambodia_23_11_001",
     "sourceRow": 216,
     "countryId": "cambodia",
-    "countryName": "真腊",
-    "countryRaw": "真腊",
+    "countryName": "真臘",
+    "countryRaw": "真臘",
     "timeRaw": "洪武二十三年十一月",
     "year": 23,
     "month": 11,
@@ -5400,15 +5400,15 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "绵衣人一袭",
-    "source": "《明太祖实录》，卷206，洪武二十三年十一月丁酉条，第3069页。"
+    "giftsRaw": "綿衣人一襲",
+    "source": "《明太祖實錄》，卷206，洪武二十三年十一月丁酉條，第3069頁。"
   },
   {
     "id": "goryeo_23_12_001",
     "sourceRow": 217,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十三年十二月",
     "year": 23,
     "month": 12,
@@ -5418,22 +5418,22 @@
     "king": "",
     "envoy": "",
     "purpose": "",
-    "tributeRaw": "玳瑁笔",
+    "tributeRaw": "玳瑁筆",
     "tributeItems": [
-      "玳瑁笔"
+      "玳瑁筆"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷206，洪武二十三年十二月癸亥条，第3073页。"
+    "source": "《明太祖實錄》，卷206，洪武二十三年十二月癸亥條，第3073頁。"
   },
   {
     "id": "goryeo_23_12_002",
     "sourceRow": 218,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十三年十二月",
     "year": 23,
     "month": 12,
@@ -5441,51 +5441,51 @@
     "monthSort": 12,
     "gregorianYear": 1390,
     "king": "",
-    "envoy": "姜隐（密直副使） / 金南德（门下评理）",
-    "purpose": "贺明年正旦",
-    "tributeRaw": "马四十八匹及金银器皿等物",
+    "envoy": "姜隱（密直副使） / 金南德（門下評理）",
+    "purpose": "賀明年正旦",
+    "tributeRaw": "馬四十八匹及金銀器皿等物",
     "tributeItems": [
-      "马",
-      "金银器皿"
+      "馬",
+      "金銀器皿"
     ],
     "tributeCategories": [
       "animal",
       "vessel"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷206，洪武二十三年十二月庚辰，第3076页。"
+    "source": "《明太祖實錄》，卷206，洪武二十三年十二月庚辰，第3076頁。"
   },
   {
     "id": "ryukyu_chuzan_24_02_001",
     "sourceRow": 219,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武二十四年二月",
     "year": 24,
     "month": 2,
     "isLeapMonth": false,
     "monthSort": 2,
     "gregorianYear": 1391,
-    "king": "察度 / 武宁（王子）",
-    "envoy": "亚兰匏 / 嵬谷致",
+    "king": "察度 / 武寧（王子）",
+    "envoy": "亞蘭匏 / 嵬谷致",
     "purpose": "",
-    "tributeRaw": "马、方物",
+    "tributeRaw": "馬、方物",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷207，洪武二十四年二月己卯条，第3091页。"
+    "source": "《明太祖實錄》，卷207，洪武二十四年二月己卯條，第3091頁。"
   },
   {
     "id": "siam_24_04_001",
     "sourceRow": 220,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武二十四年四月",
     "year": 24,
     "month": 4,
@@ -5503,65 +5503,65 @@
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "衣，钞",
-    "source": "《明太祖实录》，卷208，洪武二十四年四月戊午条，第3098页。"
+    "giftsRaw": "衣，鈔",
+    "source": "《明太祖實錄》，卷208，洪武二十四年四月戊午條，第3098頁。"
   },
   {
     "id": "goryeo_24_08_001",
     "sourceRow": 221,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十四年八月",
     "year": 24,
     "month": 8,
     "isLeapMonth": false,
     "monthSort": 8,
     "gregorianYear": 1391,
-    "king": "王瑶",
-    "envoy": "杨天植",
-    "purpose": "市马",
-    "tributeRaw": "市马一千五百匹",
+    "king": "王瑤",
+    "envoy": "楊天植",
+    "purpose": "市馬",
+    "tributeRaw": "市馬一千五百匹",
     "tributeItems": [
-      "市马"
+      "市馬"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷211，洪武二十四年八月戊辰条，第3135-3136页。"
+    "source": "《明太祖實錄》，卷211，洪武二十四年八月戊辰條，第3135-3136頁。"
   },
   {
     "id": "goryeo_24_09_001",
     "sourceRow": 222,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十四年九月",
     "year": 24,
     "month": 9,
     "isLeapMonth": false,
     "monthSort": 9,
     "gregorianYear": 1391,
-    "king": "王瑶",
-    "envoy": "赵俊（门下成事）",
-    "purpose": "贺天寿圣节",
-    "tributeRaw": "马、方物",
+    "king": "王瑤",
+    "envoy": "趙俊（門下成事）",
+    "purpose": "賀天壽聖節",
+    "tributeRaw": "馬、方物",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷212，洪武二十四年九月乙酉条，第3141。"
+    "source": "《明太祖實錄》，卷212，洪武二十四年九月乙酉條，第3141。"
   },
   {
     "id": "ryukyu_sannan_24_09_001",
     "sourceRow": 223,
     "countryId": "ryukyu_sannan",
-    "countryName": "琉球山南国",
-    "countryRaw": "琉球山南国",
+    "countryName": "琉球山南國",
+    "countryRaw": "琉球山南國",
     "timeRaw": "洪武二十四年九月",
     "year": 24,
     "month": 9,
@@ -5569,17 +5569,17 @@
     "monthSort": 9,
     "gregorianYear": 1391,
     "king": "汪英紫氏（王叔）",
-    "envoy": "耶师姑、寿礼给智",
-    "purpose": "贺天寿圣节",
-    "tributeRaw": "马、方物",
+    "envoy": "耶師姑、壽禮給智",
+    "purpose": "賀天壽聖節",
+    "tributeRaw": "馬、方物",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷212，洪武二十四年九月乙酉条，第3141页。"
+    "source": "《明太祖實錄》，卷212，洪武二十四年九月乙酉條，第3141頁。"
   },
   {
     "id": "champa_24_11_001",
@@ -5594,7 +5594,7 @@
     "monthSort": 11,
     "gregorianYear": 1391,
     "king": "",
-    "envoy": "陶宝加直（太师）",
+    "envoy": "陶寶加直（太師）",
     "purpose": "",
     "tributeRaw": "犀牛、番奴、布",
     "tributeItems": [
@@ -5606,121 +5606,121 @@
       "animal",
       "textile"
     ],
-    "giftsRaw": "却贡",
-    "source": "《明太祖实录》，卷214，洪武二十四年十一月己丑条，第3157页。"
+    "giftsRaw": "卻貢",
+    "source": "《明太祖實錄》，卷214，洪武二十四年十一月己丑條，第3157頁。"
   },
   {
     "id": "goryeo_24_11_001",
     "sourceRow": 225,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十四年十一月",
     "year": 24,
     "month": 11,
     "isLeapMonth": false,
     "monthSort": 11,
     "gregorianYear": 1391,
-    "king": "王瑶",
+    "king": "王瑤",
     "envoy": "金之铎",
-    "purpose": "市马",
+    "purpose": "市馬",
     "tributeRaw": "二千五百",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷214，洪武二十四年十一月己亥条，第3158-3159页。"
+    "source": "《明太祖實錄》，卷214，洪武二十四年十一月己亥條，第3158-3159頁。"
   },
   {
     "id": "goryeo_24_12_001",
     "sourceRow": 226,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十四年十二月",
     "year": 24,
     "month": 12,
     "isLeapMonth": false,
     "monthSort": 12,
     "gregorianYear": 1391,
-    "king": "王瑶",
-    "envoy": "王奭（长子定城君） / 偰长寿（门下赞成事）",
-    "purpose": "贺明年正旦",
-    "tributeRaw": "马、方物",
+    "king": "王瑤",
+    "envoy": "王奭（長子定城君） / 偰長壽（門下贊成事）",
+    "purpose": "賀明年正旦",
+    "tributeRaw": "馬、方物",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "金织文绮，衣服",
-    "source": "《明太祖实录》，卷214，洪武二十四年十二月癸酉条，第3164页。"
+    "giftsRaw": "金織文綺，衣服",
+    "source": "《明太祖實錄》，卷214，洪武二十四年十二月癸酉條，第3164頁。"
   },
   {
     "id": "ryukyu_chuzan_25_05_001",
     "sourceRow": 227,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武二十五年五月",
     "year": 25,
     "month": 5,
     "isLeapMonth": false,
     "monthSort": 5,
     "gregorianYear": 1392,
-    "king": "察度 / 武宁（王子）",
-    "envoy": "渥周结致",
-    "purpose": "入学",
-    "tributeRaw": "马",
+    "king": "察度 / 武寧（王子）",
+    "envoy": "渥周結致",
+    "purpose": "入學",
+    "tributeRaw": "馬",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "衣巾、靴韈、夏衣一襲、鈔五錠",
-    "source": "《明太祖实录》，卷217，洪武二十五年五月癸未条，第3197页。"
+    "source": "《明太祖實錄》，卷217，洪武二十五年五月癸未條，第3197頁。"
   },
   {
     "id": "goryeo_25_05_001",
     "sourceRow": 228,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十五年五月",
     "year": 25,
     "month": 5,
     "isLeapMonth": false,
     "monthSort": 5,
     "gregorianYear": 1392,
-    "king": "王瑶",
-    "envoy": "王昂（侄永福君） / 权仲和（门下赞成事）",
-    "purpose": "谢所赐礼币",
-    "tributeRaw": "马、方物",
+    "king": "王瑤",
+    "envoy": "王昂（侄永福君） / 權仲和（門下贊成事）",
+    "purpose": "謝所賜禮幣",
+    "tributeRaw": "馬、方物",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "宴",
-    "source": "《明太祖实录》，卷217，洪武二十五年五月庚戌条，第3201页。"
+    "source": "《明太祖實錄》，卷217，洪武二十五年五月庚戌條，第3201頁。"
   },
   {
     "id": "goryeo_25_09_001",
     "sourceRow": 229,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十五年九月",
     "year": 25,
     "month": 9,
     "isLeapMonth": false,
     "monthSort": 9,
     "gregorianYear": 1392,
-    "king": "高丽都评议司",
-    "envoy": "赵胖（知密直司事）",
+    "king": "高麗都評議司",
+    "envoy": "趙胖（知密直司事）",
     "purpose": "奏言",
     "tributeRaw": "",
     "tributeItems": [],
@@ -5728,14 +5728,14 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷221，洪武二十五年九月庚寅条，第3233-3235页。"
+    "source": "《明太祖實錄》，卷221，洪武二十五年九月庚寅條，第3233-3235頁。"
   },
   {
     "id": "goryeo_25_11_001",
     "sourceRow": 230,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十五年十一月",
     "year": 25,
     "month": 11,
@@ -5745,7 +5745,7 @@
     "king": "李成桂",
     "envoy": "李居仁（三司左使）",
     "purpose": "奉慰皇太子薨",
-    "tributeRaw": "白金二锭、白黑布各百疋",
+    "tributeRaw": "白金二錠、白黑布各百疋",
     "tributeItems": [
       "白金",
       "白黑布各"
@@ -5755,14 +5755,14 @@
       "textile"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷222，洪武二十五年十一月甲午条，第3247页。"
+    "source": "《明太祖實錄》，卷222，洪武二十五年十一月甲午條，第3247頁。"
   },
   {
     "id": "ryukyu_chuzan_25_11_001",
     "sourceRow": 231,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武二十五年十一月",
     "year": 25,
     "month": 11,
@@ -5771,21 +5771,21 @@
     "gregorianYear": 1392,
     "king": "察度",
     "envoy": "察都",
-    "purpose": "贺冬至",
+    "purpose": "賀冬至",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷222，洪武二十五年十一月甲午条，第3247页。"
+    "source": "《明太祖實錄》，卷222，洪武二十五年十一月甲午條，第3247頁。"
   },
   {
     "id": "ryukyu_sannan_25_12_001",
     "sourceRow": 232,
     "countryId": "ryukyu_sannan",
-    "countryName": "琉球山南国",
-    "countryRaw": "琉球山南国",
+    "countryName": "琉球山南國",
+    "countryRaw": "琉球山南國",
     "timeRaw": "洪武二十五年十二月",
     "year": 25,
     "month": 12,
@@ -5794,21 +5794,21 @@
     "gregorianYear": 1392,
     "king": "承察度",
     "envoy": "南都妹",
-    "purpose": "入学",
+    "purpose": "入學",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷223，洪武二十五年十二月庚申条，第3260-3261页。"
+    "source": "《明太祖實錄》，卷223，洪武二十五年十二月庚申條，第3260-3261頁。"
   },
   {
     "id": "goryeo_25_r12_001",
     "sourceRow": 233,
     "countryId": "goryeo",
-    "countryName": "高丽",
-    "countryRaw": "高丽",
+    "countryName": "高麗",
+    "countryRaw": "高麗",
     "timeRaw": "洪武二十五年闰十二月",
     "year": 25,
     "month": 12,
@@ -5817,21 +5817,21 @@
     "gregorianYear": 1392,
     "king": "李成桂",
     "envoy": "",
-    "purpose": "欲更其国号",
+    "purpose": "欲更其國號",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷223，洪武二十五年闰十二月乙酉条，第3267页。"
+    "source": "《明太祖實錄》，卷223，洪武二十五年闰十二月乙酉條，第3267頁。"
   },
   {
     "id": "joseon_26_01_001",
     "sourceRow": 234,
     "countryId": "joseon",
-    "countryName": "朝鲜",
-    "countryRaw": "朝鲜",
+    "countryName": "朝鮮",
+    "countryRaw": "朝鮮",
     "timeRaw": "洪武二十六年正月",
     "year": 26,
     "month": 1,
@@ -5839,15 +5839,15 @@
     "monthSort": 1,
     "gregorianYear": 1393,
     "king": "李成桂",
-    "envoy": "卢嵩（同知密直司事）",
+    "envoy": "盧嵩（同知密直司事）",
     "purpose": "",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "文绮，钞",
-    "source": "《明太祖实录》，卷224，洪武二十六年正月丁未条，第3273页。"
+    "giftsRaw": "文綺，鈔",
+    "source": "《明太祖實錄》，卷224，洪武二十六年正月丁未條，第3273頁。"
   },
   {
     "id": "annam_26_01_001",
@@ -5869,38 +5869,38 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "文绮，钞",
-    "source": "《明太祖实录》，卷224，洪武二十六年正月丁未条，第3273页。"
+    "giftsRaw": "文綺，鈔",
+    "source": "《明太祖實錄》，卷224，洪武二十六年正月丁未條，第3273頁。"
   },
   {
     "id": "siam_26_01_001",
     "sourceRow": 236,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武二十六年正月",
     "year": 26,
     "month": 1,
     "isLeapMonth": false,
     "monthSort": 1,
     "gregorianYear": 1393,
-    "king": "参烈宝毗牙",
-    "envoy": "李三齐德",
+    "king": "參烈寶毗牙",
+    "envoy": "李三齊德",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "文绮，钞",
-    "source": "《明太祖实录》，卷224，洪武二十六年正月丁未条，第3273页。"
+    "giftsRaw": "文綺，鈔",
+    "source": "《明太祖實錄》，卷224，洪武二十六年正月丁未條，第3273頁。"
   },
   {
     "id": "ryukyu_chuzan_26_01_001",
     "sourceRow": 237,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武二十六年正月",
     "year": 26,
     "month": 1,
@@ -5910,24 +5910,24 @@
     "king": "察度",
     "envoy": "麻州",
     "purpose": "",
-    "tributeRaw": "马、硫黄",
+    "tributeRaw": "馬、硫黃",
     "tributeItems": [
-      "马",
-      "硫黄"
+      "馬",
+      "硫黃"
     ],
     "tributeCategories": [
       "animal",
       "misc"
     ],
-    "giftsRaw": "锦绮，钞",
-    "source": "《明太祖实录》，卷224，洪武二十六年正月甲子条，第3276-3277页。"
+    "giftsRaw": "錦綺，鈔",
+    "source": "《明太祖實錄》，卷224，洪武二十六年正月甲子條，第3276-3277頁。"
   },
   {
     "id": "joseon_26_02_001",
     "sourceRow": 238,
     "countryId": "joseon",
-    "countryName": "朝鲜",
-    "countryRaw": "朝鲜",
+    "countryName": "朝鮮",
+    "countryRaw": "朝鮮",
     "timeRaw": "洪武二十六年二月",
     "year": 26,
     "month": 2,
@@ -5936,16 +5936,16 @@
     "gregorianYear": 1393,
     "king": "",
     "envoy": "",
-    "purpose": "市马",
-    "tributeRaw": "送马九千八百八十匹",
+    "purpose": "市馬",
+    "tributeRaw": "送馬九千八百八十匹",
     "tributeItems": [
-      "送马"
+      "送馬"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "纻丝，绵布一万九千七百六十匹，以酬之",
-    "source": "《明太祖实录》，卷225，洪武二十六年二月癸巳条，第3298页。"
+    "giftsRaw": "纻絲，綿布一萬九千七百六十匹，以酬之",
+    "source": "《明太祖實錄》，卷225，洪武二十六年二月癸巳條，第3298頁。"
   },
   {
     "id": "java_26_02_001",
@@ -5960,24 +5960,24 @@
     "monthSort": 2,
     "gregorianYear": 1393,
     "king": "",
-    "envoy": "番僧阿烈均禄 / （使二十五人）",
+    "envoy": "番僧阿烈均祿 / （使二十五人）",
     "purpose": "",
-    "tributeRaw": "马、方物",
+    "tributeRaw": "馬、方物",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "钞",
-    "source": "《明太祖实录》，卷225，洪武二十六年二月丙申条，第3300页。"
+    "giftsRaw": "鈔",
+    "source": "《明太祖實錄》，卷225，洪武二十六年二月丙申條，第3300頁。"
   },
   {
     "id": "joseon_26_02_002",
     "sourceRow": 240,
     "countryId": "joseon",
-    "countryName": "朝鲜",
-    "countryRaw": "朝鲜",
+    "countryName": "朝鮮",
+    "countryRaw": "朝鮮",
     "timeRaw": "洪武二十六年二月",
     "year": 26,
     "month": 2,
@@ -5985,24 +5985,24 @@
     "monthSort": 2,
     "gregorianYear": 1393,
     "king": "李成桂",
-    "envoy": "禹仁烈（门下赞成事）",
+    "envoy": "禹仁烈（門下贊成事）",
     "purpose": "",
-    "tributeRaw": "马、方物",
+    "tributeRaw": "馬、方物",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷225，洪武二十六年二月是月条，第3302页。"
+    "source": "《明太祖實錄》，卷225，洪武二十六年二月是月條，第3302頁。"
   },
   {
     "id": "ryukyu_chuzan_26_04_001",
     "sourceRow": 241,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武二十六年四月",
     "year": 26,
     "month": 4,
@@ -6010,24 +6010,24 @@
     "monthSort": 4,
     "gregorianYear": 1393,
     "king": "察度",
-    "envoy": "寿礼结致",
-    "purpose": "入学",
-    "tributeRaw": "马、方物",
+    "envoy": "壽禮結致",
+    "purpose": "入學",
+    "tributeRaw": "馬、方物",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷227，洪武二十六年四月辛卯条，第3313页。"
+    "source": "《明太祖實錄》，卷227，洪武二十六年四月辛卯條，第3313頁。"
   },
   {
     "id": "ryukyu_sannan_26_05_001",
     "sourceRow": 242,
     "countryId": "ryukyu_sannan",
-    "countryName": "琉球山南国",
-    "countryRaw": "琉球山南国",
+    "countryName": "琉球山南國",
+    "countryRaw": "琉球山南國",
     "timeRaw": "洪武二十六年五月",
     "year": 26,
     "month": 5,
@@ -6035,24 +6035,24 @@
     "monthSort": 5,
     "gregorianYear": 1393,
     "king": "汪英紫氏（王叔）",
-    "envoy": "不里结致",
+    "envoy": "不里結致",
     "purpose": "",
-    "tributeRaw": "马、方物",
+    "tributeRaw": "馬、方物",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷227，洪武二十六年五月庚午条，第3318页。"
+    "source": "《明太祖實錄》，卷227，洪武二十六年五月庚午條，第3318頁。"
   },
   {
     "id": "joseon_26_06_001",
     "sourceRow": 243,
     "countryId": "joseon",
-    "countryName": "朝鲜",
-    "countryRaw": "朝鲜",
+    "countryName": "朝鮮",
+    "countryRaw": "朝鮮",
     "timeRaw": "洪武二十六年六月",
     "year": 26,
     "month": 6,
@@ -6061,23 +6061,23 @@
     "gregorianYear": 1393,
     "king": "李成桂",
     "envoy": "李恬",
-    "purpose": "谢更国号 / 上金印 / 更名",
-    "tributeRaw": "马、方物",
+    "purpose": "謝更國號 / 上金印 / 更名",
+    "tributeRaw": "馬、方物",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "文绮，钞锭",
-    "source": "《明太祖实录》，卷228，洪武二十六年六月丙子条，第3323页。"
+    "giftsRaw": "文綺，鈔錠",
+    "source": "《明太祖實錄》，卷228，洪武二十六年六月丙子條，第3323頁。"
   },
   {
     "id": "joseon_26_09_001",
     "sourceRow": 244,
     "countryId": "joseon",
-    "countryName": "朝鲜",
-    "countryRaw": "高丽（朝鲜）",
+    "countryName": "朝鮮",
+    "countryRaw": "高麗（朝鮮）",
     "timeRaw": "洪武二十六年九月",
     "year": 26,
     "month": 9,
@@ -6086,12 +6086,12 @@
     "gregorianYear": 1393,
     "king": "李旦",
     "envoy": "",
-    "purpose": "谢罪",
-    "tributeRaw": "白黑布、人参、金装鞍马",
+    "purpose": "謝罪",
+    "tributeRaw": "白黑布、人參、金裝鞍馬",
     "tributeItems": [
       "白黑布",
-      "参",
-      "金装鞍马"
+      "參",
+      "金裝鞍馬"
     ],
     "tributeCategories": [
       "animal",
@@ -6099,7 +6099,7 @@
       "textile"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷229，洪武二十六年九月壬申条，第3357页。"
+    "source": "《明太祖實錄》，卷229，洪武二十六年九月壬申條，第3357頁。"
   },
   {
     "id": "java_26_11_001",
@@ -6122,14 +6122,14 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷230，洪武二十六年十一月丁卯条，第3367页。"
+    "source": "《明太祖實錄》，卷230，洪武二十六年十一月丁卯條，第3367頁。"
   },
   {
     "id": "siam_26_12_001",
     "sourceRow": 246,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武二十六年十二月",
     "year": 26,
     "month": 12,
@@ -6137,7 +6137,7 @@
     "monthSort": 12,
     "gregorianYear": 1393,
     "king": "",
-    "envoy": "冒勾来",
+    "envoy": "冒勾來",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
@@ -6145,14 +6145,14 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷231，洪武二十六年十二月丙戌条，第3368页。"
+    "source": "《明太祖實錄》，卷231，洪武二十六年十二月丙戌條，第3368頁。"
   },
   {
     "id": "ryukyu_chuzan_27_01_001",
     "sourceRow": 247,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武二十七年正月",
     "year": 27,
     "month": 1,
@@ -6160,13 +6160,13 @@
     "monthSort": 1,
     "gregorianYear": 1394,
     "king": "察度",
-    "envoy": "亚兰匏（王相） / 叶希尹（通事）",
+    "envoy": "亞蘭匏（王相） / 葉希尹（通事）",
     "purpose": "",
-    "tributeRaw": "马九十余匹、硫黄、苏木、胡椒等物",
+    "tributeRaw": "馬九十餘匹、硫黃、蘇木、胡椒等物",
     "tributeItems": [
-      "马",
-      "硫黄",
-      "苏木",
+      "馬",
+      "硫黃",
+      "蘇木",
       "胡椒"
     ],
     "tributeCategories": [
@@ -6174,15 +6174,15 @@
       "misc",
       "spice"
     ],
-    "giftsRaw": "公服一袭、冠带，钞",
-    "source": "《明太祖实录》，卷231、232，洪武二十七年正月乙丑条、三月己酉条，第3375-3376，3389页。"
+    "giftsRaw": "公服一襲、冠帶，鈔",
+    "source": "《明太祖實錄》，卷231、232，洪武二十七年正月乙丑條、三月己酉條，第3375-3376，3389頁。"
   },
   {
     "id": "ryukyu_sannan_27_01_001",
     "sourceRow": 248,
     "countryId": "ryukyu_sannan",
-    "countryName": "琉球山南国",
-    "countryRaw": "琉球山南国",
+    "countryName": "琉球山南國",
+    "countryRaw": "琉球山南國",
     "timeRaw": "洪武二十七年正月",
     "year": 27,
     "month": 1,
@@ -6192,13 +6192,13 @@
     "king": "承察度",
     "envoy": "",
     "purpose": "",
-    "tributeRaw": "与上同一项",
+    "tributeRaw": "與上同一項",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷231，洪武二十七年正月乙丑条，第3375-3376页。"
+    "source": "《明太祖實錄》，卷231，洪武二十七年正月乙丑條，第3375-3376頁。"
   },
   {
     "id": "java_27_04_001",
@@ -6215,15 +6215,15 @@
     "king": "",
     "envoy": "",
     "purpose": "",
-    "tributeRaw": "苏木香药等物",
+    "tributeRaw": "蘇木香藥等物",
     "tributeItems": [
-      "苏木香药"
+      "蘇木香藥"
     ],
     "tributeCategories": [
       "spice"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷232，洪武二十七年四月庚寅条，第3398页。"
+    "source": "《明太祖實錄》，卷232，洪武二十七年四月庚寅條，第3398頁。"
   },
   {
     "id": "annam_27_05_001",
@@ -6245,15 +6245,15 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "却贡",
-    "source": "《明太祖实录》，卷233，洪武二十七年五月甲寅条，第3401页。"
+    "giftsRaw": "卻貢",
+    "source": "《明太祖實錄》，卷233，洪武二十七年五月甲寅條，第3401頁。"
   },
   {
     "id": "joseon_27_09_001",
     "sourceRow": 251,
     "countryId": "joseon",
-    "countryName": "朝鲜",
-    "countryRaw": "朝鲜",
+    "countryName": "朝鮮",
+    "countryRaw": "朝鮮",
     "timeRaw": "洪武二十七年九月",
     "year": 27,
     "month": 9,
@@ -6261,22 +6261,22 @@
     "monthSort": 9,
     "gregorianYear": 1394,
     "king": "李旦",
-    "envoy": "其子某、赵琳（门下评理）",
-    "purpose": "贺天寿圣节",
+    "envoy": "其子某、趙琳（門下評理）",
+    "purpose": "賀天壽聖節",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷234，洪武二十七年九月乙卯条，第3422-3423页。"
+    "source": "《明太祖實錄》，卷234，洪武二十七年九月乙卯條，第3422-3423頁。"
   },
   {
     "id": "joseon_27_11_001",
     "sourceRow": 252,
     "countryId": "joseon",
-    "countryName": "朝鲜",
-    "countryRaw": "朝鲜",
+    "countryName": "朝鮮",
+    "countryRaw": "朝鮮",
     "timeRaw": "洪武二十七年十一月",
     "year": 27,
     "month": 11,
@@ -6284,24 +6284,24 @@
     "monthSort": 11,
     "gregorianYear": 1394,
     "king": "",
-    "envoy": "李茂（门下府事）",
+    "envoy": "李茂（門下府事）",
     "purpose": "",
-    "tributeRaw": "马十四匹",
+    "tributeRaw": "馬十四匹",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷235，洪武二十七年十一月戊戍条，第3432页。"
+    "source": "《明太祖實錄》，卷235，洪武二十七年十一月戊戍條，第3432頁。"
   },
   {
     "id": "joseon_28_01_001",
     "sourceRow": 253,
     "countryId": "joseon",
-    "countryName": "朝鲜",
-    "countryRaw": "朝鲜",
+    "countryName": "朝鮮",
+    "countryRaw": "朝鮮",
     "timeRaw": "洪武二十八年正月",
     "year": 28,
     "month": 1,
@@ -6311,22 +6311,22 @@
     "king": "李旦",
     "envoy": "",
     "purpose": "",
-    "tributeRaw": "方物、马匹",
+    "tributeRaw": "方物、馬匹",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷236，洪武二十八年正月丙申条，第3443页。"
+    "source": "《明太祖實錄》，卷236，洪武二十八年正月丙申條，第3443頁。"
   },
   {
     "id": "ryukyu_hokuzan_28_01_001",
     "sourceRow": 254,
     "countryId": "ryukyu_hokuzan",
-    "countryName": "琉球山北国",
-    "countryRaw": "琉球山北国",
+    "countryName": "琉球山北國",
+    "countryRaw": "琉球山北國",
     "timeRaw": "洪武二十八年正月",
     "year": 28,
     "month": 1,
@@ -6336,22 +6336,22 @@
     "king": "",
     "envoy": "",
     "purpose": "",
-    "tributeRaw": "方物、马匹",
+    "tributeRaw": "方物、馬匹",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷236，洪武二十八年正月丙申条，第3443页。"
+    "source": "《明太祖實錄》，卷236，洪武二十八年正月丙申條，第3443頁。"
   },
   {
     "id": "ryukyu_sannan_28_01_001",
     "sourceRow": 255,
     "countryId": "ryukyu_sannan",
-    "countryName": "琉球山南国",
-    "countryRaw": "琉球山南国",
+    "countryName": "琉球山南國",
+    "countryRaw": "琉球山南國",
     "timeRaw": "洪武二十八年正月",
     "year": 28,
     "month": 1,
@@ -6359,26 +6359,26 @@
     "monthSort": 1,
     "gregorianYear": 1395,
     "king": "汪英紫氏（王叔）",
-    "envoy": "耶师姑",
+    "envoy": "耶師姑",
     "purpose": "",
-    "tributeRaw": "马共三十六匹、硫黄共四千斤",
+    "tributeRaw": "馬共三十六匹、硫黃共四千斤",
     "tributeItems": [
-      "马共",
-      "硫黄共"
+      "馬共",
+      "硫黃共"
     ],
     "tributeCategories": [
       "animal",
       "misc"
     ],
-    "giftsRaw": "钞",
-    "source": "《明太祖实录》，卷236，洪武二十八年正月是月条，第3447页。"
+    "giftsRaw": "鈔",
+    "source": "《明太祖實錄》，卷236，洪武二十八年正月是月條，第3447頁。"
   },
   {
     "id": "ryukyu_chuzan_28_01_001",
     "sourceRow": 256,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武二十八年正月",
     "year": 28,
     "month": 1,
@@ -6386,22 +6386,22 @@
     "monthSort": 1,
     "gregorianYear": 1395,
     "king": "察度",
-    "envoy": "亚兰匏",
+    "envoy": "亞蘭匏",
     "purpose": "",
-    "tributeRaw": "与上项合共计",
+    "tributeRaw": "與上項合共計",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "钞",
-    "source": "《明太祖实录》，卷236，洪武二十八年正月是月条，第3447页。"
+    "giftsRaw": "鈔",
+    "source": "《明太祖實錄》，卷236，洪武二十八年正月是月條，第3447頁。"
   },
   {
     "id": "ryukyu_chuzan_28_04_001",
     "sourceRow": 257,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武二十八年四月",
     "year": 28,
     "month": 4,
@@ -6409,19 +6409,19 @@
     "monthSort": 4,
     "gregorianYear": 1395,
     "king": "察度",
-    "envoy": "亚撒都",
+    "envoy": "亞撒都",
     "purpose": "",
-    "tributeRaw": "硫黄、马匹、方物",
+    "tributeRaw": "硫黃、馬匹、方物",
     "tributeItems": [
-      "硫黄",
-      "马"
+      "硫黃",
+      "馬"
     ],
     "tributeCategories": [
       "animal",
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷238，洪武二十八年四月庚午条，第3467页。"
+    "source": "《明太祖實錄》，卷238，洪武二十八年四月庚午條，第3467頁。"
   },
   {
     "id": "annam_28_05_001",
@@ -6436,7 +6436,7 @@
     "monthSort": 5,
     "gregorianYear": 1395,
     "king": "",
-    "envoy": "黎宗辙（大中大夫) / 裴鑋（朝仪大夫)",
+    "envoy": "黎宗辙（大中大夫) / 裴鑋（朝儀大夫)",
     "purpose": "",
     "tributeRaw": "象",
     "tributeItems": [
@@ -6445,15 +6445,15 @@
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "冠带，钞",
-    "source": "《明太祖实录》，卷238，洪武二十八年五月癸丑条，第3473页。"
+    "giftsRaw": "冠帶，鈔",
+    "source": "《明太祖實錄》，卷238，洪武二十八年五月癸丑條，第3473頁。"
   },
   {
     "id": "joseon_28_08_001",
     "sourceRow": 259,
     "countryId": "joseon",
-    "countryName": "朝鲜",
-    "countryRaw": "朝鲜",
+    "countryName": "朝鮮",
+    "countryRaw": "朝鮮",
     "timeRaw": "洪武二十八年八月",
     "year": 28,
     "month": 8,
@@ -6461,24 +6461,24 @@
     "monthSort": 8,
     "gregorianYear": 1395,
     "king": "",
-    "envoy": "崔子云（典农正）",
-    "purpose": "市马",
-    "tributeRaw": "送马一千五百匹",
+    "envoy": "崔子雲（典農正）",
+    "purpose": "市馬",
+    "tributeRaw": "送馬一千五百匹",
     "tributeItems": [
-      "送马"
+      "送馬"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷240，洪武二十八年八月丁卯条，第3486页。"
+    "source": "《明太祖實錄》，卷240，洪武二十八年八月丁卯條，第3486頁。"
   },
   {
     "id": "joseon_28_09_001",
     "sourceRow": 260,
     "countryId": "joseon",
-    "countryName": "朝鲜",
-    "countryRaw": "朝鲜",
+    "countryName": "朝鮮",
+    "countryRaw": "朝鮮",
     "timeRaw": "洪武二十八年九月",
     "year": 28,
     "month": 9,
@@ -6486,7 +6486,7 @@
     "monthSort": 9,
     "gregorianYear": 1395,
     "king": "",
-    "envoy": "金立坚（门下评理）",
+    "envoy": "金立堅（門下評理）",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
@@ -6494,37 +6494,37 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷241，洪武二十八年九月己酉条，第3503页。"
+    "source": "《明太祖實錄》，卷241，洪武二十八年九月己酉條，第3503頁。"
   },
   {
     "id": "siam_28_11_001",
     "sourceRow": 261,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武二十八年十一月",
     "year": 28,
     "month": 11,
     "isLeapMonth": false,
     "monthSort": 11,
     "gregorianYear": 1395,
-    "king": "苏门邦王昭禄群膺（嗣王）",
-    "envoy": "柰婆郎直事剃 / 柰诗俚曾（通事）",
+    "king": "蘇門邦王昭祿群膺（嗣王）",
+    "envoy": "柰婆郎直事剃 / 柰詩俚曾（通事）",
     "purpose": "告丧",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "钞",
-    "source": "《明太祖实录》，卷243，洪武二十八年十一月甲申条，第3531页。"
+    "giftsRaw": "鈔",
+    "source": "《明太祖實錄》，卷243，洪武二十八年十一月甲申條，第3531頁。"
   },
   {
     "id": "joseon_28_12_001",
     "sourceRow": 262,
     "countryId": "joseon",
-    "countryName": "朝鲜",
-    "countryRaw": "朝鲜",
+    "countryName": "朝鮮",
+    "countryRaw": "朝鮮",
     "timeRaw": "洪武二十八年十二月",
     "year": 28,
     "month": 12,
@@ -6533,21 +6533,21 @@
     "gregorianYear": 1395,
     "king": "李旦",
     "envoy": "柳玽",
-    "purpose": "贺明年正旦",
+    "purpose": "賀明年正旦",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷243，洪武二十八年十二月己酉条，第3533-3534页。"
+    "source": "《明太祖實錄》，卷243，洪武二十八年十二月己酉條，第3533-3534頁。"
   },
   {
     "id": "ryukyu_hokuzan_29_01_001",
     "sourceRow": 263,
     "countryId": "ryukyu_hokuzan",
-    "countryName": "琉球山北国",
-    "countryRaw": "琉球山北国",
+    "countryName": "琉球山北國",
+    "countryRaw": "琉球山北國",
     "timeRaw": "洪武二十九年正月",
     "year": 29,
     "month": 1,
@@ -6562,15 +6562,15 @@
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "钞二百四十七锭",
-    "source": "《明太祖实录》，卷244，洪武二十九年正月己已条，第3537-3538页。"
+    "giftsRaw": "鈔二百四十七錠",
+    "source": "《明太祖實錄》，卷244，洪武二十九年正月己已條，第3537-3538頁。"
   },
   {
     "id": "ryukyu_chuzan_29_01_001",
     "sourceRow": 264,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武二十九年正月",
     "year": 29,
     "month": 1,
@@ -6578,24 +6578,24 @@
     "monthSort": 1,
     "gregorianYear": 1396,
     "king": "察度",
-    "envoy": "程复（典簿）",
+    "envoy": "程復（典簿）",
     "purpose": "",
-    "tributeRaw": "马、方物",
+    "tributeRaw": "馬、方物",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
-    "giftsRaw": "与上同项",
-    "source": "《明太祖实录》，卷244，洪武二十九年正月己已条，第3537-3538页。"
+    "giftsRaw": "與上同項",
+    "source": "《明太祖實錄》，卷244，洪武二十九年正月己已條，第3537-3538頁。"
   },
   {
     "id": "joseon_29_01_001",
     "sourceRow": 265,
     "countryId": "joseon",
-    "countryName": "朝鲜",
-    "countryRaw": "朝鲜",
+    "countryName": "朝鮮",
+    "countryRaw": "朝鮮",
     "timeRaw": "洪武二十九年正月",
     "year": 29,
     "month": 1,
@@ -6603,15 +6603,15 @@
     "monthSort": 1,
     "gregorianYear": 1396,
     "king": "李旦",
-    "envoy": "郑总（知门下府事）",
-    "purpose": "请印诰",
+    "envoy": "鄭總（知門下府事）",
+    "purpose": "請印诰",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷244，洪武二十九年正月乙亥条，第3538页。"
+    "source": "《明太祖實錄》，卷244，洪武二十九年正月乙亥條，第3538頁。"
   },
   {
     "id": "annam_29_02_001",
@@ -6625,16 +6625,16 @@
     "isLeapMonth": false,
     "monthSort": 2,
     "gregorianYear": 1396,
-    "king": "陈日焜",
-    "envoy": "陶全金（通奉大夫）、阮应龙（少中大夫）",
+    "king": "陳日焜",
+    "envoy": "陶全金（通奉大夫）、阮應龍（少中大夫）",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "钞",
-    "source": "《明太祖实录》，卷244，洪武二十九年二月戊戌条，第3546页。"
+    "giftsRaw": "鈔",
+    "source": "《明太祖實錄》，卷244，洪武二十九年二月戊戌條，第3546頁。"
   },
   {
     "id": "annam_29_02_002",
@@ -6657,14 +6657,14 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷244，洪武二十九年二月壬寅条，第3547页。"
+    "source": "《明太祖實錄》，卷244，洪武二十九年二月壬寅條，第3547頁。"
   },
   {
     "id": "ryukyu_chuzan_29_04_001",
     "sourceRow": 268,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武二十九年四月",
     "year": 29,
     "month": 4,
@@ -6672,24 +6672,24 @@
     "monthSort": 4,
     "gregorianYear": 1396,
     "king": "察度",
-    "envoy": "隗谷结致",
+    "envoy": "隗谷結致",
     "purpose": "",
-    "tributeRaw": "马二十七匹、方物",
+    "tributeRaw": "馬二十七匹、方物",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷245，洪武二十九年四月丁未条，第3562页。"
+    "source": "《明太祖實錄》，卷245，洪武二十九年四月丁未條，第3562頁。"
   },
   {
     "id": "ryukyu_sannan_29_04_001",
     "sourceRow": 269,
     "countryId": "ryukyu_sannan",
-    "countryName": "琉球山南国",
-    "countryRaw": "琉球山南国",
+    "countryName": "琉球山南國",
+    "countryRaw": "琉球山南國",
     "timeRaw": "洪武二十九年四月",
     "year": 29,
     "month": 4,
@@ -6697,15 +6697,15 @@
     "monthSort": 4,
     "gregorianYear": 1396,
     "king": "承察度 / 汪英紫氏（王叔）",
-    "envoy": "吴宜堪弥结致（王叔遣）",
+    "envoy": "吳宜堪彌結致（王叔遣）",
     "purpose": "",
-    "tributeRaw": "方物、马二十一匹 / 王叔： / 马五十二匹、硫黄七千斤、苏木一千三百斤",
+    "tributeRaw": "方物、馬二十一匹 / 王叔： / 馬五十二匹、硫黃七千斤、蘇木一千三百斤",
     "tributeItems": [
-      "马",
+      "馬",
       "王叔",
-      "马",
-      "硫黄",
-      "苏木"
+      "馬",
+      "硫黃",
+      "蘇木"
     ],
     "tributeCategories": [
       "animal",
@@ -6713,14 +6713,14 @@
       "spice"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷245，洪武二十九年四月丁未条，第3562页。"
+    "source": "《明太祖實錄》，卷245，洪武二十九年四月丁未條，第3562頁。"
   },
   {
     "id": "joseon_29_09_001",
     "sourceRow": 270,
     "countryId": "joseon",
-    "countryName": "朝鲜",
-    "countryRaw": "朝鲜",
+    "countryName": "朝鮮",
+    "countryRaw": "朝鮮",
     "timeRaw": "洪武二十九年九月",
     "year": 29,
     "month": 9,
@@ -6728,24 +6728,24 @@
     "monthSort": 9,
     "gregorianYear": 1396,
     "king": "李旦",
-    "envoy": "赵胖（门下评理） / 权仲和",
-    "purpose": "贺天寿圣节 / 谢恩",
-    "tributeRaw": "金银器布席等物",
+    "envoy": "趙胖（門下評理） / 權仲和",
+    "purpose": "賀天壽聖節 / 謝恩",
+    "tributeRaw": "金銀器布席等物",
     "tributeItems": [
-      "金银器布席"
+      "金銀器布席"
     ],
     "tributeCategories": [
       "textile"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷247，洪武二十九年九月丙辰条，第3583-3584页。"
+    "source": "《明太祖實錄》，卷247，洪武二十九年九月丙辰條，第3583-3584頁。"
   },
   {
     "id": "joseon_29_09_002",
     "sourceRow": 271,
     "countryId": "joseon",
-    "countryName": "朝鲜",
-    "countryRaw": "朝鲜",
+    "countryName": "朝鮮",
+    "countryRaw": "朝鮮",
     "timeRaw": "洪武二十九年九月",
     "year": 29,
     "month": 9,
@@ -6754,21 +6754,21 @@
     "gregorianYear": 1396,
     "king": "李旦",
     "envoy": "",
-    "purpose": "送撰表人郑总等三人",
+    "purpose": "送撰表人鄭總等三人",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷247，洪武二十九年九月丁卯条，第3585-3586页"
+    "source": "《明太祖實錄》，卷247，洪武二十九年九月丁卯條，第3585-3586頁"
   },
   {
     "id": "ryukyu_hokuzan_29_11_001",
     "sourceRow": 272,
     "countryId": "ryukyu_hokuzan",
-    "countryName": "琉球山北国",
-    "countryRaw": "琉球山北国",
+    "countryName": "琉球山北國",
+    "countryRaw": "琉球山北國",
     "timeRaw": "洪武二十九年十一月",
     "year": 29,
     "month": 11,
@@ -6777,48 +6777,48 @@
     "gregorianYear": 1396,
     "king": "攀安知",
     "envoy": "善佳古耶",
-    "purpose": "入学",
+    "purpose": "入學",
     "tributeRaw": "",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷248，洪武二十九年十一月戊寅条，第3599-3600页。"
+    "source": "《明太祖實錄》，卷248，洪武二十九年十一月戊寅條，第3599-3600頁。"
   },
   {
     "id": "ryukyu_chuzan_29_11_001",
     "sourceRow": 273,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武二十九年十一月",
     "year": 29,
     "month": 11,
     "isLeapMonth": false,
     "monthSort": 11,
     "gregorianYear": 1396,
-    "king": "武宁（王世子）",
+    "king": "武寧（王世子）",
     "envoy": "蔡奇阿孛耶",
-    "purpose": "入贡、入学",
-    "tributeRaw": "马三十七匹、硫黄等物",
+    "purpose": "入貢、入學",
+    "tributeRaw": "馬三十七匹、硫黃等物",
     "tributeItems": [
-      "马",
-      "硫黄"
+      "馬",
+      "硫黃"
     ],
     "tributeCategories": [
       "animal",
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷248，洪武二十九年十一月戊寅条，第3599-3600页。"
+    "source": "《明太祖實錄》，卷248，洪武二十九年十一月戊寅條，第3599-3600頁。"
   },
   {
     "id": "joseon_29_12_001",
     "sourceRow": 274,
     "countryId": "joseon",
-    "countryName": "朝鲜",
-    "countryRaw": "朝鲜",
+    "countryName": "朝鮮",
+    "countryRaw": "朝鮮",
     "timeRaw": "洪武二十九年十二月",
     "year": 29,
     "month": 12,
@@ -6826,22 +6826,22 @@
     "monthSort": 12,
     "gregorianYear": 1396,
     "king": "李旦",
-    "envoy": "安翊（门下赞成事）",
-    "purpose": "贺明年正旦",
+    "envoy": "安翊（門下贊成事）",
+    "purpose": "賀明年正旦",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷248，洪武二十九年十二月癸卯条，第3602页。"
+    "source": "《明太祖實錄》，卷248，洪武二十九年十二月癸卯條，第3602頁。"
   },
   {
     "id": "ryukyu_chuzan_30_02_001",
     "sourceRow": 275,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武三十年二月",
     "year": 30,
     "month": 2,
@@ -6849,26 +6849,26 @@
     "monthSort": 2,
     "gregorianYear": 1397,
     "king": "察度",
-    "envoy": "友赞结致",
+    "envoy": "友讚結致",
     "purpose": "",
-    "tributeRaw": "马、硫黄",
+    "tributeRaw": "馬、硫黃",
     "tributeItems": [
-      "马",
-      "硫黄"
+      "馬",
+      "硫黃"
     ],
     "tributeCategories": [
       "animal",
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷250，洪武三十年二月丙戌条，第3615页。"
+    "source": "《明太祖實錄》，卷250，洪武三十年二月丙戌條，第3615頁。"
   },
   {
     "id": "ryukyu_hokuzan_30_02_001",
     "sourceRow": 276,
     "countryId": "ryukyu_hokuzan",
-    "countryName": "琉球山北国",
-    "countryRaw": "琉球山北国",
+    "countryName": "琉球山北國",
+    "countryRaw": "琉球山北國",
     "timeRaw": "洪武三十年二月",
     "year": 30,
     "month": 2,
@@ -6878,24 +6878,24 @@
     "king": "攀安知",
     "envoy": "恰宜斯耶",
     "purpose": "",
-    "tributeRaw": "马、硫黄",
+    "tributeRaw": "馬、硫黃",
     "tributeItems": [
-      "马",
-      "硫黄"
+      "馬",
+      "硫黃"
     ],
     "tributeCategories": [
       "animal",
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷250，洪武三十年二月丙戌条，第3615页。"
+    "source": "《明太祖實錄》，卷250，洪武三十年二月丙戌條，第3615頁。"
   },
   {
     "id": "ryukyu_sannan_30_02_001",
     "sourceRow": 277,
     "countryId": "ryukyu_sannan",
-    "countryName": "琉球山南国",
-    "countryRaw": "琉球山南国",
+    "countryName": "琉球山南國",
+    "countryRaw": "琉球山南國",
     "timeRaw": "洪武三十年二月",
     "year": 30,
     "month": 2,
@@ -6903,26 +6903,26 @@
     "monthSort": 2,
     "gregorianYear": 1397,
     "king": "汪英紫氏（王叔）",
-    "envoy": "渥周结致",
+    "envoy": "渥周結致",
     "purpose": "",
-    "tributeRaw": "马、硫黄",
+    "tributeRaw": "馬、硫黃",
     "tributeItems": [
-      "马",
-      "硫黄"
+      "馬",
+      "硫黃"
     ],
     "tributeCategories": [
       "animal",
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷250，洪武三十年二月丙戌条，第3615页。"
+    "source": "《明太祖實錄》，卷250，洪武三十年二月丙戌條，第3615頁。"
   },
   {
     "id": "joseon_30_02_001",
     "sourceRow": 278,
     "countryId": "joseon",
-    "countryName": "朝鲜",
-    "countryRaw": "朝鲜",
+    "countryName": "朝鮮",
+    "countryRaw": "朝鮮",
     "timeRaw": "洪武三十年二月",
     "year": 30,
     "month": 2,
@@ -6930,14 +6930,14 @@
     "monthSort": 2,
     "gregorianYear": 1397,
     "king": "李旦",
-    "envoy": "偰长寿（三司事） / 辛有贤（密直副使）",
-    "purpose": "谢恩",
-    "tributeRaw": "鞍马、金银器、布、人参等物",
+    "envoy": "偰長壽（三司事） / 辛有賢（密直副使）",
+    "purpose": "謝恩",
+    "tributeRaw": "鞍馬、金銀器、布、人參等物",
     "tributeItems": [
-      "鞍马",
-      "金银器",
+      "鞍馬",
+      "金銀器",
       "布",
-      "参"
+      "參"
     ],
     "tributeCategories": [
       "animal",
@@ -6946,7 +6946,7 @@
       "vessel"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷250，洪武三十年二月丙戌条，第3615-3616页。"
+    "source": "《明太祖實錄》，卷250，洪武三十年二月丙戌條，第3615-3616頁。"
   },
   {
     "id": "champa_30_02_001",
@@ -6960,7 +6960,7 @@
     "isLeapMonth": false,
     "monthSort": 2,
     "gregorianYear": 1397,
-    "king": "卜落记真卜农",
+    "king": "卜落記真卜農",
     "envoy": "",
     "purpose": "",
     "tributeRaw": "胡椒、降香、象牙等物",
@@ -6973,15 +6973,15 @@
       "animal",
       "spice"
     ],
-    "giftsRaw": "衣服，钞",
-    "source": "《明太祖实录》，卷250，洪武三十年二月丙戌条，第3616页。"
+    "giftsRaw": "衣服，鈔",
+    "source": "《明太祖實錄》，卷250，洪武三十年二月丙戌條，第3616頁。"
   },
   {
     "id": "siam_30_08_001",
     "sourceRow": 280,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武三十年八月",
     "year": 30,
     "month": 8,
@@ -6997,14 +6997,14 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷254，洪武三十年八月辛丑条，第3671页。"
+    "source": "《明太祖實錄》，卷254，洪武三十年八月辛丑條，第3671頁。"
   },
   {
     "id": "joseon_30_09_001",
     "sourceRow": 281,
     "countryId": "joseon",
-    "countryName": "朝鲜",
-    "countryRaw": "朝鲜",
+    "countryName": "朝鮮",
+    "countryRaw": "朝鮮",
     "timeRaw": "洪武三十年九月",
     "year": 30,
     "month": 9,
@@ -7012,22 +7012,22 @@
     "monthSort": 9,
     "gregorianYear": 1397,
     "king": "李旦",
-    "envoy": "郑允辅（户曹判书）",
-    "purpose": "贺天寿圣节",
+    "envoy": "鄭允輔（戶曹判書）",
+    "purpose": "賀天壽聖節",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷255，洪武三十年九月癸亥条，第3679页。"
+    "source": "《明太祖實錄》，卷255，洪武三十年九月癸亥條，第3679頁。"
   },
   {
     "id": "siam_30_10_001",
     "sourceRow": 282,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武三十年十月",
     "year": 30,
     "month": 10,
@@ -7035,7 +7035,7 @@
     "monthSort": 10,
     "gregorianYear": 1397,
     "king": "",
-    "envoy": "奈斯勿罗者",
+    "envoy": "奈斯勿羅者",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
@@ -7043,14 +7043,14 @@
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷255，洪武三十年十月丁未条，第3686页。"
+    "source": "《明太祖實錄》，卷255，洪武三十年十月丁未條，第3686頁。"
   },
   {
     "id": "ryukyu_hokuzan_30_12_001",
     "sourceRow": 283,
     "countryId": "ryukyu_hokuzan",
-    "countryName": "琉球山北国",
-    "countryRaw": "琉球山北国",
+    "countryName": "琉球山北國",
+    "countryRaw": "琉球山北國",
     "timeRaw": "洪武三十年十二月",
     "year": 30,
     "month": 12,
@@ -7060,24 +7060,24 @@
     "king": "攀安知",
     "envoy": "恰宜斯耶",
     "purpose": "",
-    "tributeRaw": "马、硫黄",
+    "tributeRaw": "馬、硫黃",
     "tributeItems": [
-      "马",
-      "硫黄"
+      "馬",
+      "硫黃"
     ],
     "tributeCategories": [
       "animal",
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷255，洪武三十年十二月癸已条，第3690页。"
+    "source": "《明太祖實錄》，卷255，洪武三十年十二月癸已條，第3690頁。"
   },
   {
     "id": "ryukyu_chuzan_30_12_001",
     "sourceRow": 284,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武三十年十二月",
     "year": 30,
     "month": 12,
@@ -7085,49 +7085,49 @@
     "monthSort": 12,
     "gregorianYear": 1397,
     "king": "察度",
-    "envoy": "友赞结致",
+    "envoy": "友讚結致",
     "purpose": "",
-    "tributeRaw": "马、硫黄",
+    "tributeRaw": "馬、硫黃",
     "tributeItems": [
-      "马",
-      "硫黄"
+      "馬",
+      "硫黃"
     ],
     "tributeCategories": [
       "animal",
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷255，洪武三十年十二月癸已条，第3690页。"
+    "source": "《明太祖實錄》，卷255，洪武三十年十二月癸已條，第3690頁。"
   },
   {
     "id": "siam_31_01_001",
     "sourceRow": 285,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武三十一年正月",
     "year": 31,
     "month": 1,
     "isLeapMonth": false,
     "monthSort": 1,
     "gregorianYear": 1398,
-    "king": "苏门邦王昭禄羣膺",
+    "king": "蘇門邦王昭祿羣膺",
     "envoy": "",
-    "purpose": "贺正旦",
+    "purpose": "賀正旦",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "钞",
-    "source": "《明太祖实录》，卷256，洪武三十一年正月乙卯条，第3695页。"
+    "giftsRaw": "鈔",
+    "source": "《明太祖實錄》，卷256，洪武三十一年正月乙卯條，第3695頁。"
   },
   {
     "id": "ryukyu_hokuzan_31_01_001",
     "sourceRow": 286,
     "countryId": "ryukyu_hokuzan",
-    "countryName": "琉球山北国",
-    "countryRaw": "琉球山北国",
+    "countryName": "琉球山北國",
+    "countryRaw": "琉球山北國",
     "timeRaw": "洪武三十一年正月",
     "year": 31,
     "month": 1,
@@ -7137,52 +7137,52 @@
     "king": "攀安知",
     "envoy": "",
     "purpose": "",
-    "tributeRaw": "马",
+    "tributeRaw": "馬",
     "tributeItems": [
-      "马"
+      "馬"
     ],
     "tributeCategories": [
       "animal"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷256，洪武三十一年正月丙辰条，第3695页。"
+    "source": "《明太祖實錄》，卷256，洪武三十一年正月丙辰條，第3695頁。"
   },
   {
     "id": "ryukyu_chuzan_31_03_001",
     "sourceRow": 287,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武三十一年三月",
     "year": 31,
     "month": 3,
     "isLeapMonth": false,
     "monthSort": 3,
     "gregorianYear": 1398,
-    "king": "察度、武宁（王世子）",
-    "envoy": "亚兰匏、押撒都结致每步结致撒都奴侍",
-    "purpose": "入学",
-    "tributeRaw": "马、琉黄、胡椒等物 / 世子武宁贡亦如之",
+    "king": "察度、武寧（王世子）",
+    "envoy": "亞蘭匏、押撒都結致每步結致撒都奴侍",
+    "purpose": "入學",
+    "tributeRaw": "馬、琉黃、胡椒等物 / 世子武寧貢亦如之",
     "tributeItems": [
-      "马",
-      "琉黄",
+      "馬",
+      "琉黃",
       "胡椒",
-      "世子武宁贡亦如之"
+      "世子武寧貢亦如之"
     ],
     "tributeCategories": [
       "animal",
       "misc",
       "spice"
     ],
-    "giftsRaw": "钞",
-    "source": "《明太祖实录》，卷256，洪武三十一年三月戊申条，第3703页。"
+    "giftsRaw": "鈔",
+    "source": "《明太祖實錄》，卷256，洪武三十一年三月戊申條，第3703頁。"
   },
   {
     "id": "ryukyu_chuzan_31_04_001",
     "sourceRow": 288,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武三十一年四月",
     "year": 31,
     "month": 4,
@@ -7190,26 +7190,26 @@
     "monthSort": 4,
     "gregorianYear": 1398,
     "king": "察度",
-    "envoy": "鸦勒隹稽程复",
+    "envoy": "鴉勒隹稽程復",
     "purpose": "",
-    "tributeRaw": "马、硫黄",
+    "tributeRaw": "馬、硫黃",
     "tributeItems": [
-      "马",
-      "硫黄"
+      "馬",
+      "硫黃"
     ],
     "tributeCategories": [
       "animal",
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷257，洪武三十一年四月丁丑条，第3709页。"
+    "source": "《明太祖實錄》，卷257，洪武三十一年四月丁丑條，第3709頁。"
   },
   {
     "id": "ryukyu_chuzan_31_04_002",
     "sourceRow": 289,
     "countryId": "ryukyu_chuzan",
-    "countryName": "琉球中山国",
-    "countryRaw": "琉球中山国",
+    "countryName": "琉球中山國",
+    "countryRaw": "琉球中山國",
     "timeRaw": "洪武三十一年四月",
     "year": 31,
     "month": 4,
@@ -7219,17 +7219,17 @@
     "king": "察度",
     "envoy": "阿不耶",
     "purpose": "",
-    "tributeRaw": "马、硫黄",
+    "tributeRaw": "馬、硫黃",
     "tributeItems": [
-      "马",
-      "硫黄"
+      "馬",
+      "硫黃"
     ],
     "tributeCategories": [
       "animal",
       "misc"
     ],
     "giftsRaw": "",
-    "source": "《明太祖实录》，卷257，洪武三十一年四月己丑条，第3713页。"
+    "source": "《明太祖實錄》，卷257，洪武三十一年四月己丑條，第3713頁。"
   },
   {
     "id": "champa_31_05_001",
@@ -7244,22 +7244,22 @@
     "monthSort": 5,
     "gregorianYear": 1398,
     "king": "",
-    "envoy": "孙子布婆陋垓乌台夜皮么",
+    "envoy": "孫子布婆陋垓烏臺夜皮么",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "衣，钞",
-    "source": "《明太祖实录》，卷257，洪武三十一年五月辛亥条，第3715页。"
+    "giftsRaw": "衣，鈔",
+    "source": "《明太祖實錄》，卷257，洪武三十一年五月辛亥條，第3715頁。"
   },
   {
     "id": "siam_31_05_001",
     "sourceRow": 291,
     "countryId": "siam",
-    "countryName": "暹罗",
-    "countryRaw": "暹罗",
+    "countryName": "暹羅",
+    "countryRaw": "暹羅",
     "timeRaw": "洪武三十一年五月",
     "year": 31,
     "month": 5,
@@ -7267,41 +7267,41 @@
     "monthSort": 5,
     "gregorianYear": 1398,
     "king": "",
-    "envoy": "柰斯勿罗者",
+    "envoy": "柰斯勿羅者",
     "purpose": "",
     "tributeRaw": "方物",
     "tributeItems": [],
     "tributeCategories": [
       "misc"
     ],
-    "giftsRaw": "钞锭",
-    "source": "《明太祖实录》，卷257，洪武三十一年五月丙寅条，第3716页。"
+    "giftsRaw": "鈔錠",
+    "source": "《明太祖實錄》，卷257，洪武三十一年五月丙寅條，第3716頁。"
   }
 ];
   global.TRIBUTE_DATA = TRIBUTE_DATA;
   const COUNTRIES = {
   "goryeo": {
     "id": "goryeo",
-    "name": "高丽",
+    "name": "高麗",
     "nameEn": "Goryeo",
     "lat": 37.97,
     "lng": 126.56,
     "region": "korea",
     "routeType": "land_north",
-    "note": "洪武二十五年前主要以高丽名义出现。",
+    "note": "洪武二十五年前主要以高麗名義出現。",
     "totalRecords": 65,
     "firstYear": 2,
     "lastYear": 25
   },
   "joseon": {
     "id": "joseon",
-    "name": "朝鲜",
+    "name": "朝鮮",
     "nameEn": "Joseon",
     "lat": 37.57,
     "lng": 126.98,
     "region": "korea",
     "routeType": "land_north",
-    "note": "洪武二十六年起正式使用朝鲜国号；高丽（朝鲜）记录按朝鲜处理。",
+    "note": "洪武二十六年起正式使用朝鮮國號；高麗（朝鮮）記錄按朝鮮處理。",
     "totalRecords": 17,
     "firstYear": 26,
     "lastYear": 30
@@ -7314,7 +7314,7 @@
     "lng": 105.85,
     "region": "southeast_asia",
     "routeType": "sea_south",
-    "note": "以升龙/东都，即今河内一带定位。",
+    "note": "以升龍/東都，即今河內一帶定位。",
     "totalRecords": 34,
     "firstYear": 2,
     "lastYear": 29
@@ -7327,33 +7327,33 @@
     "lng": 108.8,
     "region": "southeast_asia",
     "routeType": "sea_south",
-    "note": "以占城核心区近今越南中南部定位。",
+    "note": "以占城核心區近今越南中南部定位。",
     "totalRecords": 27,
     "firstYear": 2,
     "lastYear": 31
   },
   "siam": {
     "id": "siam",
-    "name": "暹罗",
+    "name": "暹羅",
     "nameEn": "Siam",
     "lat": 14.35,
     "lng": 100.52,
     "region": "southeast_asia",
     "routeType": "sea_south",
-    "note": "以阿瑜陀耶，即今大城一带定位。",
+    "note": "以阿瑜陀耶，即今大城一帶定位。",
     "totalRecords": 42,
     "firstYear": 4,
     "lastYear": 31
   },
   "cambodia": {
     "id": "cambodia",
-    "name": "真腊",
+    "name": "真臘",
     "nameEn": "Chenla / Cambodia",
     "lat": 13.36,
     "lng": 103.86,
     "region": "southeast_asia",
     "routeType": "sea_south",
-    "note": "以吴哥，即今暹粒一带定位。",
+    "note": "以吳哥，即今暹粒一帶定位。",
     "totalRecords": 12,
     "firstYear": 4,
     "lastYear": 23
@@ -7366,20 +7366,20 @@
     "lng": 112.75,
     "region": "island_southeast_asia",
     "routeType": "sea_south",
-    "note": "以满者伯夷核心区近今泗水一带定位。",
+    "note": "以滿者伯夷核心區近今泗水一帶定位。",
     "totalRecords": 11,
     "firstYear": 3,
     "lastYear": 27
   },
   "java_east": {
     "id": "java_east",
-    "name": "爪哇东番",
+    "name": "爪哇東番",
     "nameEn": "Eastern Java polity",
     "lat": -7.28,
     "lng": 112.95,
     "region": "island_southeast_asia",
     "routeType": "sea_south",
-    "note": "洪武十二年一次记录；与爪哇共用核心区域，略作视觉偏移。",
+    "note": "洪武十二年一次記錄；與爪哇共用核心區域，略作視覺偏移。",
     "totalRecords": 1,
     "firstYear": 12,
     "lastYear": 12
@@ -7392,20 +7392,20 @@
     "lng": 112.55,
     "region": "island_southeast_asia",
     "routeType": "sea_south",
-    "note": "洪武十二年一次记录；与爪哇共用核心区域，略作视觉偏移。",
+    "note": "洪武十二年一次記錄；與爪哇共用核心區域，略作視覺偏移。",
     "totalRecords": 1,
     "firstYear": 12,
     "lastYear": 12
   },
   "srivijaya": {
     "id": "srivijaya",
-    "name": "三佛齐",
+    "name": "三佛齊",
     "nameEn": "Srivijaya",
     "lat": -2.99,
     "lng": 104.75,
     "region": "island_southeast_asia",
     "routeType": "west_sea",
-    "note": "以旧港/巨港一带定位。",
+    "note": "以舊港/巨港一帶定位。",
     "totalRecords": 6,
     "firstYear": 4,
     "lastYear": 10
@@ -7418,46 +7418,46 @@
     "lng": 130.5,
     "region": "east_asia",
     "routeType": "east_sea",
-    "note": "以洪武时期主要对华港博多一带定位。",
+    "note": "以洪武時期主要對華港博多一帶定位。",
     "totalRecords": 9,
     "firstYear": 4,
     "lastYear": 19
   },
   "ryukyu_chuzan": {
     "id": "ryukyu_chuzan",
-    "name": "琉球中山国",
+    "name": "琉球中山國",
     "nameEn": "Ryukyu Chuzan",
     "lat": 26.33,
     "lng": 127.77,
     "region": "east_asia",
     "routeType": "east_sea",
-    "note": "泛称“琉球”的洪武十八年记录归入中山国。",
+    "note": "泛稱“琉球”的洪武十八年記錄歸入中山國。",
     "totalRecords": 32,
     "firstYear": 5,
     "lastYear": 31
   },
   "ryukyu_sannan": {
     "id": "ryukyu_sannan",
-    "name": "琉球山南国",
+    "name": "琉球山南國",
     "nameEn": "Ryukyu Sannan",
     "lat": 26.15,
     "lng": 127.7,
     "region": "east_asia",
     "routeType": "east_sea",
-    "note": "琉球三国之一，独立显示。",
+    "note": "琉球三國之一，獨立顯示。",
     "totalRecords": 12,
     "firstYear": 13,
     "lastYear": 30
   },
   "ryukyu_hokuzan": {
     "id": "ryukyu_hokuzan",
-    "name": "琉球山北国",
+    "name": "琉球山北國",
     "nameEn": "Ryukyu Hokuzan",
     "lat": 26.7,
     "lng": 127.9,
     "region": "east_asia",
     "routeType": "east_sea",
-    "note": "琉球三国之一，独立显示。",
+    "note": "琉球三國之一，獨立顯示。",
     "totalRecords": 11,
     "firstYear": 16,
     "lastYear": 31
@@ -7470,7 +7470,7 @@
     "lng": 114.95,
     "region": "island_southeast_asia",
     "routeType": "sea_south",
-    "note": "以今文莱一带定位。",
+    "note": "以今文萊一帶定位。",
     "totalRecords": 1,
     "firstYear": 4,
     "lastYear": 4
@@ -7483,27 +7483,27 @@
     "lng": 75.78,
     "region": "indian_ocean",
     "routeType": "west_sea",
-    "note": "古地名对应仍需学术确认，暂按南印度西岸方向定位。",
+    "note": "古地名對應仍需學術確認，暫按南印度西岸方向定位。",
     "totalRecords": 1,
     "firstYear": 3,
     "lastYear": 3
   },
   "soli": {
     "id": "soli",
-    "name": "琐里",
+    "name": "瑣里",
     "nameEn": "Soli",
     "lat": 10.8,
     "lng": 79.0,
     "region": "indian_ocean",
     "routeType": "west_sea",
-    "note": "古地名对应仍需学术确认，暂按南印度方向定位。",
+    "note": "古地名對應仍需學術確認，暫按南印度方向定位。",
     "totalRecords": 1,
     "firstYear": 5,
     "lastYear": 5
   },
   "fulin": {
     "id": "fulin",
-    "name": "拂菻国",
+    "name": "拂菻國",
     "nameEn": "Fulin",
     "lat": 41.01,
     "lng": 75.2,
@@ -7512,20 +7512,20 @@
     "region": "far_west",
     "routeType": "west_sea",
     "positionStatus": "edge_marker",
-    "note": "若按拜占庭方向理解，实际位置远超主图范围；主图使用西侧边界方向标记。",
+    "note": "若按拜占庭方向理解，實際位置遠超主圖範圍；主圖使用西側邊界方向標記。",
     "totalRecords": 1,
     "firstYear": 8,
     "lastYear": 8
   },
   "lambri": {
     "id": "lambri",
-    "name": "览邦",
+    "name": "覽邦",
     "nameEn": "Lambri",
     "lat": 5.55,
     "lng": 95.32,
     "region": "indian_ocean",
     "routeType": "west_sea",
-    "note": "以苏门答腊北端兰无里一带定位。",
+    "note": "以蘇門答臘北端蘭無里一帶定位。",
     "totalRecords": 1,
     "firstYear": 9,
     "lastYear": 9
@@ -7538,7 +7538,7 @@
     "lng": 103.0,
     "region": "southeast_asia",
     "routeType": "west_sea",
-    "note": "古地名对应仍需学术确认。",
+    "note": "古地名對應仍需學術確認。",
     "totalRecords": 1,
     "firstYear": 10,
     "lastYear": 10
@@ -7551,7 +7551,7 @@
     "lng": 103.4,
     "region": "southeast_asia",
     "routeType": "west_sea",
-    "note": "以今马来西亚彭亨州一带定位。",
+    "note": "以今馬來西亞彭亨州一帶定位。",
     "totalRecords": 1,
     "firstYear": 11,
     "lastYear": 11
@@ -7564,33 +7564,33 @@
     "lng": 110.36,
     "region": "island_southeast_asia",
     "routeType": "sea_south",
-    "note": "古地名对应仍需学术确认，暂按爪哇中部方向定位。",
+    "note": "古地名對應仍需學術確認，暫按爪哇中部方向定位。",
     "totalRecords": 1,
     "firstYear": 11,
     "lastYear": 11
   },
   "jawa": {
     "id": "jawa",
-    "name": "阇婆",
+    "name": "闍婆",
     "nameEn": "Jawa",
     "lat": -7.6,
     "lng": 110.4,
     "region": "island_southeast_asia",
     "routeType": "sea_south",
-    "note": "古地名对应仍需学术确认，暂按爪哇方向定位。",
+    "note": "古地名對應仍需學術確認，暫按爪哇方向定位。",
     "totalRecords": 1,
     "firstYear": 11,
     "lastYear": 11
   },
   "samudra": {
     "id": "samudra",
-    "name": "须文那达",
+    "name": "鬚文那達",
     "nameEn": "Samudra",
     "lat": 5.18,
     "lng": 97.14,
     "region": "indian_ocean",
     "routeType": "west_sea",
-    "note": "以苏门答腊/巴赛方向定位。",
+    "note": "以蘇門答臘/巴賽方向定位。",
     "totalRecords": 1,
     "firstYear": 16,
     "lastYear": 16
@@ -7598,32 +7598,32 @@
 };
   global.COUNTRIES = COUNTRIES;
   const COUNTRY_NAME_TO_ID = {
-  "高丽": "goryeo",
-  "朝鲜": "joseon",
-  "高丽（朝鲜）": "joseon",
+  "高麗": "goryeo",
+  "朝鮮": "joseon",
+  "高麗（朝鮮）": "joseon",
   "安南": "annam",
   "占城": "champa",
-  "暹罗": "siam",
-  "真腊": "cambodia",
+  "暹羅": "siam",
+  "真臘": "cambodia",
   "爪哇": "java",
-  "爪哇东番": "java_east",
+  "爪哇東番": "java_east",
   "爪哇西番": "java_west",
-  "三佛齐": "srivijaya",
+  "三佛齊": "srivijaya",
   "日本": "japan",
   "琉球": "ryukyu_chuzan",
-  "琉球中山国": "ryukyu_chuzan",
-  "琉球山南国": "ryukyu_sannan",
-  "琉球山北国": "ryukyu_hokuzan",
+  "琉球中山國": "ryukyu_chuzan",
+  "琉球山南國": "ryukyu_sannan",
+  "琉球山北國": "ryukyu_hokuzan",
   "浡泥": "brunei",
   "西洋": "xiyang",
-  "琐里": "soli",
-  "拂菻国": "fulin",
-  "览邦": "lambri",
+  "瑣里": "soli",
+  "拂菻國": "fulin",
+  "覽邦": "lambri",
   "淡巴": "timor",
   "湓亨": "pahang",
   "百花": "baihua",
-  "阇婆": "jawa",
-  "须文那达": "samudra"
+  "闍婆": "jawa",
+  "鬚文那達": "samudra"
 };
   global.COUNTRY_NAME_TO_ID = COUNTRY_NAME_TO_ID;
   const TRIBUTE_META = {
@@ -7643,34 +7643,34 @@
 
   const TRIBUTE_CATEGORIES = {
     "方物": ["方物"],
-    "馬匹": ["马", "馬"],
-    "香料": ["胡椒", "苏木", "蘇木", "丁香", "降香", "木香", "龙脑", "龍腦", "速香", "沉香", "黄蜡", "黃蠟", "乳香", "檀香"],
-    "象": ["象", "驯象", "馴象"],
-    "金銀器": ["金", "银", "銀", "龙盏", "龍盞", "玳瑁"],
-    "布帛": ["布", "绵", "綿", "绮", "綺", "罗", "羅", "纱", "紗", "苾布", "缎", "緞"],
-    "硫黃": ["硫黄", "硫磺"],
-    "動物": ["虎", "熊", "孔雀", "鹦鹉", "鸚鵡", "白猴", "火鸡", "火雞", "犀牛", "白鹿", "鹤", "鶴", "鸡", "雞"]
+    "馬匹": ["馬", "馬"],
+    "香料": ["胡椒", "蘇木", "蘇木", "丁香", "降香", "木香", "龍腦", "龍腦", "速香", "沉香", "黃蠟", "黃蠟", "乳香", "檀香"],
+    "象": ["象", "馴象", "馴象"],
+    "金銀器": ["金", "銀", "銀", "龍盞", "龍盞", "玳瑁"],
+    "布帛": ["布", "綿", "綿", "綺", "綺", "羅", "羅", "紗", "紗", "苾布", "緞", "緞"],
+    "硫黃": ["硫黃", "硫磺"],
+    "動物": ["虎", "熊", "孔雀", "鸚鵡", "鸚鵡", "白猴", "火雞", "火雞", "犀牛", "白鹿", "鶴", "鶴", "雞", "雞"]
   };
   global.TRIBUTE_CATEGORIES = TRIBUTE_CATEGORIES;
 
   const GIFT_CATEGORIES = {
-    "絲織品": ["文绮", "文綺", "织金", "織金", "纱罗", "紗羅", "绮", "綺", "帛", "罗", "羅", "纱", "紗", "缎", "緞"],
-    "鈔錠": ["钞", "鈔"],
-    "衣服": ["衣", "冠带", "冠帶", "靴", "袜", "襪"],
-    "卻貢": ["却贡", "卻貢"],
-    "大統曆": ["大统历", "大統曆", "历", "曆"],
+    "絲織品": ["文綺", "文綺", "織金", "織金", "紗羅", "紗羅", "綺", "綺", "帛", "羅", "羅", "紗", "紗", "緞", "緞"],
+    "鈔錠": ["鈔", "鈔"],
+    "衣服": ["衣", "冠帶", "冠帶", "靴", "襪", "襪"],
+    "卻貢": ["卻貢", "卻貢"],
+    "大統曆": ["大統歷", "大統曆", "歷", "曆"],
     "宴飲": ["宴"]
   };
   global.GIFT_CATEGORIES = GIFT_CATEGORIES;
 
   const PURPOSE_CATEGORIES = {
-    "朝賀": ["贺正旦", "賀正旦", "贺明年正旦", "賀明年正旦", "贺天寿", "賀天壽", "上贺", "上賀", "贺皇太子", "賀皇太子", "贺即位", "賀即位", "贺克", "賀克", "天寿圣节", "天壽聖節", "天寿节", "天壽節", "皇太子千秋"],
-    "謝恩": ["谢恩", "謝恩", "上表谢恩", "上表謝恩", "谢封", "謝封", "谢赐", "謝賜"],
-    "請求": ["请封", "請封", "请入朝", "請入朝", "请袭", "請襲", "请谥", "請謚", "请命", "請命", "请祭", "請祭", "请入学", "請入學"],
-    "入學": ["入学", "入學"],
-    "市馬": ["市马", "市馬"],
+    "朝賀": ["賀正旦", "賀正旦", "賀明年正旦", "賀明年正旦", "賀天壽", "賀天壽", "上賀", "上賀", "賀皇太子", "賀皇太子", "賀即位", "賀即位", "賀克", "賀克", "天壽聖節", "天壽聖節", "天壽節", "天壽節", "皇太子千秋"],
+    "謝恩": ["謝恩", "謝恩", "上表謝恩", "上表謝恩", "謝封", "謝封", "謝賜", "謝賜"],
+    "請求": ["請封", "請封", "請入朝", "請入朝", "請襲", "請襲", "請谥", "請謚", "請命", "請命", "請祭", "請祭", "請入學", "請入學"],
+    "入學": ["入學", "入學"],
+    "市馬": ["市馬", "市馬"],
     "告哀": ["告哀"],
-    "謝罪": ["谢罪", "謝罪", "纳元", "納元", "纳前元", "納前元"]
+    "謝罪": ["謝罪", "謝罪", "納元", "納元", "納前元", "納前元"]
   };
   global.PURPOSE_CATEGORIES = PURPOSE_CATEGORIES;
 

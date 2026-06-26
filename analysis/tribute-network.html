@@ -1,0 +1,1020 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>貢物網絡圖譜</title>
+    <style>
+      :root {
+        --paper: #f5f0e8;
+        --ink: #1a1008;
+        --ink-soft: rgba(26, 16, 8, 0.68);
+        --line: rgba(139, 128, 112, 0.28);
+        --muted: #8b8070;
+        --vermillion: #c0392b;
+        --gold: #8b6914;
+        --shadow: rgba(58, 43, 26, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        min-height: 100%;
+        margin: 0;
+      }
+
+      body {
+        background:
+          repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(139, 128, 112, 0.02) 2px, rgba(139, 128, 112, 0.02) 4px),
+          radial-gradient(ellipse at 50% 16%, #fff8ed 0%, var(--paper) 58%, #e6ddcc 100%);
+        color: var(--ink);
+        font-family: "Noto Serif TC", "Noto Serif SC", "Source Han Serif TC", "Songti TC", serif;
+      }
+
+      .page {
+        width: min(1200px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 28px 0 56px;
+      }
+
+      .top-nav {
+        margin-bottom: 18px;
+      }
+
+      .back-link {
+        color: var(--gold);
+        font-size: var(--fs-14, 14px);
+        text-decoration: none;
+      }
+
+      .back-link:hover,
+      .back-link:focus-visible {
+        color: var(--vermillion);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        margin-bottom: 6px;
+        color: var(--ink);
+        font-size: clamp(var(--fs-30, 30px), 5vw, var(--fs-46, 46px));
+        line-height: 1.1;
+        letter-spacing: 0;
+      }
+
+      .subtitle {
+        max-width: 820px;
+        margin-bottom: 22px;
+        color: var(--ink-soft);
+        font-size: var(--fs-15, 15px);
+        line-height: 1.8;
+      }
+
+      .toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+        padding: 12px;
+        border: 1px solid var(--line);
+        background: rgba(245, 240, 232, 0.72);
+        box-shadow: 0 14px 34px rgba(58, 43, 26, 0.08);
+      }
+
+      .segmented {
+        display: inline-flex;
+        border: 1px solid rgba(139, 128, 112, 0.34);
+        background: rgba(255, 250, 242, 0.4);
+      }
+
+      .mode-btn {
+        min-height: 34px;
+        padding: 0 14px;
+        border: 0;
+        border-right: 1px solid rgba(139, 128, 112, 0.24);
+        background: transparent;
+        color: rgba(26, 16, 8, 0.76);
+        cursor: pointer;
+        font: var(--fs-14, 14px) "Noto Serif TC", "Noto Serif SC", serif;
+      }
+
+      .mode-btn:last-child {
+        border-right: 0;
+      }
+
+      .mode-btn.active {
+        background: rgba(192, 57, 43, 0.12);
+        color: var(--vermillion);
+        font-weight: 700;
+      }
+
+      .field {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        color: var(--muted);
+        font-size: var(--fs-13, 13px);
+      }
+
+      select {
+        min-height: 34px;
+        padding: 0 32px 0 10px;
+        border: 1px solid rgba(139, 128, 112, 0.38);
+        background: rgba(255, 250, 242, 0.58);
+        color: var(--ink);
+        font: var(--fs-14, 14px) "Noto Serif TC", "Noto Serif SC", serif;
+      }
+
+      .check-field {
+        margin-left: auto;
+      }
+
+      input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+        accent-color: var(--vermillion);
+      }
+
+      .network-shell {
+        display: flex;
+        gap: 16px;
+        align-items: stretch;
+      }
+
+      .canvas-wrap {
+        position: relative;
+        flex: 1 1 70%;
+        min-width: 0;
+        height: 620px;
+        border: 1px solid var(--line);
+        background:
+          radial-gradient(circle at 42% 44%, rgba(255, 250, 242, 0.72), rgba(245, 240, 232, 0.22) 58%, rgba(139, 105, 20, 0.06)),
+          rgba(255, 250, 242, 0.34);
+        box-shadow: 0 18px 42px var(--shadow);
+      }
+
+      #network-canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      .tooltip {
+        position: absolute;
+        display: none;
+        max-width: 260px;
+        padding: 8px 10px;
+        border: 1px solid rgba(139, 128, 112, 0.35);
+        background: rgba(245, 240, 232, 0.96);
+        color: var(--ink);
+        box-shadow: 0 8px 22px rgba(58, 43, 26, 0.16);
+        font-size: var(--fs-12, 12px);
+        line-height: 1.55;
+        pointer-events: none;
+        z-index: 3;
+      }
+
+      .info-panel {
+        position: sticky;
+        top: 18px;
+        flex: 0 0 280px;
+        max-height: calc(100vh - 36px);
+        overflow: auto;
+        padding: 16px;
+        border: 1px solid var(--line);
+        background: rgba(245, 240, 232, 0.82);
+        box-shadow: 0 18px 42px rgba(58, 43, 26, 0.1);
+      }
+
+      .info-panel h2 {
+        margin: 0 0 10px;
+        font-size: var(--fs-21, 21px);
+        line-height: 1.25;
+      }
+
+      .panel-note {
+        margin-bottom: 14px;
+        color: var(--ink-soft);
+        font-size: var(--fs-13, 13px);
+        line-height: 1.75;
+      }
+
+      .stat-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin: 12px 0;
+      }
+
+      .stat {
+        padding: 8px;
+        border: 1px solid rgba(139, 128, 112, 0.22);
+        background: rgba(255, 250, 242, 0.38);
+      }
+
+      .stat strong {
+        display: block;
+        color: var(--vermillion);
+        font-size: var(--fs-20, 20px);
+        line-height: 1.1;
+      }
+
+      .stat span {
+        color: var(--muted);
+        font-size: var(--fs-11, 11px);
+      }
+
+      .badge-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        margin: 10px 0 14px;
+      }
+
+      .badge {
+        padding: 4px 8px;
+        border: 1px solid rgba(139, 128, 112, 0.28);
+        border-radius: 999px;
+        background: rgba(255, 250, 242, 0.48);
+        color: rgba(26, 16, 8, 0.78);
+        font-size: var(--fs-12, 12px);
+        line-height: 1.35;
+      }
+
+      .panel-section-title {
+        margin: 14px 0 7px;
+        color: var(--gold);
+        font-size: var(--fs-13, 13px);
+        font-weight: 700;
+      }
+
+      .ranking {
+        margin-top: 18px;
+        padding: 14px 16px;
+        border: 1px solid var(--line);
+        background: rgba(245, 240, 232, 0.72);
+        box-shadow: 0 12px 32px rgba(58, 43, 26, 0.08);
+      }
+
+      .ranking h2 {
+        margin: 0 0 10px;
+        font-size: var(--fs-18, 18px);
+      }
+
+      .rank-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .rank-card {
+        min-width: 118px;
+        padding: 9px 10px;
+        border-left: 3px solid var(--vermillion);
+        background: rgba(255, 250, 242, 0.52);
+        box-shadow: 0 5px 16px rgba(58, 43, 26, 0.07);
+      }
+
+      .rank-card strong {
+        display: block;
+        font-size: var(--fs-15, 15px);
+      }
+
+      .rank-card span {
+        color: var(--muted);
+        font-size: var(--fs-12, 12px);
+      }
+
+      @media (max-width: 900px) {
+        .network-shell {
+          display: block;
+        }
+
+        .canvas-wrap {
+          height: 560px;
+        }
+
+        .info-panel {
+          position: static;
+          max-height: none;
+          margin-top: 14px;
+        }
+
+        .check-field {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <nav class="top-nav" aria-label="頁面導航">
+        <a class="back-link" href="../map.html">← 返回地圖</a>
+      </nav>
+
+      <header>
+        <h1>貢物網絡圖譜</h1>
+        <p class="subtitle">具體貢物 × 藩國關係網絡 — 方物之下的真實往來</p>
+      </header>
+
+      <section class="toolbar" aria-label="圖譜控制">
+        <div class="segmented" role="group" aria-label="視圖切換">
+          <button class="mode-btn active" type="button" data-mode="network">貢物-藩國網絡</button>
+          <button class="mode-btn" type="button" data-mode="matrix">藩國相似矩陣</button>
+        </div>
+        <label class="field">
+          <span>時段</span>
+          <select id="period-select">
+            <option value="all">全期</option>
+            <option value="early">洪武1-13</option>
+            <option value="late">洪武14-31</option>
+          </select>
+        </label>
+        <label class="field check-field">
+          <input id="exclude-misc" type="checkbox" checked />
+          <span>排除方物</span>
+        </label>
+      </section>
+
+      <section class="network-shell">
+        <div class="canvas-wrap" id="canvas-wrap">
+          <canvas id="network-canvas" aria-label="貢物網絡圖譜"></canvas>
+          <div class="tooltip" id="tooltip"></div>
+        </div>
+        <aside class="info-panel" id="info-panel" aria-label="圖譜資訊面板"></aside>
+      </section>
+
+      <section class="ranking" aria-labelledby="ranking-title">
+        <h2 id="ranking-title">藩國貢物獨特性排名</h2>
+        <div class="rank-cards" id="ranking-cards"></div>
+      </section>
+    </main>
+
+    <script src="../js/fontSizeControls.js"></script>
+    <script src="../js/data.js"></script>
+    <script>
+      (function () {
+        "use strict";
+
+        const records = window.TRIBUTE_DATA || [];
+        const countries = window.COUNTRIES || {};
+        const canvas = document.getElementById("network-canvas");
+        const wrap = document.getElementById("canvas-wrap");
+        const tooltip = document.getElementById("tooltip");
+        const panel = document.getElementById("info-panel");
+        const periodSelect = document.getElementById("period-select");
+        const excludeMisc = document.getElementById("exclude-misc");
+        const rankingCards = document.getElementById("ranking-cards");
+        const modeButtons = Array.from(document.querySelectorAll(".mode-btn"));
+
+        const regionColors = {
+          northeast_asia: "#7F77DD",
+          southeast_asia_mainland: "#1D9E75",
+          southeast_asia_maritime: "#EF9F27",
+          ryukyu: "#378ADD",
+          other: "#888780",
+        };
+
+        const itemDefs = [
+          { id: "horses", name: "馬匹", regex: /馬(?:\d|匹|疋|[一二三四五六七八九十百千萬萬])|鞍馬/g, group: "generic", hint: "馬匹多見於東北亞朝貢圈，與草原、半島交通和軍事資源密切相關。" },
+          { id: "elephant", name: "象/象牙", regex: /馴象|象牙|象(?:奴|齒|\d+隻)/g, group: "animal", hint: "象與象牙指向中南半島熱帶資源，也是占城、安南、暹羅、真臘的重要高端物資。" },
+          { id: "rhino", name: "犀角/犀牛", regex: /犀(?:角|牛)/g, group: "animal", hint: "犀角連接占城、三佛齊、爪哇等地，是東南亞珍稀物產的典型標記。" },
+          { id: "sulfur", name: "硫黃", regex: /硫黃|琉黃/g, group: "mineral", hint: "硫黃是琉球與日本貢物中的關鍵物資，帶有軍事技術與轉運網絡的雙重意味。" },
+          { id: "pepper", name: "胡椒", regex: /胡椒/g, group: "spice", hint: "胡椒出現於洪武前中期，集中在東南亞圈；琉球中山的胡椒可能來自轉口貿易。" },
+          { id: "sappan", name: "蘇木", regex: /蘇木/g, group: "spice", hint: "蘇木連接暹羅、爪哇與琉球中山，反映染料與香料貿易的跨海流動。" },
+          { id: "clove", name: "丁香", regex: /丁香/g, group: "spice", hint: "丁香指向南海與馬來世界香料圈，與三佛齊、暹羅的物資譜系相連。" },
+          { id: "incense", name: "沉/降/檀香", regex: /沉香|降香|速香|檀香|沉速香|降真/g, group: "spice", hint: "香木類貢物是東南亞高價資源的核心，尤其凸顯占城、浡泥與真臘的地理稟賦。" },
+          { id: "camphor", name: "龍腦/各類腦", regex: /龍腦|米腦|糠腦/g, group: "spice", hint: "龍腦等樹脂香料多見於海島東南亞，呈現馬來世界的森林資源。" },
+          { id: "exotic_bird", name: "珍禽異獸", regex: /孔雀|鸚鵡|火雞|白猴|紅猴|黑熊|白鹿|鶴頂/g, group: "animal", hint: "珍禽異獸常作為遠方奇物，既是自然資源，也是宮廷展示性的外交符號。" },
+          { id: "fabric_trade", name: "番布/異域布", regex: /苾布|番布|兜羅綿|覬木里布|撒哈剌/g, group: "textile", hint: "異域布料保存了印度洋與南海貿易的痕跡，不隻是地方土產，也可能是再流通商品。" },
+          { id: "gold_silver", name: "金銀器皿", regex: /金銀器|金龍|金盞|金盂|銀(?:盂|器|罐)/g, group: "metal", hint: "金銀器在高麗、朝鮮與安南記錄中突出，常與政治禮制和宮廷交換相關。" },
+          { id: "cloth_local", name: "布帛(本國)", regex: /白黑布|細布|黑布|白布|文席|布(?:匹|文)/g, group: "textile", hint: "布帛類在高麗記錄中較集中，與東北亞物產圈及制度化貢禮相連。" },
+          { id: "ginseng", name: "人參", regex: /人參/g, group: "metal", hint: "人參是高麗、朝鮮的地域性標記，和東南亞香料圈幾乎沒有重疊。" },
+          { id: "eunuch_slave", name: "閹豎/番奴", regex: /閹豎|番奴|閽者|黑奴|侍童|象奴/g, group: "population", hint: "安南貢閹豎多次，為所有藩國最高，是政治臣服的特殊表達形式。" },
+          { id: "misc_tribute", name: "方物", regex: /方物/g, group: "generic", hint: "方物是外交辭令的遮蔽，連線最多卻資訊密度最低；排除後可看見更具體的物質連接。" },
+        ];
+
+        const groupColor = {
+          animal: "#1D6B3E",
+          spice: "#8B4513",
+          mineral: "#C8A000",
+          textile: "#2B4F8C",
+          metal: "#8B6914",
+          population: "#C0392B",
+          generic: "#888780",
+        };
+        const networkCountryColor = "#8B6914";
+        const networkItemColor = "#9A4A12";
+
+        const countrySummaries = {
+          goryeo: "以馬匹、金銀器為核心，東北亞物產圈，與東南亞完全分隔。",
+          joseon: "延續高麗物產譜系，人參、馬匹與禮制性器物構成朝鮮特色。",
+          siam: "香料多樣性最高，胡椒、蘇木、丁香、象牙並舉，東南亞大陸的關鍵節點。",
+          ryukyu_chuzan: "硫黃為本島特產，蘇木、胡椒疑為琉球轉口貿易，連接東亞與東南亞。",
+          annam: "閹豎是最獨特貢品，馬匹和象牙兼有，體現與明廷的複雜臣屬關係。",
+          champa: "象/象牙、伽南香與犀角並重，為東南亞大陸高端物資的主要來源。",
+          srivijaya: "香料與珍禽並重，苾布體現馬來世界物質文化，物品多樣性僅次於暹羅。",
+          java: "以蘇木、犀角等南海物產為主，屬於海島東南亞資源圈。",
+        };
+
+        let mode = "network";
+        let selected = null;
+        let hover = null;
+        let dragNode = null;
+        let graph = null;
+        let matrixData = null;
+        let pointer = { x: 0, y: 0 };
+
+        function normalizeRegion(countryId) {
+          const country = countries[countryId] || {};
+          const region = country.region;
+          if (countryId.startsWith("ryukyu_") || region === "ryukyu") return "ryukyu";
+          if (["goryeo", "joseon", "japan"].includes(countryId) || region === "korea" || region === "east_asia" || region === "northeast_asia") return "northeast_asia";
+          if (region === "southeast_asia" || region === "southeast_asia_mainland" || countryId === "timor" || countryId === "pahang") return "southeast_asia_mainland";
+          if (region === "island_southeast_asia" || region === "southeast_asia_maritime") return "southeast_asia_maritime";
+          return "other";
+        }
+
+        function periodRecords() {
+          const period = periodSelect.value;
+          return records.filter((record) => {
+            if (period === "early") return record.year >= 1 && record.year <= 13;
+            if (period === "late") return record.year >= 14 && record.year <= 31;
+            return true;
+          });
+        }
+
+        function matchItems(raw) {
+          const text = raw || "";
+          return itemDefs.filter((item) => {
+            item.regex.lastIndex = 0;
+            return item.regex.test(text);
+          });
+        }
+
+        function computeModel() {
+          const source = periodRecords();
+          const itemCountry = new Map();
+          const itemYears = new Map();
+          const countryItems = new Map();
+          const countryTotals = new Map();
+          const miscCount = source.filter((record) => /方物/.test(record.tributeRaw || "")).length;
+
+          source.forEach((record) => {
+            const countryId = record.countryId;
+            if (!countryId || !countries[countryId]) return;
+            countryTotals.set(countryId, (countryTotals.get(countryId) || 0) + 1);
+            matchItems(record.tributeRaw).forEach((item) => {
+              const linkKey = `${item.id}::${countryId}`;
+              if (!itemCountry.has(linkKey)) itemCountry.set(linkKey, { itemId: item.id, countryId, count: 0, years: [] });
+              const link = itemCountry.get(linkKey);
+              link.count += 1;
+              link.years.push(record.year);
+
+              if (!itemYears.has(item.id)) itemYears.set(item.id, []);
+              itemYears.get(item.id).push(record.year);
+
+              if (!countryItems.has(countryId)) countryItems.set(countryId, new Map());
+              const map = countryItems.get(countryId);
+              map.set(item.id, (map.get(item.id) || 0) + 1);
+            });
+          });
+
+          return { source, itemCountry, itemYears, countryItems, countryTotals, miscCount };
+        }
+
+        function setupCanvas() {
+          const dpr = window.devicePixelRatio || 1;
+          const rect = wrap.getBoundingClientRect();
+          const width = rect.width || 800;
+          const height = rect.height || 620;
+          canvas.width = Math.round(width * dpr);
+          canvas.height = Math.round(height * dpr);
+          canvas.style.width = `${width}px`;
+          canvas.style.height = `${height}px`;
+          const ctx = canvas.getContext("2d");
+          ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+          return { ctx, width, height };
+        }
+
+        function fontPx(size) {
+          const scale = typeof window.getFontScale === "function" ? window.getFontScale() : 1;
+          return Math.round(size * scale * 10) / 10;
+        }
+
+        function countItemCountries(itemId, links) {
+          return new Set(links.filter((link) => link.itemId === itemId).map((link) => link.countryId)).size;
+        }
+
+        function buildGraph() {
+          const model = computeModel();
+          const hideMisc = excludeMisc.checked;
+          const links = Array.from(model.itemCountry.values()).filter((link) => !(hideMisc && link.itemId === "misc_tribute"));
+          const activeItemIds = new Set(links.map((link) => link.itemId));
+          const activeCountryIds = new Set(links.map((link) => link.countryId));
+          const nodes = [];
+          const rect = wrap.getBoundingClientRect();
+          const width = rect.width || 860;
+          const height = rect.height || 620;
+          const centerX = width / 2;
+          const centerY = height / 2 + 8;
+          const ringX = Math.max(260, width * 0.39);
+          const ringY = Math.max(205, height * 0.34);
+
+          itemDefs.forEach((item, index) => {
+            if (hideMisc && item.id === "misc_tribute") return;
+            if (!activeItemIds.has(item.id)) return;
+            const itemCountryCount = countItemCountries(item.id, links);
+            const angle = (Math.PI * 2 * index) / Math.max(activeItemIds.size, 1) - Math.PI / 2;
+            nodes.push({
+              id: `item:${item.id}`,
+              kind: "item",
+              itemId: item.id,
+              label: item.name,
+              color: networkItemColor,
+              radius: Math.min(40, 8 + Math.sqrt(itemCountryCount) * 6),
+              x: centerX + Math.cos(angle) * 72,
+              y: centerY + Math.sin(angle) * 56,
+              vx: 0,
+              vy: 0,
+            });
+          });
+
+          const regionOrder = ["northeast_asia", "ryukyu", "southeast_asia_maritime", "southeast_asia_mainland", "other"];
+          const sortedCountryIds = Array.from(activeCountryIds).sort((a, b) => {
+            const regionDelta = regionOrder.indexOf(normalizeRegion(a)) - regionOrder.indexOf(normalizeRegion(b));
+            return regionDelta || (countries[a].name || a).localeCompare(countries[b].name || b, "zh-Hant");
+          });
+
+          sortedCountryIds.forEach((countryId, index) => {
+            const country = countries[countryId];
+            const angle = (Math.PI * 2 * index) / Math.max(sortedCountryIds.length, 1) - Math.PI / 2;
+            const x = centerX + Math.cos(angle) * ringX;
+            const y = centerY + Math.sin(angle) * ringY;
+            nodes.push({
+              id: `country:${countryId}`,
+              kind: "country",
+              countryId,
+              label: country.name || countryId,
+              color: networkCountryColor,
+              radius: Math.min(28, 5 + Math.sqrt(country.totalRecords || model.countryTotals.get(countryId) || 1) * 2.5),
+              x,
+              y,
+              anchorX: x,
+              anchorY: y,
+              fixed: true,
+              vx: 0,
+              vy: 0,
+            });
+          });
+
+          const nodeById = new Map(nodes.map((node) => [node.id, node]));
+          const graphLinks = links
+            .map((link) => ({
+              ...link,
+              source: nodeById.get(`item:${link.itemId}`),
+              target: nodeById.get(`country:${link.countryId}`),
+              misc: link.itemId === "misc_tribute",
+            }))
+            .filter((link) => link.source && link.target);
+
+          graph = { ...model, nodes, links: graphLinks };
+          runLayout();
+          selected = null;
+          hover = null;
+          renderInfoDefault();
+          renderRanking();
+        }
+
+        function runLayout() {
+          const { width, height } = wrap.getBoundingClientRect();
+          const centerX = width / 2;
+          const centerY = height / 2 + 8;
+          for (let step = 0; step < 300; step++) {
+            graph.nodes.forEach((a, i) => {
+              if (a.fixed) return;
+              for (let j = i + 1; j < graph.nodes.length; j++) {
+                const b = graph.nodes[j];
+                if (b.fixed) continue;
+                const dx = a.x - b.x;
+                const dy = a.y - b.y;
+                const distSq = Math.max(dx * dx + dy * dy, 25);
+                const dist = Math.sqrt(distSq);
+                if (dist > 135) continue;
+                const force = (135 - dist) * 0.024;
+                const fx = (dx / dist) * force;
+                const fy = (dy / dist) * force;
+                a.vx += fx;
+                a.vy += fy;
+                if (!b.fixed) {
+                  b.vx -= fx;
+                  b.vy -= fy;
+                }
+              }
+            });
+
+            graph.links.forEach((link) => {
+              const dx = link.target.x - link.source.x;
+              const dy = link.target.y - link.source.y;
+              const dist = Math.max(Math.sqrt(dx * dx + dy * dy), 1);
+              const desired = link.misc ? 260 : 185 - Math.min(55, link.count * 8);
+              const force = (dist - desired) * (0.018 + Math.log(link.count + 1) * 0.012);
+              const fx = (dx / dist) * force;
+              const fy = (dy / dist) * force;
+              link.source.vx += fx;
+              link.source.vy += fy;
+            });
+
+            graph.nodes.forEach((node) => {
+              if (node.fixed) {
+                node.x = node.anchorX;
+                node.y = node.anchorY;
+                node.vx = 0;
+                node.vy = 0;
+                return;
+              }
+              node.vx += (centerX - node.x) * 0.004;
+              node.vy += (centerY - node.y) * 0.004;
+              node.vx *= 0.88;
+              node.vy *= 0.88;
+              node.x += node.vx;
+              node.y += node.vy;
+              node.x = Math.max(width * 0.18, Math.min(width * 0.82, node.x));
+              node.y = Math.max(height * 0.18, Math.min(height * 0.82, node.y));
+            });
+          }
+        }
+
+        function isHighlightedLink(link) {
+          if (!selected) return true;
+          if (selected.kind === "item") return link.itemId === selected.itemId;
+          if (selected.kind === "country") return link.countryId === selected.countryId;
+          return true;
+        }
+
+        function drawNetwork() {
+          const { ctx, width, height } = setupCanvas();
+          ctx.clearRect(0, 0, width, height);
+          const centerX = width / 2;
+          const centerY = height / 2 + 8;
+
+          ctx.fillStyle = "rgba(139,105,20,0.08)";
+          ctx.font = `${fontPx(13)}px "Noto Serif TC", serif`;
+          ctx.fillText("內圈：具體貢物節點", 24, 28);
+          ctx.textAlign = "right";
+          ctx.fillText("外圈：藩國節點", width - 24, 28);
+          ctx.textAlign = "left";
+
+          graph.links.forEach((link) => {
+            const highlighted = isHighlightedLink(link);
+            ctx.save();
+            ctx.strokeStyle = link.misc ? "rgba(136,135,128,0.15)" : hexToRgba(networkCountryColor, highlighted ? 0.38 : 0.1);
+            ctx.lineWidth = Math.log(link.count + 1) * 2;
+            if (link.misc) ctx.setLineDash([4, 7]);
+            if (!highlighted) ctx.globalAlpha = 0.35;
+            ctx.beginPath();
+            ctx.moveTo(link.source.x, link.source.y);
+            const midX = (link.source.x + link.target.x) / 2;
+            ctx.bezierCurveTo(midX, link.source.y, midX, link.target.y, link.target.x, link.target.y);
+            ctx.stroke();
+            ctx.restore();
+
+            if ((link.countryId === "ryukyu_chuzan" && (link.itemId === "pepper" || link.itemId === "sappan")) && highlighted) {
+              const mx = (link.source.x + link.target.x) / 2;
+              const my = (link.source.y + link.target.y) / 2;
+              ctx.save();
+              ctx.fillStyle = "rgba(55,138,221,0.92)";
+              ctx.font = `${fontPx(12)}px "Noto Serif TC", serif`;
+              ctx.fillText("轉口?", mx + 6, my - 6);
+              ctx.restore();
+            }
+          });
+
+          graph.nodes.forEach((node) => {
+            const active = !selected || (selected.kind === node.kind && selected.id === node.id) || graph.links.some((link) => isHighlightedLink(link) && (link.source === node || link.target === node));
+            ctx.save();
+            ctx.globalAlpha = active ? 1 : 0.28;
+            ctx.fillStyle = node.color;
+            ctx.beginPath();
+            ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.strokeStyle = node.kind === "item" && node.itemId === "eunuch_slave" ? "#C0392B" : "rgba(245,240,232,0.9)";
+            ctx.lineWidth = node.itemId === "eunuch_slave" ? 3 : 1.2;
+            ctx.stroke();
+            if (node.itemId === "eunuch_slave") {
+              ctx.fillStyle = "#C0392B";
+              ctx.font = `bold ${fontPx(15)}px "Noto Serif TC", serif`;
+              ctx.fillText("!", node.x + node.radius - 3, node.y - node.radius + 4);
+            }
+            ctx.fillStyle = "rgba(26,16,8,0.82)";
+            ctx.font = `${fontPx(node.kind === "country" ? 12 : 11)}px "Noto Serif TC", serif`;
+            if (node.kind === "country") {
+              const angle = Math.atan2(node.y - centerY, node.x - centerX);
+              const labelX = node.x + Math.cos(angle) * (node.radius + 12);
+              const labelY = node.y + Math.sin(angle) * (node.radius + 12);
+              ctx.textAlign = Math.cos(angle) > 0.2 ? "left" : Math.cos(angle) < -0.2 ? "right" : "center";
+              ctx.textBaseline = Math.sin(angle) > 0.45 ? "top" : Math.sin(angle) < -0.45 ? "bottom" : "middle";
+              ctx.fillText(node.label, labelX, labelY);
+            } else {
+              ctx.textAlign = "center";
+              ctx.textBaseline = "top";
+              ctx.fillText(node.label, node.x, node.y + node.radius + 4);
+            }
+            ctx.restore();
+          });
+        }
+
+        function buildMatrix() {
+          const model = computeModel();
+          const countryIds = Array.from(model.countryItems.keys()).filter((countryId) => countries[countryId]);
+          countryIds.sort((a, b) => normalizeRegion(a).localeCompare(normalizeRegion(b)) || (countries[a].name || a).localeCompare(countries[b].name || b, "zh-Hant"));
+          const sets = new Map(countryIds.map((countryId) => [countryId, new Set(Array.from(model.countryItems.get(countryId).keys()).filter((id) => id !== "misc_tribute"))]));
+          const cells = [];
+          let max = 1;
+          countryIds.forEach((a) => {
+            countryIds.forEach((b) => {
+              const shared = Array.from(sets.get(a)).filter((id) => sets.get(b).has(id));
+              max = Math.max(max, shared.length);
+              cells.push({ a, b, shared });
+            });
+          });
+          matrixData = { countryIds, cells, max };
+          renderInfoDefault();
+          renderRanking();
+        }
+
+        function drawMatrix() {
+          const { ctx, width, height } = setupCanvas();
+          ctx.clearRect(0, 0, width, height);
+          const ids = matrixData.countryIds;
+          const left = 118;
+          const top = 98;
+          const size = Math.min((width - left - 30) / ids.length, (height - top - 34) / ids.length);
+          const labelDefs = ids.map((id, index) => ({ id, name: countries[id].name || id, x: left + index * size, y: top + index * size }));
+
+          ctx.font = `${fontPx(10)}px "Noto Serif TC", serif`;
+          ctx.textAlign = "right";
+          labelDefs.forEach((label) => {
+            ctx.fillStyle = hexToRgba(regionColors[normalizeRegion(label.id)], 0.9);
+            ctx.fillText(label.name, left - 8, label.y + size * 0.66);
+          });
+
+          ctx.textAlign = "left";
+          labelDefs.forEach((label) => {
+            ctx.save();
+            ctx.translate(label.x + size * 0.18, top - 8);
+            ctx.rotate(-Math.PI / 4);
+            ctx.fillStyle = hexToRgba(regionColors[normalizeRegion(label.id)], 0.9);
+            ctx.fillText(label.name, 0, 0);
+            ctx.restore();
+          });
+
+          matrixData.cells.forEach((cell) => {
+            const xi = ids.indexOf(cell.b);
+            const yi = ids.indexOf(cell.a);
+            const value = cell.shared.length;
+            const alpha = value === 0 ? 0.08 : 0.16 + (value / matrixData.max) * 0.72;
+            ctx.fillStyle = value === 0 ? "rgba(255,250,242,0.56)" : `rgba(192,57,43,${alpha})`;
+            ctx.fillRect(left + xi * size, top + yi * size, size - 1, size - 1);
+          });
+
+          ctx.strokeStyle = "rgba(139,128,112,0.28)";
+          ctx.strokeRect(left, top, size * ids.length, size * ids.length);
+          ctx.fillStyle = "rgba(26,16,8,0.72)";
+          ctx.font = `${fontPx(13)}px "Noto Serif TC", serif`;
+          ctx.textAlign = "left";
+          ctx.fillText("共同具體貢物數（排除方物）", left, 28);
+          ctx.fillStyle = "rgba(192,57,43,0.82)";
+          ctx.fillText("顏色越深，兩國物質譜系越相近", left, 50);
+        }
+
+        function render() {
+          if (mode === "network") drawNetwork();
+          else drawMatrix();
+        }
+
+        function hexToRgba(hex, alpha) {
+          const clean = hex.replace("#", "");
+          const value = parseInt(clean, 16);
+          const r = (value >> 16) & 255;
+          const g = (value >> 8) & 255;
+          const b = value & 255;
+          return `rgba(${r},${g},${b},${alpha})`;
+        }
+
+        function nodeAt(x, y) {
+          if (!graph || mode !== "network") return null;
+          for (let i = graph.nodes.length - 1; i >= 0; i--) {
+            const node = graph.nodes[i];
+            const dx = x - node.x;
+            const dy = y - node.y;
+            if (Math.sqrt(dx * dx + dy * dy) <= node.radius + 5) return node;
+          }
+          return null;
+        }
+
+        function matrixCellAt(x, y) {
+          if (!matrixData || mode !== "matrix") return null;
+          const { width, height } = canvas.getBoundingClientRect();
+          const ids = matrixData.countryIds;
+          const left = 118;
+          const top = 98;
+          const size = Math.min((width - left - 30) / ids.length, (height - top - 34) / ids.length);
+          const col = Math.floor((x - left) / size);
+          const row = Math.floor((y - top) / size);
+          if (col < 0 || row < 0 || col >= ids.length || row >= ids.length) return null;
+          return matrixData.cells.find((cell) => cell.a === ids[row] && cell.b === ids[col]);
+        }
+
+        function pointerPosition(event) {
+          const rect = canvas.getBoundingClientRect();
+          return { x: event.clientX - rect.left, y: event.clientY - rect.top };
+        }
+
+        function renderTooltip(event) {
+          pointer = pointerPosition(event);
+          if (mode === "network") {
+            hover = nodeAt(pointer.x, pointer.y);
+            if (!hover) {
+              tooltip.style.display = "none";
+              render();
+              return;
+            }
+            tooltip.innerHTML = hover.kind === "item" ? `<strong>${hover.label}</strong><br>點擊查看貢此物藩國` : `<strong>${hover.label}</strong><br>點擊查看貢物檔案`;
+          } else {
+            const cell = matrixCellAt(pointer.x, pointer.y);
+            if (!cell) {
+              tooltip.style.display = "none";
+              return;
+            }
+            const names = cell.shared.map((id) => itemDefs.find((item) => item.id === id)?.name || id);
+            tooltip.innerHTML = `<strong>${countries[cell.a].name} × ${countries[cell.b].name}</strong><br>共同貢：${names.join("、") || "無"}（${names.length}種）`;
+          }
+          tooltip.style.display = "block";
+          tooltip.style.left = `${pointer.x + 12}px`;
+          tooltip.style.top = `${pointer.y + 12}px`;
+          render();
+        }
+
+        function renderInfoDefault() {
+          const model = computeModel();
+          const itemTotals = itemDefs.map((item) => ({
+            item,
+            count: Array.from(model.itemCountry.values()).filter((link) => link.itemId === item.id).reduce((sum, link) => sum + link.count, 0),
+          }));
+          const densest = itemTotals.slice().sort((a, b) => b.count - a.count)[0];
+          const miscRate = model.source.length ? Math.round((model.miscCount / model.source.length) * 100) : 0;
+          panel.innerHTML = `
+            <h2>全局統計摘要</h2>
+            <p class="panel-note">這張圖把外交套話拆開，讓具體物品重新浮出水面。</p>
+            <div class="stat-grid">
+              <div class="stat"><strong>${itemDefs.length}</strong><span>貢物節點</span></div>
+              <div class="stat"><strong>${graph ? graph.links.length : 0}</strong><span>網絡連線</span></div>
+              <div class="stat"><strong>${densest.item.name}</strong><span>連線最密集</span></div>
+              <div class="stat"><strong>${miscRate}%</strong><span>方物出現率</span></div>
+            </div>
+            <p class="panel-note">「方物」在 ${model.source.length} 條記錄中出現 ${model.miscCount} 次。勾選「排除方物」可看到更真實的物質連接。</p>
+          `;
+        }
+
+        function renderItemInfo(node) {
+          const item = itemDefs.find((def) => def.id === node.itemId);
+          const model = computeModel();
+          const links = Array.from(model.itemCountry.values())
+            .filter((link) => link.itemId === item.id)
+            .sort((a, b) => b.count - a.count);
+          const years = links.flatMap((link) => link.years);
+          panel.innerHTML = `
+            <h2>${item.name}</h2>
+            <p class="panel-note">${item.hint}</p>
+            <div class="panel-section-title">貢此物藩國</div>
+            <div class="badge-list">${links.map((link) => `<span class="badge">${countries[link.countryId]?.name || link.countryId} ${link.count}次</span>`).join("") || "<span class=\"badge\">本時段無記錄</span>"}</div>
+            <div class="panel-section-title">時間分佈</div>
+            <p class="panel-note">${years.length ? `洪武${Math.min(...years)}年 → 洪武${Math.max(...years)}年` : "本時段未出現"}</p>
+          `;
+        }
+
+        function renderCountryInfo(node) {
+          const country = countries[node.countryId];
+          const model = computeModel();
+          const itemMap = model.countryItems.get(node.countryId) || new Map();
+          const items = Array.from(itemMap.entries())
+            .map(([itemId, count]) => ({ item: itemDefs.find((def) => def.id === itemId), count }))
+            .filter((entry) => entry.item)
+            .sort((a, b) => b.count - a.count);
+          panel.innerHTML = `
+            <h2>${country.name}</h2>
+            <p class="panel-note">${regionLabel(normalizeRegion(node.countryId))} · ${countrySummaries[node.countryId] || "此國貢物譜系呈現地域資源與外交定位的交疊。"}</p>
+            <div class="panel-section-title">貢物檔案</div>
+            <div class="badge-list">${items.map((entry) => `<span class="badge">${entry.item.name} ${entry.count}次</span>`).join("") || "<span class=\"badge\">本時段無具體貢物</span>"}</div>
+          `;
+        }
+
+        function regionLabel(region) {
+          return {
+            northeast_asia: "東北亞",
+            southeast_asia_mainland: "東南亞大陸",
+            southeast_asia_maritime: "東南亞海島",
+            ryukyu: "琉球",
+            other: "其他遠域",
+          }[region] || "其他";
+        }
+
+        function renderRanking() {
+          const model = computeModel();
+          const ranking = Array.from(model.countryItems.entries())
+            .map(([countryId, itemMap]) => ({
+              countryId,
+              count: Array.from(itemMap.keys()).filter((id) => id !== "misc_tribute").length,
+            }))
+            .filter((entry) => entry.count > 0)
+            .sort((a, b) => b.count - a.count)
+            .slice(0, 5);
+          rankingCards.innerHTML = ranking
+            .map((entry, index) => `<div class="rank-card"><strong>${index + 1}. ${countries[entry.countryId]?.name || entry.countryId}</strong><span>${entry.count}類具體貢物</span></div>`)
+            .join("");
+        }
+
+        function refresh() {
+          if (mode === "network") buildGraph();
+          else buildMatrix();
+          render();
+        }
+
+        canvas.addEventListener("mousemove", (event) => {
+          if (dragNode) {
+            const pos = pointerPosition(event);
+            dragNode.x = pos.x;
+            dragNode.y = pos.y;
+            dragNode.vx = 0;
+            dragNode.vy = 0;
+            render();
+            return;
+          }
+          renderTooltip(event);
+        });
+
+        canvas.addEventListener("mouseleave", () => {
+          tooltip.style.display = "none";
+          hover = null;
+          dragNode = null;
+          render();
+        });
+
+        canvas.addEventListener("mousedown", (event) => {
+          const pos = pointerPosition(event);
+          const node = nodeAt(pos.x, pos.y);
+          dragNode = node && !node.fixed ? node : null;
+        });
+
+        window.addEventListener("mouseup", () => {
+          dragNode = null;
+        });
+
+        canvas.addEventListener("click", (event) => {
+          const pos = pointerPosition(event);
+          if (mode === "network") {
+            const node = nodeAt(pos.x, pos.y);
+            if (!node) {
+              selected = null;
+              renderInfoDefault();
+            } else {
+              selected = node;
+              if (node.kind === "item") renderItemInfo(node);
+              else renderCountryInfo(node);
+            }
+            render();
+          }
+        });
+
+        modeButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            mode = button.dataset.mode;
+            modeButtons.forEach((btn) => btn.classList.toggle("active", btn === button));
+            selected = null;
+            tooltip.style.display = "none";
+            refresh();
+          });
+        });
+
+        periodSelect.addEventListener("change", refresh);
+        excludeMisc.addEventListener("change", refresh);
+        window.addEventListener("resize", () => window.setTimeout(refresh, 120));
+        window.addEventListener("fontSizeChange", refresh);
+
+        refresh();
+      })();
+    </script>
+  </body>
+</html>

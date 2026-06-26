@@ -2,7 +2,7 @@
 (function (global) {
   "use strict";
   const NANJING = {
-  "name": "应天府",
+  "name": "應天府",
   "lat": 32.06,
   "lng": 118.78
 };
@@ -21,7 +21,7 @@
   const ROUTE_TEMPLATES = {
   "sea_south": {
     "type": "sea_south",
-    "name": "东南亚海路",
+    "name": "東南亞海路",
     "waypoints": [
       {
         "lat": 8.0,
@@ -43,7 +43,7 @@
   },
   "east_sea": {
     "type": "east_sea",
-    "name": "东海路线",
+    "name": "東海路線",
     "waypoints": [
       {
         "lat": 27.0,
@@ -61,7 +61,7 @@
   },
   "land_north": {
     "type": "land_north",
-    "name": "陆路/混合路线",
+    "name": "陸路/混合路線",
     "waypoints": [
       {
         "lat": 40.0,
@@ -79,7 +79,7 @@
   },
   "west_sea": {
     "type": "west_sea",
-    "name": "西域/印度洋路线",
+    "name": "西域/印度洋路線",
     "waypoints": [
       {
         "lat": 5.0,
@@ -117,7 +117,7 @@
   global.TRIBUTE_COLORS = TRIBUTE_COLORS;
   const TRIBUTE_CATEGORIES = {
   "animal": {
-    "label": "动物",
+    "label": "動物",
     "icon": "elephant"
   },
   "spice": {
@@ -125,7 +125,7 @@
     "icon": "incense"
   },
   "textile": {
-    "label": "织物",
+    "label": "織物",
     "icon": "scroll"
   },
   "vessel": {

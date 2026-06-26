@@ -1,0 +1,867 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>藩國關係光譜</title>
+    <style>
+      :root {
+        --paper: #f5f0e8;
+        --paper-deep: #e8dfcf;
+        --ink: #1a1008;
+        --ink-soft: rgba(26, 16, 8, 0.68);
+        --line: rgba(139, 128, 112, 0.3);
+        --muted: #8b8070;
+        --gold: #8b6914;
+        --vermillion: #c0392b;
+        --shadow: rgba(58, 43, 26, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        min-height: 100%;
+        margin: 0;
+      }
+
+      body {
+        background:
+          repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(139, 128, 112, 0.024) 2px, rgba(139, 128, 112, 0.024) 4px),
+          radial-gradient(ellipse at 54% 12%, #fff8ed 0%, var(--paper) 56%, var(--paper-deep) 100%);
+        color: var(--ink);
+        font-family: "Noto Serif TC", "Noto Serif SC", "Source Han Serif TC", "Songti TC", serif;
+      }
+
+      .page {
+        width: min(1200px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 28px 0 58px;
+      }
+
+      .top-nav {
+        margin-bottom: 18px;
+      }
+
+      .back-link {
+        color: var(--gold);
+        font-size: var(--fs-14, 14px);
+        text-decoration: none;
+      }
+
+      .back-link:hover,
+      .back-link:focus-visible {
+        color: var(--vermillion);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        margin-bottom: 8px;
+        color: var(--ink);
+        font-size: clamp(var(--fs-30, 30px), 5vw, var(--fs-46, 46px));
+        line-height: 1.1;
+        letter-spacing: 0;
+      }
+
+      .subtitle {
+        max-width: 860px;
+        margin-bottom: 24px;
+        color: var(--ink-soft);
+        font-size: var(--fs-15, 15px);
+        line-height: 1.8;
+      }
+
+      .toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        padding: 14px 16px;
+        border: 1px solid var(--line);
+        background: rgba(245, 240, 232, 0.78);
+        box-shadow: 0 18px 42px var(--shadow);
+      }
+
+      .control-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+      }
+
+      .control-label {
+        margin-right: 4px;
+        color: var(--muted);
+        font-size: var(--fs-13, 13px);
+      }
+
+      button {
+        min-height: 34px;
+        border: 1px solid rgba(139, 128, 112, 0.42);
+        border-radius: 0;
+        background: rgba(255, 250, 242, 0.72);
+        color: var(--ink);
+        cursor: pointer;
+        font-family: inherit;
+        font-size: var(--fs-13, 13px);
+      }
+
+      .seg-button {
+        padding: 6px 11px;
+      }
+
+      .seg-button[aria-pressed="true"] {
+        border-color: rgba(192, 57, 43, 0.65);
+        background: rgba(192, 57, 43, 0.08);
+        color: var(--vermillion);
+        font-weight: 700;
+      }
+
+      button:hover,
+      button:focus-visible {
+        border-color: rgba(192, 57, 43, 0.62);
+        color: var(--vermillion);
+      }
+
+      .spectrum-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 312px;
+        gap: 18px;
+        align-items: start;
+      }
+
+      .chart-panel,
+      .side-panel,
+      .detail-card {
+        border: 1px solid var(--line);
+        background: rgba(245, 240, 232, 0.78);
+        box-shadow: 0 18px 42px var(--shadow);
+      }
+
+      .chart-panel {
+        position: relative;
+        min-width: 0;
+        padding: 16px;
+      }
+
+      #spectrum-canvas {
+        display: block;
+        width: 100%;
+        height: 610px;
+        border: 1px solid rgba(139, 128, 112, 0.18);
+        background: rgba(255, 250, 242, 0.34);
+      }
+
+      .tooltip {
+        position: absolute;
+        z-index: 4;
+        max-width: 240px;
+        padding: 10px 12px;
+        border: 1px solid rgba(139, 128, 112, 0.32);
+        background: rgba(255, 250, 242, 0.96);
+        box-shadow: 0 12px 26px rgba(58, 43, 26, 0.18);
+        color: rgba(26, 16, 8, 0.76);
+        font-size: var(--fs-13, 13px);
+        line-height: 1.6;
+        pointer-events: none;
+      }
+
+      .tooltip strong {
+        display: block;
+        color: var(--ink);
+        font-size: var(--fs-15, 15px);
+      }
+
+      .tooltip[hidden],
+      .detail-card[hidden] {
+        display: none;
+      }
+
+      .side-panel {
+        position: sticky;
+        top: 16px;
+        padding: 16px;
+      }
+
+      .side-panel h2 {
+        margin-bottom: 14px;
+        font-size: var(--fs-20, 20px);
+      }
+
+      .stat-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        margin-bottom: 18px;
+      }
+
+      .stat-card {
+        min-height: 82px;
+        padding: 11px;
+        border: 1px solid rgba(139, 128, 112, 0.22);
+        background: rgba(255, 250, 242, 0.36);
+      }
+
+      .stat-card strong {
+        display: block;
+        color: var(--ink);
+        font-size: var(--fs-24, 24px);
+        line-height: 1.1;
+      }
+
+      .stat-card span {
+        display: block;
+        margin-top: 7px;
+        color: var(--muted);
+        font-size: var(--fs-12, 12px);
+        line-height: 1.45;
+      }
+
+      .legend {
+        display: grid;
+        gap: 9px;
+        margin-bottom: 18px;
+      }
+
+      .legend-item {
+        display: grid;
+        grid-template-columns: 14px minmax(0, 1fr);
+        gap: 8px;
+        align-items: center;
+        color: rgba(26, 16, 8, 0.74);
+        font-size: var(--fs-13, 13px);
+      }
+
+      .swatch {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--color);
+      }
+
+      .axis-note {
+        margin: 0;
+        padding-top: 14px;
+        border-top: 1px solid rgba(139, 128, 112, 0.22);
+        color: var(--muted);
+        font-size: var(--fs-12, 12px);
+        line-height: 1.75;
+      }
+
+      .detail-card {
+        margin-top: 18px;
+        padding: 18px 20px;
+      }
+
+      .detail-head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+
+      .detail-head h2 {
+        margin: 0;
+        font-size: var(--fs-23, 23px);
+      }
+
+      .detail-meta {
+        color: var(--muted);
+        font-size: var(--fs-13, 13px);
+      }
+
+      .detail-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 10px;
+        margin: 14px 0;
+      }
+
+      .detail-metric {
+        padding: 11px;
+        border: 1px solid rgba(139, 128, 112, 0.22);
+        background: rgba(255, 250, 242, 0.34);
+      }
+
+      .detail-metric strong {
+        display: block;
+        margin-bottom: 5px;
+        font-size: var(--fs-21, 21px);
+      }
+
+      .detail-metric span {
+        color: var(--muted);
+        font-size: var(--fs-12, 12px);
+      }
+
+      .detail-card p {
+        color: var(--ink-soft);
+        font-size: var(--fs-14, 14px);
+        line-height: 1.8;
+      }
+
+      .country-link {
+        color: var(--gold);
+        font-size: var(--fs-14, 14px);
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .country-link:hover,
+      .country-link:focus-visible {
+        color: var(--vermillion);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      @media (max-width: 920px) {
+        .spectrum-layout {
+          grid-template-columns: 1fr;
+        }
+
+        .side-panel {
+          position: static;
+        }
+
+        #spectrum-canvas {
+          height: 520px;
+        }
+
+        .detail-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 560px) {
+        .toolbar {
+          align-items: stretch;
+        }
+
+        .control-group {
+          width: 100%;
+        }
+
+        .seg-button {
+          flex: 1;
+        }
+
+        .detail-grid,
+        .stat-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <nav class="top-nav"><a class="back-link" href="../map.html">返回地圖</a></nav>
+      <h1>藩國關係光譜</h1>
+      <p class="subtitle">把每個藩國放進“朝貢廣度 × 朝貢深度”的座標系：橫軸看往來覆蓋了多少年份，縱軸按所選維度衡量關係投入，氣泡大小表示記錄總量。</p>
+
+      <section class="toolbar" aria-label="圖表控制">
+        <div class="control-group" aria-label="深度維度">
+          <span class="control-label">深度維度</span>
+          <button class="seg-button" type="button" data-mode="score" aria-pressed="true">綜合得分</button>
+          <button class="seg-button" type="button" data-mode="envoy" aria-pressed="false">使者人次</button>
+          <button class="seg-button" type="button" data-mode="tribute" aria-pressed="false">貢物種類數</button>
+        </div>
+        <div class="control-group" aria-label="標籤顯示">
+          <span class="control-label">標籤顯示</span>
+          <button class="seg-button" type="button" data-label-mode="all" aria-pressed="true">全部</button>
+          <button class="seg-button" type="button" data-label-mode="outliers" aria-pressed="false">僅異常值</button>
+          <button class="seg-button" type="button" data-label-mode="hidden" aria-pressed="false">隱藏</button>
+        </div>
+      </section>
+
+      <div class="spectrum-layout">
+        <section class="chart-panel" aria-label="藩國關係散點圖">
+          <canvas id="spectrum-canvas"></canvas>
+          <div id="tooltip" class="tooltip" hidden></div>
+        </section>
+
+        <aside class="side-panel" aria-label="統計面板">
+          <h2>總體結構</h2>
+          <div id="stat-grid" class="stat-grid"></div>
+          <h2>區域圖例</h2>
+          <div id="legend" class="legend"></div>
+          <p class="axis-note">X軸為有記錄年份跨度；Y軸隨上方按鈕切換。兩條虛線分別取 X、Y 中位數，用於劃分四象限。</p>
+        </aside>
+      </div>
+
+      <section id="detail-card" class="detail-card" aria-label="藩國詳情" hidden></section>
+    </main>
+
+    <script src="../js/fontSizeControls.js"></script>
+    <script src="../js/data.js"></script>
+    <script>
+      (function () {
+        "use strict";
+
+        const { TRIBUTE_DATA, COUNTRIES, getTributeCategories } = window;
+        const canvas = document.getElementById("spectrum-canvas");
+        const tooltip = document.getElementById("tooltip");
+        const detailCard = document.getElementById("detail-card");
+
+        const regionMeta = {
+          northeast: { label: "東北亞", color: "#7752a8" },
+          mainland: { label: "東南亞大陸", color: "#3d8a5f" },
+          island: { label: "東南亞海島", color: "#d9822b" },
+          ryukyu: { label: "琉球", color: "#2d75a8" },
+          other: { label: "其他", color: "#8b8070" },
+        };
+
+        const state = {
+          mode: "score",
+          labelMode: "all",
+          points: [],
+          plotted: [],
+          bounds: null,
+          hover: null,
+          selected: null,
+        };
+
+        function hasNamedEnvoy(record) {
+          const value = String(record.envoy || "").trim();
+          return value !== "" && value !== "不詳";
+        }
+
+        function countryRegionGroup(country) {
+          if (country.id.startsWith("ryukyu_")) return "ryukyu";
+          if (country.region === "korea" || country.region === "east_asia") return "northeast";
+          if (country.region === "southeast_asia") return "mainland";
+          if (country.region === "island_southeast_asia") return "island";
+          return "other";
+        }
+
+        function extractTributeTypes(record) {
+          const items = (record.tributeItems || []).map((item) => String(item).trim()).filter(Boolean);
+          if (items.length) return items;
+          return getTributeCategories(record);
+        }
+
+        function groupRecordsByCountry() {
+          const groups = new Map();
+          TRIBUTE_DATA.forEach((record) => {
+            if (!groups.has(record.countryId)) groups.set(record.countryId, []);
+            groups.get(record.countryId).push(record);
+          });
+          return groups;
+        }
+
+        function buildPoints() {
+          return Array.from(groupRecordsByCountry().entries())
+            .map(([countryId, records]) => {
+              const country = COUNTRIES[countryId] || { id: countryId, name: countryId, region: "unknown" };
+              const years = records.map((record) => record.year);
+              const firstYear = Math.min(...years);
+              const lastYear = Math.max(...years);
+              const span = lastYear - firstYear + 1;
+              const tributeTypes = new Set();
+              records.forEach((record) => extractTributeTypes(record).forEach((item) => tributeTypes.add(item)));
+              const envoyCount = records.filter(hasNamedEnvoy).length;
+              const recordCount = records.length;
+              return {
+                id: countryId,
+                name: country.name || countryId,
+                regionKey: countryRegionGroup(country),
+                regionLabel: regionMeta[countryRegionGroup(country)].label,
+                firstYear,
+                lastYear,
+                span,
+                recordCount,
+                envoyCount,
+                tributeTypeCount: tributeTypes.size,
+                score: envoyCount * 0.5 + tributeTypes.size * 3 + (recordCount / 5) * 2,
+              };
+            })
+            .sort((a, b) => b.recordCount - a.recordCount || a.name.localeCompare(b.name, "zh-Hant"));
+        }
+
+        function currentDepth(point) {
+          if (state.mode === "envoy") return point.envoyCount;
+          if (state.mode === "tribute") return point.tributeTypeCount;
+          return point.score;
+        }
+
+        function niceMax(value) {
+          if (value <= 0) return 10;
+          const exponent = Math.floor(Math.log10(value));
+          const base = 10 ** exponent;
+          const normalized = value / base;
+          const nice = normalized <= 2 ? 2 : normalized <= 5 ? 5 : 10;
+          return nice * base;
+        }
+
+        function median(values) {
+          const sorted = values.slice().sort((a, b) => a - b);
+          const mid = Math.floor(sorted.length / 2);
+          if (!sorted.length) return 0;
+          return sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+        }
+
+        function chartBounds() {
+          const depths = state.points.map(currentDepth);
+          return {
+            xMax: 31,
+            yMax: niceMax(Math.max(...depths, 1)),
+            xMedian: median(state.points.map((point) => point.span)),
+            yMedian: median(depths),
+          };
+        }
+
+        function plotArea(width, height) {
+          return {
+            left: 64,
+            right: width - 28,
+            top: 38,
+            bottom: height - 64,
+          };
+        }
+
+        function toCanvas(point, area, bounds) {
+          const depth = currentDepth(point);
+          const x = area.left + (point.span / bounds.xMax) * (area.right - area.left);
+          const y = area.bottom - (depth / bounds.yMax) * (area.bottom - area.top);
+          return { x, y, depth };
+        }
+
+        function draw() {
+          const rect = canvas.getBoundingClientRect();
+          const dpr = window.devicePixelRatio || 1;
+          canvas.width = Math.max(1, Math.round(rect.width * dpr));
+          canvas.height = Math.max(1, Math.round(rect.height * dpr));
+          const ctx = canvas.getContext("2d");
+          ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+          ctx.clearRect(0, 0, rect.width, rect.height);
+
+          const area = plotArea(rect.width, rect.height);
+          const bounds = chartBounds();
+          state.bounds = bounds;
+          drawAxes(ctx, area, bounds);
+          drawQuadrants(ctx, area, bounds);
+
+          state.plotted = state.points.map((point) => {
+            const plotted = toCanvas(point, area, bounds);
+            return { ...point, ...plotted, radius: Math.max(5, Math.sqrt(point.recordCount) * 3.5) };
+          });
+
+          state.plotted.forEach((point) => {
+            ctx.beginPath();
+            ctx.fillStyle = regionMeta[point.regionKey].color;
+            ctx.globalAlpha = state.hover?.id === point.id || state.selected?.id === point.id ? 0.92 : 0.72;
+            ctx.arc(point.x, point.y, point.radius, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.globalAlpha = 1;
+            ctx.strokeStyle = state.selected?.id === point.id ? "#1a1008" : "rgba(26, 16, 8, 0.28)";
+            ctx.lineWidth = state.selected?.id === point.id ? 1.8 : 0.8;
+            ctx.stroke();
+          });
+
+          drawLabels(ctx);
+        }
+
+        function fontPx(size) {
+          const scale = typeof window.getFontScale === "function" ? window.getFontScale() : 1;
+          return Math.round(size * scale * 10) / 10;
+        }
+
+        function drawAxes(ctx, area, bounds) {
+          ctx.save();
+          ctx.strokeStyle = "rgba(139, 128, 112, 0.54)";
+          ctx.lineWidth = 0.5;
+          ctx.beginPath();
+          ctx.moveTo(area.left, area.top);
+          ctx.lineTo(area.left, area.bottom);
+          ctx.lineTo(area.right, area.bottom);
+          ctx.stroke();
+
+          ctx.font = `${fontPx(12)}px "Noto Serif TC", "Noto Serif SC", serif`;
+          ctx.fillStyle = "rgba(26, 16, 8, 0.68)";
+          ctx.textAlign = "center";
+          ctx.textBaseline = "top";
+          for (let xTick = 0; xTick <= 31; xTick += 5) {
+            const x = area.left + (xTick / bounds.xMax) * (area.right - area.left);
+            ctx.strokeStyle = "rgba(139, 128, 112, 0.18)";
+            ctx.setLineDash([4, 6]);
+            ctx.beginPath();
+            ctx.moveTo(x, area.top);
+            ctx.lineTo(x, area.bottom);
+            ctx.stroke();
+            ctx.setLineDash([]);
+            ctx.fillText(String(xTick), x, area.bottom + 10);
+          }
+
+          ctx.textAlign = "right";
+          ctx.textBaseline = "middle";
+          const ySteps = 5;
+          for (let i = 0; i <= ySteps; i += 1) {
+            const value = (bounds.yMax / ySteps) * i;
+            const y = area.bottom - (value / bounds.yMax) * (area.bottom - area.top);
+            ctx.strokeStyle = "rgba(139, 128, 112, 0.18)";
+            ctx.setLineDash([4, 6]);
+            ctx.beginPath();
+            ctx.moveTo(area.left, y);
+            ctx.lineTo(area.right, y);
+            ctx.stroke();
+            ctx.setLineDash([]);
+            ctx.fillText(formatAxisValue(value), area.left - 8, y);
+          }
+
+          ctx.textAlign = "center";
+          ctx.textBaseline = "bottom";
+          ctx.fillStyle = "rgba(26, 16, 8, 0.76)";
+          ctx.fillText("朝貢廣度：年份跨度", (area.left + area.right) / 2, area.bottom + 44);
+          ctx.save();
+          ctx.translate(18, (area.top + area.bottom) / 2);
+          ctx.rotate(-Math.PI / 2);
+          ctx.fillText(`朝貢深度：${modeLabel()}`, 0, 0);
+          ctx.restore();
+          ctx.restore();
+        }
+
+        function drawQuadrants(ctx, area, bounds) {
+          const xMid = area.left + (bounds.xMedian / bounds.xMax) * (area.right - area.left);
+          const yMid = area.bottom - (bounds.yMedian / bounds.yMax) * (area.bottom - area.top);
+          ctx.save();
+          ctx.setLineDash([6, 6]);
+          ctx.strokeStyle = "rgba(192, 57, 43, 0.42)";
+          ctx.lineWidth = 0.8;
+          ctx.beginPath();
+          ctx.moveTo(xMid, area.top);
+          ctx.lineTo(xMid, area.bottom);
+          ctx.moveTo(area.left, yMid);
+          ctx.lineTo(area.right, yMid);
+          ctx.stroke();
+          ctx.setLineDash([]);
+
+          const labels = [
+            { text: "核心藩國", x: xMid + 12, y: area.top + 14 },
+            { text: "深而不廣", x: area.left + 12, y: area.top + 14 },
+            { text: "廣而不深", x: xMid + 12, y: yMid + 14 },
+            { text: "一次性/邊緣", x: area.left + 12, y: yMid + 14 },
+          ];
+          ctx.font = `${fontPx(13)}px "Noto Serif TC", "Noto Serif SC", serif`;
+          labels.forEach((label) => {
+            const width = ctx.measureText(label.text).width + 18;
+            ctx.fillStyle = "rgba(255, 250, 242, 0.82)";
+            ctx.fillRect(label.x, label.y, width, 26);
+            ctx.strokeStyle = "rgba(139, 128, 112, 0.24)";
+            ctx.strokeRect(label.x, label.y, width, 26);
+            ctx.fillStyle = "rgba(26, 16, 8, 0.72)";
+            ctx.fillText(label.text, label.x + 9, label.y + 18);
+          });
+          ctx.restore();
+        }
+
+        function drawLabels(ctx) {
+          ctx.save();
+          ctx.font = `${fontPx(12)}px "Noto Serif TC", "Noto Serif SC", serif`;
+          ctx.fillStyle = "rgba(26, 16, 8, 0.78)";
+          state.plotted.forEach((point) => {
+            if (!shouldShowLabel(point)) return;
+            ctx.fillText(point.name, point.x + point.radius + 4, point.y - point.radius - 2);
+          });
+          ctx.restore();
+        }
+
+        function shouldShowLabel(point) {
+          if (state.labelMode === "hidden") return false;
+          if (state.labelMode === "all") return true;
+          return isOutlier(point);
+        }
+
+        function isOutlier(point) {
+          const bounds = state.bounds || chartBounds();
+          return point.span >= bounds.xMedian * 1.5 || point.depth >= bounds.yMedian * 1.5 || point.recordCount === 1;
+        }
+
+        function formatAxisValue(value) {
+          return value >= 10 ? String(Math.round(value)) : value.toFixed(1).replace(/\.0$/, "");
+        }
+
+        function modeLabel() {
+          if (state.mode === "envoy") return "使者人次";
+          if (state.mode === "tribute") return "貢物種類數";
+          return "綜合得分";
+        }
+
+        function renderStats() {
+          const bounds = chartBounds();
+          const coreCount = state.points.filter((point) => point.span >= bounds.xMedian && currentDepth(point) >= bounds.yMedian).length;
+          const regularCount = state.points.filter((point) => point.recordCount > 1 && point.span > 1).length;
+          const oneTimeCount = state.points.filter((point) => point.recordCount === 1).length;
+          const avgSpan = state.points.reduce((sum, point) => sum + point.span, 0) / state.points.length;
+          const stats = [
+            [coreCount, "核心藩國數"],
+            [regularCount, "定期往來數"],
+            [oneTimeCount, "一次性藩國數"],
+            [avgSpan.toFixed(1), "平均年份跨度"],
+          ];
+          document.getElementById("stat-grid").innerHTML = stats
+            .map(([value, label]) => `<div class="stat-card"><strong>${value}</strong><span>${label}</span></div>`)
+            .join("");
+        }
+
+        function renderLegend() {
+          document.getElementById("legend").innerHTML = Object.values(regionMeta)
+            .map((region) => `<div class="legend-item"><span class="swatch" style="--color:${region.color}"></span><span>${region.label}</span></div>`)
+            .join("");
+        }
+
+        function nearestPoint(event) {
+          const rect = canvas.getBoundingClientRect();
+          const x = event.clientX - rect.left;
+          const y = event.clientY - rect.top;
+          let nearest = null;
+          let nearestDistance = Infinity;
+          state.plotted.forEach((point) => {
+            const distance = Math.hypot(point.x - x, point.y - y);
+            if (distance <= point.radius + 6 && distance < nearestDistance) {
+              nearest = point;
+              nearestDistance = distance;
+            }
+          });
+          return nearest;
+        }
+
+        function showTooltip(point, event) {
+          if (!point) {
+            tooltip.hidden = true;
+            state.hover = null;
+            draw();
+            return;
+          }
+          state.hover = point;
+          tooltip.innerHTML = `
+            <strong>${escapeHtml(point.name)}</strong>
+            區域：${escapeHtml(point.regionLabel)}<br />
+            記錄數：${point.recordCount}　跨度：${point.span}年<br />
+            使者人次：${point.envoyCount}　貢物種類：${point.tributeTypeCount}<br />
+            當前深度：${formatAxisValue(point.depth)}
+          `;
+          const panelRect = canvas.parentElement.getBoundingClientRect();
+          tooltip.style.left = `${event.clientX - panelRect.left + 14}px`;
+          tooltip.style.top = `${event.clientY - panelRect.top + 14}px`;
+          tooltip.hidden = false;
+          draw();
+        }
+
+        function quadrant(point) {
+          const bounds = state.bounds || chartBounds();
+          const highX = point.span >= bounds.xMedian;
+          const highY = point.depth >= bounds.yMedian;
+          if (highX && highY) return "core";
+          if (!highX && highY) return "deep";
+          if (highX && !highY) return "broad";
+          return "edge";
+        }
+
+        function quadrantText(point) {
+          const q = quadrant(point);
+          if (q === "core") return "它同時具備較長往來跨度與較高互動深度，說明關係不是偶發接觸，而是洪武朝朝貢體系中的穩定節點。";
+          if (q === "deep") return "它的互動強度較高，但年份跨度較短，通常意味著某一階段內集中往來，之後熱度回落或記錄中斷。";
+          if (q === "broad") return "它跨越年份較長，但單次投入不算高，更像低頻但持續存在的禮儀性連接。";
+          return "它在記錄中停留時間短、互動深度低，更接近一次性接觸、邊緣來往或史料偶見。";
+        }
+
+        function renderDetail(point) {
+          state.selected = point;
+          detailCard.hidden = false;
+          detailCard.innerHTML = `
+            <div class="detail-head">
+              <h2>${escapeHtml(point.name)}</h2>
+              <span class="detail-meta">${escapeHtml(point.regionLabel)} · 洪武${point.firstYear}年—洪武${point.lastYear}年</span>
+            </div>
+            <div class="detail-grid">
+              <div class="detail-metric"><strong>${point.recordCount}</strong><span>記錄數</span></div>
+              <div class="detail-metric"><strong>${point.envoyCount}</strong><span>使者人次</span></div>
+              <div class="detail-metric"><strong>${point.tributeTypeCount}</strong><span>貢物種類數</span></div>
+              <div class="detail-metric"><strong>${point.span}</strong><span>年份跨度</span></div>
+            </div>
+            <p>${quadrantText(point)}</p>
+            <a class="country-link" href="../country.html?id=${encodeURIComponent(point.id)}">返回該藩國完整記錄</a>
+          `;
+          detailCard.scrollIntoView({ behavior: "smooth", block: "nearest" });
+          draw();
+        }
+
+        function updateButtons(selector, activeValue, attrName) {
+          document.querySelectorAll(selector).forEach((button) => {
+            button.setAttribute("aria-pressed", String(button.dataset[attrName] === activeValue));
+          });
+        }
+
+        function renderAll() {
+          state.points = buildPoints();
+          renderStats();
+          renderLegend();
+          draw();
+        }
+
+        function bindEvents() {
+          document.querySelectorAll("[data-mode]").forEach((button) => {
+            button.addEventListener("click", () => {
+              state.mode = button.dataset.mode;
+              state.selected = null;
+              detailCard.hidden = true;
+              updateButtons("[data-mode]", state.mode, "mode");
+              renderAll();
+            });
+          });
+
+          document.querySelectorAll("[data-label-mode]").forEach((button) => {
+            button.addEventListener("click", () => {
+              state.labelMode = button.dataset.labelMode;
+              updateButtons("[data-label-mode]", state.labelMode, "labelMode");
+              draw();
+            });
+          });
+
+          canvas.addEventListener("mousemove", (event) => {
+            showTooltip(nearestPoint(event), event);
+          });
+
+          canvas.addEventListener("mouseleave", () => {
+            tooltip.hidden = true;
+            state.hover = null;
+            draw();
+          });
+
+          canvas.addEventListener("click", (event) => {
+            const point = nearestPoint(event);
+            if (point) renderDetail(point);
+          });
+
+          window.addEventListener("resize", draw);
+          window.addEventListener("fontSizeChange", draw);
+        }
+
+        function escapeHtml(value) {
+          return String(value)
+            .replaceAll("&", "&amp;")
+            .replaceAll("<", "&lt;")
+            .replaceAll(">", "&gt;")
+            .replaceAll('"', "&quot;")
+            .replaceAll("'", "&#39;");
+        }
+
+        bindEvents();
+        renderAll();
+      })();
+    </script>
+  </body>
+</html>

@@ -118,17 +118,17 @@
         const month = formatMonth(record);
         return `
           <div style="border-top:1px solid #E0D8C8; padding:12px 0;">
-            <div style="font-size:12px; color:#C0392B; margin-bottom:4px;">洪武${record.year}年${escapeHtml(month)}</div>
-            ${record.purpose ? `<div style="font-size:13px; color:#1A1008; margin-bottom:4px;">目的：${escapeHtml(record.purpose)}</div>` : ""}
-            ${record.king ? `<div style="font-size:13px; color:#1A1008; margin-bottom:4px;">國王：${escapeHtml(record.king)}</div>` : ""}
-            ${record.envoy ? `<div style="font-size:13px; color:#1A1008; margin-bottom:4px;">使者：${escapeHtml(record.envoy)}</div>` : ""}
-            <div style="font-size:13px; margin-bottom:4px;">
+            <div style="font-size:var(--fs-12, 12px); color:#C0392B; margin-bottom:4px;">洪武${record.year}年${escapeHtml(month)}</div>
+            ${record.purpose ? `<div style="font-size:var(--fs-13, 13px); color:#1A1008; margin-bottom:4px;">目的：${escapeHtml(record.purpose)}</div>` : ""}
+            ${record.king ? `<div style="font-size:var(--fs-13, 13px); color:#1A1008; margin-bottom:4px;">國王：${escapeHtml(record.king)}</div>` : ""}
+            ${record.envoy ? `<div style="font-size:var(--fs-13, 13px); color:#1A1008; margin-bottom:4px;">使者：${escapeHtml(record.envoy)}</div>` : ""}
+            <div style="font-size:var(--fs-13, 13px); margin-bottom:4px;">
               <span style="color:#8B6914;">貢物：</span>
               <span style="color:#1A1008;">${escapeHtml(record.tributeRaw || "方物")}</span>
             </div>
             ${
               record.giftsRaw
-                ? `<div style="font-size:13px;"><span style="color:#8B6914;">回賜：</span><span style="color:#1A1008;">${escapeHtml(record.giftsRaw)}</span></div>`
+                ? `<div style="font-size:var(--fs-13, 13px);"><span style="color:#8B6914;">回賜：</span><span style="color:#1A1008;">${escapeHtml(record.giftsRaw)}</span></div>`
                 : ""
             }
           </div>
@@ -146,13 +146,13 @@
 
     popup.innerHTML = `
       <div style="display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:16px;">
-        <h3 style="margin:0; color:#1A1008; font-size:18px;">${escapeHtml(country.name)}</h3>
-        <button class="tribute-popup-close" type="button" aria-label="關閉" style="cursor:pointer; border:0; background:transparent; font-size:20px; color:#8B8070; line-height:1;">&times;</button>
+        <h3 style="margin:0; color:#1A1008; font-size:var(--fs-18, 18px);">${escapeHtml(country.name)}</h3>
+        <button class="tribute-popup-close" type="button" aria-label="關閉" style="cursor:pointer; border:0; background:transparent; font-size:var(--fs-20, 20px); color:#8B8070; line-height:1;">&times;</button>
       </div>
-      <div style="font-size:13px; color:#8B6914; margin-bottom:12px;">
+      <div style="font-size:var(--fs-13, 13px); color:#8B6914; margin-bottom:12px;">
         ${escapeHtml(periodLabel)}
       </div>
-      ${recordBlocks || '<div style="font-size:13px; color:#1A1008;">本年無朝貢記錄。</div>'}
+      ${recordBlocks || '<div style="font-size:var(--fs-13, 13px); color:#1A1008;">本年無朝貢記錄。</div>'}
     `;
     popup.querySelector(".tribute-popup-close").addEventListener("click", closeTributePopup);
     popup.style.display = "block";

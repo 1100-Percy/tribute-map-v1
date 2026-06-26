@@ -1,0 +1,51 @@
+:root {
+  --paper: #f5f0e8;
+  --ink: #1a1008;
+  --ink-soft: rgba(26, 16, 8, 0.66);
+  --vermillion: #c0392b;
+  --gold-brown: #8b6914;
+  --line: rgba(139, 128, 112, 0.38);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background:
+    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(139, 128, 112, 0.02) 2px, rgba(139, 128, 112, 0.02) 4px),
+    var(--paper);
+  color: var(--ink);
+  font-family: "Noto Serif TC", "Noto Serif SC", "Source Han Serif TC", "Songti TC", serif;
+}
+
+.analysis-page {
+  padding: 28px 30px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--gold-brown);
+  font-size: var(--fs-12, 12px);
+}
+
+h1 {
+  margin: 0;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  font-size: var(--fs-26, 26px);
+  line-height: 1.2;
+}
+
+p {
+  color: var(--ink-soft);
+  font-size: var(--fs-15, 15px);
+  line-height: 1.8;
+}
